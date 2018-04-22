@@ -4,27 +4,41 @@ import {Container, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input,
 import Setting from './../utils/setting';
 export interface Props { 
   navigation: any,
+  postBaiDang: Function,
 }
-export default class infodetailuser extends Component {
+export default class infodetailuser extends Component<Props> {
   constructor(props) {
     super(props);
     this.state = {
-      status : false
+      status : false,
+      width: 0,
+      text: "=",
     }
   }
-  renderCardStatus() {
+
+  onLayout(event) {
+    const {x,y,width, height} = event.nativeEvent.layout;
+    if(this.state.width==0) {
+      this.setState({width: width});
+    }
+    // console.log("width" + width ); 
+  }
+
+  renderCardStatus(user) {
     
     console.log("status")
     console.log(this.state.status)
     if(this.state.status) {
       return (
-        <CardItem style={{borderWidth: 1, borderRadius: 10, flexDirection: 'column', width: '100%'}}>
+        <CardItem style={{borderWidth: 1, borderRadius: 10, flexDirection: 'column', width: '100%'}} 
+        onLayout={(e)=>this.onLayout(e)}>
           <Item style={{flex: 1, }}>
           <Input
           multiline={true}
           numberOfLines={3}
           placeholder='Bạn đang nghĩ gì?'
           style={{width: '100%'}}
+          onChangeText={(text)=>this.setState({text})}
           // onChangeText={(text) => this.setState({text})}
           // value={this.state.text}/>
           />
@@ -36,8 +50,10 @@ export default class infodetailuser extends Component {
               </Button>    
             </Left>
           </Item>
-          <Item style={{ flex: 1, width: 500, alignItems: 'center', borderBottomWidth: 0, paddingTop: 10}}>
-            <Button rounded style={{flex: 1, backgroundColor: '#00903b'}}>
+          <Item style={{ flex: 1, width: this.state.width-20, alignItems: 'center', borderBottomWidth: 0, paddingTop: 10}}>
+            <Button rounded style={{flex: 1, backgroundColor: '#00903b'}}
+              onPress={()=>this.props.postBaiDang(user.sothutu, this.state.text)} 
+            >
               <Text style={{color: 'white'}}>dang bai</Text>
             </Button>
           </Item>
@@ -77,7 +93,7 @@ export default class infodetailuser extends Component {
               </Left>
             </CardItem>
            {
-              this.renderCardStatus()
+              this.renderCardStatus(user)
            }
             <CardItem>
               <Body>

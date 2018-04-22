@@ -18,6 +18,7 @@ config = {
         var form = new FormData(); //tao form trong
         form.append("idnguoidung",idNguoiDang); //them json vào form
         form.append("noidung",noidung);
+        return {url: 'index.php/First_controller/postBaiDangController', data: form}
     },
     async save(key, str) {    
         try {
