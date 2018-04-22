@@ -19,7 +19,7 @@ config = {
         form.append("idnguoidung",idNguoiDang); //them json vào form
         form.append("noidung",noidung);
     },
-    async save(key, str) {
+    async save(key, str) {    
         try {
             await AsyncStorage.setItem('@ChelLong:'+key, str);
             // console.log("key + str: ")
