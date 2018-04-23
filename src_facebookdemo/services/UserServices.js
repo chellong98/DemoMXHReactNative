@@ -6,14 +6,16 @@ export default class userservice extends Services {
         super(props);
 
         // abc = newuserservice();
-        // abc.update(()=>{},)
+        // abc.update(()=>{},)     
         
     }
 
-    update(callback, check) {
+    update(callback, check) { 
         console.log(check.data);
         this.http.post(Setting.SERVER_NAME+check.url, check.data) //truyen data ve server
-        .then(response =>response.json()) //tra ve json
-        .then(responseJson=>callback(responseJson))
-    }
-}
+        .then(response =>{
+            console.log(response)
+            return response.json()}) //tra ve json
+        .then(responseJson=>callback(responseJson)) 
+    }       
+}    

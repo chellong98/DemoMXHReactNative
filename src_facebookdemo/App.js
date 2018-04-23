@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SplashContainer from './container/splashsreencontainer';
 import LoginContainer from './container/logincontainer';
-import {StackNavigator, DrawerNavigator} from 'react-navigation';
+import {StackNavigator, DrawerNavigator} from 'react-navigation'; 
 import ListUsersContainer from './container/ListUserscontainer';
 import CustomDrawNav from './container/CustomDrawNav';
 import InfoDetailUser from './container/infoDetailUserscontainer';

@@ -16,7 +16,7 @@ config = {
     // ]
     postBaiDang(idNguoiDang, noidung) {
         var form = new FormData(); //tao form trong
-        form.append("idnguoidung",idNguoiDang); //them json vào form
+        form.append("idnguoidang",idNguoiDang); //them json vào form
         form.append("noidung",noidung);
         return {url: 'index.php/First_controller/postBaiDangController', data: form}
     },
@@ -55,10 +55,10 @@ config = {
         try {
             
             return JSON.parse(login);
-        } catch (error) {
+        } catch (error) { 
             return null;
-        }
+        }   
     }
 
-}
+}                                                             
 export default config;

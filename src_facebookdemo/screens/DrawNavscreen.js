@@ -9,11 +9,12 @@ export interface Props {
 }
 
 export default class drawnav extends Component<Props> {
-  taoHang(value, index) {
+  taoHang(value, index, account) {
     return (
         <ListItem onPress={()=>{
-          this.props.navigation.navigate('InfoDetailUser',{
-            user: value
+          this.props.navigation.navigate('InfoDetailUser',{ //gui user va account hien tai sang new feed
+            user: value,
+            account: account
           });
         }}>
           <Left>
@@ -47,7 +48,7 @@ export default class drawnav extends Component<Props> {
             <List style={{flex: 6/7}}>
               {
                 listUsers.map((value, index)=>{
-                  return this.taoHang(value, index) 
+                  return this.taoHang(value, index, account) 
                 })
               }
             </List>

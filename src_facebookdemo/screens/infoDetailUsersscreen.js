@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {View , Animated, Image, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
+import {View , Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
 import {Container, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
 import Setting from './../utils/setting';
 export interface Props { 
-  navigation: any,
+  navigation: any, 
   postBaiDang: Function,
 }
 export default class infodetailuser extends Component<Props> {
@@ -39,6 +39,7 @@ export default class infodetailuser extends Component<Props> {
           placeholder='Bạn đang nghĩ gì?'
           style={{width: '100%'}}
           onChangeText={(text)=>this.setState({text})}
+
           // onChangeText={(text) => this.setState({text})}
           // value={this.state.text}/>
           />
@@ -52,7 +53,10 @@ export default class infodetailuser extends Component<Props> {
           </Item>
           <Item style={{ flex: 1, width: this.state.width-20, alignItems: 'center', borderBottomWidth: 0, paddingTop: 10}}>
             <Button rounded style={{flex: 1, backgroundColor: '#00903b'}}
-              onPress={()=>this.props.postBaiDang(user.sothutu, this.state.text)} 
+              onPress={()=>{
+                this.props.postBaiDang(user.sothutu, this.state.text)
+                Keyboard.dismiss();
+              }} 
             >
               <Text style={{color: 'white'}}>dang bai</Text>
             </Button>
@@ -116,6 +120,9 @@ export default class infodetailuser extends Component<Props> {
               </Left>
             </CardItem>
           </Card>
+          <List>
+           
+          </List>
         </Content>
       </Container>
     )

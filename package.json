@@ -8,16 +8,16 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^6.3.1",
-    "native-base": "^2.4.1",
-    "node-pre-gyp": "^0.9.0",
+    "native-base": "^2.4.2",
+    "node-pre-gyp": "^0.9.1",
     "react": "16.3.0-alpha.1",
     "react-native": "0.54.3",
-    "react-native-datepicker": "^1.6.0",
-    "react-native-local-mongodb": "^2.0.0",
+    "react-native-datepicker": "^1.7.2",
+    "react-native-local-mongodb": "^2.1.0",
     "react-native-splash-screen": "^3.0.6",
-    "react-native-version-check": "^3.0.0-rc.4",
-    "react-navigation": "^1.5.8",
-    "rn-gn-buttonloading": "^1.0.1"
+    "react-native-version-check": "^3.0.0-rc.5",
+    "react-navigation": "^1.5.11",
+    "rn-gn-buttonloading": "^1.0.2"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",
