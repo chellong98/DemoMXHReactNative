@@ -110,8 +110,8 @@ export default class listuser extends Component {
     }
   render() {
     var listItem = this.state.list;
-    console.log("data: ");
-    console.log(listItem);
+    // console.log("data: ");
+    // console.log(listItem);
     return (
         <Container style={{flex: 1}}>
             <Header 

@@ -20,6 +20,11 @@ config = {
         form.append("noidung",noidung);
         return {url: 'index.php/First_controller/postBaiDangController', data: form}
     },
+    layToanBoBaiDang(id) {
+        var form = new FormData();   
+        form.append('idUser', id);
+        return {url: 'index.php/First_controller/layToanBoBaiDangController',data: form}
+    },
     async save(key, str) {    
         try {
             await AsyncStorage.setItem('@ChelLong:'+key, str);

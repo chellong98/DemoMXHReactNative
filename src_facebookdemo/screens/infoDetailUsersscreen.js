@@ -5,6 +5,8 @@ import Setting from './../utils/setting';
 export interface Props { 
   navigation: any, 
   postBaiDang: Function,
+  user: any,
+  allPosts : any,
 }
 export default class infodetailuser extends Component<Props> {
   constructor(props) {
@@ -12,7 +14,7 @@ export default class infodetailuser extends Component<Props> {
     this.state = {
       status : false,
       width: 0,
-      text: "=",
+      text: "",
     }
   }
 
@@ -68,9 +70,8 @@ export default class infodetailuser extends Component<Props> {
     }
   }
   render() {
-    const {params} = this.props.navigation.state;
-    var user = params.user;
-
+    
+    var user = this.props.user;
     return (
       <Container>
         <Header searchBar rounded style={{}} backgroundColor='#00903b' androidStatusBarColor='#00903b'>
@@ -121,7 +122,11 @@ export default class infodetailuser extends Component<Props> {
             </CardItem>
           </Card>
           <List>
-           
+            {
+              this.props.allPosts.map((value, index)=>{
+                
+              })
+            }
           </List>
         </Content>
       </Container>
