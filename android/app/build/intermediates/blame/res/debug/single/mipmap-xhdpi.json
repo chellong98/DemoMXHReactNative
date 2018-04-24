@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
-        "source": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "D:\\GIT\\ChelLong98Coder\\ReactNative\\DemoMXHReactNative\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "D:\\GIT\\ChelLong98Coder\\ReactNative\\DemoMXHReactNative\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\imac\\Desktop\\ReactNative\\DemoMXHReactNative\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "D:\\Users\\imac\\Desktop\\ReactNative\\DemoMXHReactNative\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     }
 ]
