@@ -5,8 +5,9 @@ import Setting from './../utils/setting';
 export interface Props { 
   navigation: any, 
   postBaiDang: Function,
+  layToanBoBaiDang: Function,
   user: any,
-  allPosts : any,
+
 }
 export default class infodetailuser extends Component<Props> {
   constructor(props) {
@@ -15,7 +16,22 @@ export default class infodetailuser extends Component<Props> {
       status : false,
       width: 0,
       text: "",
-    }
+      allPosts : []
+    },
+    this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, likesOfPost)=>{
+      // console.log("response");  
+      // console.log(allPosts);  
+      // console.log('like of post')
+      // console.log(likesOfPost)
+      for(i=0; i<this.state.list.length; i++) {
+        allPosts[i].statusLike = false //them 1 thuoc tinh vao doi tuong trong mang
+        allPosts[i].statusComent = false 
+      }
+      this.forceUpdate()
+      this.setState({allPosts: allPosts})
+      console.log('allposts')
+      // this.state.allPosts = allPosts
+    })
   }
 
   onLayout(event) {
@@ -24,6 +40,18 @@ export default class infodetailuser extends Component<Props> {
       this.setState({width: width});
     }
     // console.log("width" + width ); 
+  }
+
+  taoHang(value, index, user) {
+    return (
+      <ListItem key={index} >
+        <Card>
+          <CardItem>
+            <Text>{value.noiDungBaiDang}</Text>
+          </CardItem>
+        </Card>
+      </ListItem>
+    )
   }
 
   renderCardStatus(user) {
@@ -109,7 +137,7 @@ export default class infodetailuser extends Component<Props> {
                   <Right style={{flex : 8/10}}>
                     <Text>{user.email}</Text>
                   </Right>
-               </Item>
+               </Item> 
               </Body>
             </CardItem>
             <CardItem>
@@ -121,15 +149,19 @@ export default class infodetailuser extends Component<Props> {
               </Left>
             </CardItem>
           </Card>
-          <List>
+          <List> 
             {
-              this.props.allPosts.map((value, index)=>{
-                
+              // console.log(this.state.allPosts)
+              
+              this.state.allPosts.map((value, index)=>{
+                return this.taoHang(value, index, this.props.user)
               })
+              
             }
           </List>
-        </Content>
+        </Content> 
       </Container>
     )
   }
 };
+  
