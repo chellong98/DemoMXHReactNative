@@ -55,8 +55,8 @@ export default class infodetailuser extends Component<Props> {
               <Left style={{flexDirection: 'row'}}>
                 <Thumbnail source={{uri: Setting.SERVER_API+user.image}}/>
                 <View style={{paddingLeft: 20}}>
-                  <Text style={{fontSize: 20, color: '#00903b', fontWeight: '100'}}>{user.hoten}</Text>
-                  <Text style={{fontStyle: 'italic'}}>{value.ngayDang} - <Icon android='md-globe' ios='md-globe' style={{fontSize: 15, color: '#00903b'}}/></Text>
+                  <Text style={{fontSize: 15, color: '#00903b', fontWeight: '100'}}>{user.hoten}</Text>
+                  <Text style={{fontStyle: 'italic', fontSize: 10}}>{value.ngayDang} - <Icon android='md-globe' ios='md-globe' style={{fontSize: 15, color: '#00903b'}}/></Text>
                 </View>
               </Left>
               <Right>
@@ -131,7 +131,7 @@ export default class infodetailuser extends Component<Props> {
             </Left>
           </Item>
           <Item style={{ flex: 1, width: this.state.width-20, alignItems: 'center', borderBottomWidth: 0, paddingTop: 10}}>
-            <Button rounded style={{flex: 1, backgroundColor: '#00903b'}}
+            <Button rounded style={{flex: 1, backgroundColor: '#00903b', justifyContent: 'center'}}
               onPress={()=>{
                 this.props.postBaiDang(user.sothutu, this.state.text)
                 Keyboard.dismiss();
@@ -152,7 +152,14 @@ export default class infodetailuser extends Component<Props> {
     return (
       <Container>
         <Header searchBar rounded style={{}} backgroundColor='#00903b' androidStatusBarColor='#00903b'>
-          <Item style={{flex: 8/10}}>
+        <Left style={{flex: 2/10}}>
+          <TouchableOpacity onPress={()=>{
+            this.props.navigation.navigate('ListUsersContainer', {dataUsers: global.listUsers});
+          }}>
+            <Icon android='md-arrow-back' ios='md-arrow-back' style={{color: 'white'}}/>
+          </TouchableOpacity>
+        </Left>
+          <Item style={{flex: 6/10}}>
             <Icon name='ios-search'/>
             <Input placeholder='Search' />
             <Icon name='ios-people'/>
