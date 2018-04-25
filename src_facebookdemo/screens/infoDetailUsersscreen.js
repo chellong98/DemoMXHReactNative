@@ -23,14 +23,15 @@ export default class infodetailuser extends Component<Props> {
       // console.log(allPosts);  
       // console.log('like of post')
       // console.log(likesOfPost)
-      for(i=0; i<this.state.list.length; i++) {
+      for(i=0; i<allPosts.length; i++) {
         allPosts[i].statusLike = false //them 1 thuoc tinh vao doi tuong trong mang
-        allPosts[i].statusComent = false 
+        allPosts[i].statusComment = false 
       }
-      this.forceUpdate()
+      // this.forceUpdate()
       this.setState({allPosts: allPosts})
-      console.log('allposts')
-      // this.state.allPosts = allPosts
+      // console.log('allposts')
+      // console.log(this.state.allPosts);
+     
     })
   }
 
@@ -43,11 +44,59 @@ export default class infodetailuser extends Component<Props> {
   }
 
   taoHang(value, index, user) {
+    var likeColor = value.statusLike==true ? '#00903b' : undefined;
+    var commentColor = value.statusComment==true ? '#00903b' : undefined;
+
     return (
-      <ListItem key={index} >
+      <ListItem key={index} style={{borderBottomWidth: 0}}>
         <Card>
           <CardItem>
-            <Text>{value.noiDungBaiDang}</Text>
+            <Item style={{paddingBottom: 10}}>
+              <Left style={{flexDirection: 'row'}}>
+                <Thumbnail source={{uri: Setting.SERVER_API+user.image}}/>
+                <View style={{paddingLeft: 20}}>
+                  <Text style={{fontSize: 20, color: '#00903b', fontWeight: '100'}}>{user.hoten}</Text>
+                  <Text style={{fontStyle: 'italic'}}>{value.ngayDang} - <Icon android='md-globe' ios='md-globe' style={{fontSize: 15, color: '#00903b'}}/></Text>
+                </View>
+              </Left>
+              <Right>
+                <Icon android='md-more' ios='md-more'/>
+              </Right>
+            </Item>
+          </CardItem>
+          <CardItem>
+            <Body>
+              <View>
+                <Text>{value.noiDungBaiDang}</Text>
+              </View>
+            </Body>
+          </CardItem>
+          <CardItem>
+            <Left>
+              <Button //nut like
+              transparent
+              onPress={()=>{
+                  this.state.allPosts[index].statusLike=!this.state.allPosts[index].statusLike; 
+                  this.forceUpdate(); 
+                  console.log(this.state.statusLike)
+                  }
+              }>
+                <Text style={{color: likeColor}}><Icon active name='thumbs-up' style={{color: likeColor}}/>Like</Text>
+              </Button>
+            </Left>
+            <Body>
+              <Button transparent onPress={()=>{  //nut comment
+                  this.state.allPosts[index].statusComment=!this.state.allPosts[index].statusComment; 
+                  this.forceUpdate(); 
+                  console.log(this.state.statusComment)
+              }}>
+              
+              <Text style={{color: commentColor}}><Icon active name="chatbubbles" style={{color: commentColor}}/> Comments</Text>
+              </Button>
+              </Body>
+              <Right>
+                  <Text><Icon name='md-time'/> 11h ago</Text>
+              </Right>
           </CardItem>
         </Card>
       </ListItem>
@@ -57,10 +106,10 @@ export default class infodetailuser extends Component<Props> {
   renderCardStatus(user) {
     
     console.log("status")
-    console.log(this.state.status)
+    console.log(this.state.status) 
     if(this.state.status) {
       return (
-        <CardItem style={{borderWidth: 1, borderRadius: 10, flexDirection: 'column', width: '100%'}} 
+        <CardItem style={{borderWidth: 0, borderRadius: 10, flexDirection: 'column', width: '100%'}} 
         onLayout={(e)=>this.onLayout(e)}>
           <Item style={{flex: 1, }}>
           <Input
@@ -88,7 +137,7 @@ export default class infodetailuser extends Component<Props> {
                 Keyboard.dismiss();
               }} 
             >
-              <Text style={{color: 'white'}}>dang bai</Text>
+              <Text style={{color: 'white'}}>Đăng Bài</Text>
             </Button>
           </Item>
         </CardItem>

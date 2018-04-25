@@ -83,7 +83,7 @@ export default class listuser extends Component {
                         onPress={()=>{
                             this.state.list[index].statusLike=!this.state.list[index].statusLike; 
                             this.forceUpdate(); 
-                            console.log(this.state.statusLike)
+                            // console.log(this.state.statusLike)
                             }
                         }
                         >
