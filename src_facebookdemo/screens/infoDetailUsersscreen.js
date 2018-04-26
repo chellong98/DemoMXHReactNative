@@ -9,6 +9,14 @@ export interface Props {
   user: any,
 
 }
+var imagePicker = require('react-native-image-picker');
+var options = {
+  title: 'Select image',
+  storageOptions : {
+    skipBackup: true,
+    path: 'image',
+  }
+}
 export default class infodetailuser extends Component<Props> {
   constructor(props) {
     super(props);
@@ -109,6 +117,26 @@ export default class infodetailuser extends Component<Props> {
     )
   }
 
+  upLoadImage() {
+    imagePicker.showImagePicker(options, (response)=>{
+      console.log("response image picker")
+      console.log(response);
+
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+      }
+      else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      }
+      else if (response.customButton) {
+        console.log('User tapped custom button: ', response.customButton);
+      } else {
+        let source = {uri: response.uri}
+        console.log("source: " + source)
+      }
+    })
+  }
+
   renderCardStatus(user) {
     
     console.log("status")
@@ -131,7 +159,7 @@ export default class infodetailuser extends Component<Props> {
           </Item>
           <Item style={{flex: 1, borderBottomWidth: 0, paddingTop: 10}}>
             <Left>
-              <Button rounded light>
+              <Button rounded light onPress={()=>this.upLoadImage()}>
               <Text style={{padding: 10}}>Image</Text>
               </Button>    
             </Left>
