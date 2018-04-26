@@ -1,6 +1,6 @@
 export default {
-    SERVER_API: "http://192.168.2.14:8080/adminDashboard/",
-    SERVER_NAME: "http://192.168.2.14:8080/APIUsers/", 
+    SERVER_API: "http://192.168.1.97:8080/adminDashboard/",
+    SERVER_NAME: "http://192.168.1.97:8080/APIUsers/", 
     API_URL: "https://facebook.github.io/react-native/movies.json",
     ListTodo : [
         {
@@ -9,10 +9,10 @@ export default {
           time: "",
           status: 1,
         },
-        {
+        {  
           
           name: "Work on Skill Share Class",
-          time: "",
+          time: "", 
           status: 1,
         },
         {

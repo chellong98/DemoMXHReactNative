@@ -12,8 +12,7 @@ export default class infoDetailUsersContainer extends Component<Props> {
   constructor(props) {
     super(props) 
     this.state = {
-      allPosts : [],
-      likesOfPost: []
+
     }
   }
   
@@ -36,10 +35,8 @@ export default class infoDetailUsersContainer extends Component<Props> {
     this.services.update((status)=>{  
     // console.log("response");
     // console.log(status)     
-    this.state.allPosts = status.data.allPosts;
-    this.state.likesOfPost  = status.data.likesOfPost;
     
-    callback(this.state.allPosts, this.state.likesOfPost);
+    callback(status.data.allPosts, status.data.likesOfPost, status.data.commentsOfPost);
     }, idUser);   
   }
   
@@ -56,8 +53,7 @@ export default class infoDetailUsersContainer extends Component<Props> {
       user={user} 
       postBaiDang={(idnguoidang, noidung)=>this.postBaiDang(idnguoidang, noidung)}
       layToanBoBaiDang={(idUser, callback)=>{this.layToanBoBaiDang(idUser, callback)}}
-      likesOfPost = {this.state.likesOfPost}
-      allPosts = {this.state.allPosts}/>
+      />
     )
   }
 };
