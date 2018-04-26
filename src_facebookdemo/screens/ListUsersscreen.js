@@ -62,7 +62,7 @@ export default class listuser extends Component {
                         <Thumbnail source={{uri: Setting.SERVER_API+item.image}}/>
                         <View style={{paddingLeft: 20}}>
                             <Text style={{fontSize: 20,color: '#00903b', fontWeight: '100'}}>{item.hoten}</Text>
-                            <Text style={{fontStyle: 'italic'}}>10/04/2018 - <Icon android='md-globe' ios='md-globe' style={{fontSize: 15, color: '#00903b'}}/></Text>
+                            <Text style={{fontStyle: 'italic'}}>{item.ngaysinh} - <Icon android='md-globe' ios='md-globe' style={{fontSize: 15, color: '#00903b'}}/></Text>
                         </View>
                     </Left>
                     <Right>
@@ -83,7 +83,7 @@ export default class listuser extends Component {
                         onPress={()=>{
                             this.state.list[index].statusLike=!this.state.list[index].statusLike; 
                             this.forceUpdate(); 
-                            console.log(this.state.statusLike)
+                            // console.log(this.state.statusLike)
                             }
                         }
                         >
@@ -110,21 +110,21 @@ export default class listuser extends Component {
     }
   render() {
     var listItem = this.state.list;
-    console.log("data: ");
-    console.log(listItem);
+    // console.log("data: ");
+    // console.log(listItem);
     return (
         <Container style={{flex: 1}}>
             <Header 
             style={{}} 
             backgroundColor='#00903b' 
             androidStatusBarColor='#00903b'>
-                <Left >
+                <Left style={{flex: 1}} >
                     <TouchableOpacity onPress={ () => {this.props.navigation.navigate('DrawerToggle')}}>
                         <Icon android='md-menu' ios='md-menu' style={{color: 'white'}}/>
                     </TouchableOpacity>
                 </Left>
-                <Body style={{flex:1}}>
-                    <Title>Users Infomation</Title>
+                <Body style={{flex:1, alignItems: 'center'}}>
+                    <Title style={{color: 'white'}}>Users Infomation</Title>
                 </Body>
                 <Right>
                 

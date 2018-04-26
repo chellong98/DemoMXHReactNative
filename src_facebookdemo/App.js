@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
+import { Dimensions } from "react-native";
 import SplashContainer from './container/splashsreencontainer';
 import LoginContainer from './container/logincontainer';
 import {StackNavigator, DrawerNavigator} from 'react-navigation'; 
 import ListUsersContainer from './container/ListUserscontainer';
 import CustomDrawNav from './container/CustomDrawNav';
 import InfoDetailUser from './container/infoDetailUserscontainer';
-
+const deviceWidth = Dimensions.get("window").width;
 var navigationOptions = {
     navigationOptions:{
-            header:null
+            header:null,   
     },
     contentComponent: props => (<CustomDrawNav {...props}/>)
 }
 const Draw = DrawerNavigator({
     Src1: {
         screen: ListUsersContainer,
-    }
+    }, 
 }, navigationOptions);
 
  const Stack = StackNavigator({
