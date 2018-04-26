@@ -18,6 +18,7 @@ config = {
         var form = new FormData(); //tao form trong
         form.append("idnguoidang",idNguoiDang); //them json vào form
         form.append("noidung",noidung);
+        // form.append('image', duong dng,kieu fike )
         return {url: 'index.php/First_controller/postBaiDangController', data: form}
     },
     layToanBoBaiDang(id) {

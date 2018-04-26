@@ -16,9 +16,11 @@ export default class infodetailuser extends Component<Props> {
       status : false,
       width: 0,
       text: "",
-      allPosts : []
+      allPosts : [],
+      likesOfPost: [],
+      commentsOfPost: [],
     },
-    this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, likesOfPost)=>{
+    this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, likesOfPost, commentsOfPost)=>{
       // console.log("response");  
       // console.log(allPosts);  
       // console.log('like of post')
@@ -29,6 +31,8 @@ export default class infodetailuser extends Component<Props> {
       }
       // this.forceUpdate()
       this.setState({allPosts: allPosts})
+      this.setState({likesOfPost: likesOfPost})
+      this.setState({commentsOfPost: commentsOfPost})
       // console.log('allposts')
       // console.log(this.state.allPosts);
      
@@ -46,7 +50,7 @@ export default class infodetailuser extends Component<Props> {
   taoHang(value, index, user) {
     var likeColor = value.statusLike==true ? '#00903b' : undefined;
     var commentColor = value.statusComment==true ? '#00903b' : undefined;
-
+    // console.log("like of post: " + this.state.likesOfPost[index])
     return (
       <ListItem key={index} style={{borderBottomWidth: 0}}>
         <Card>
@@ -72,7 +76,7 @@ export default class infodetailuser extends Component<Props> {
             </Body>
           </CardItem>
           <CardItem>
-            <Left>
+            <Left style={{flex: 3/10}}>
               <Button //nut like
               transparent
               onPress={()=>{
@@ -81,21 +85,23 @@ export default class infodetailuser extends Component<Props> {
                   console.log(this.state.statusLike)
                   }
               }>
-                <Text style={{color: likeColor}}><Icon active name='thumbs-up' style={{color: likeColor}}/>Like</Text>
+                <Text style={{color: likeColor}}><Icon active name='thumbs-up' style={{color: likeColor}}/>Like ({this.state.likesOfPost[index]})</Text>
               </Button>
-            </Left>
-            <Body>
+            </Left> 
+            <Body style={{flex: 5/10, alignItems: 'center'}}>
               <Button transparent onPress={()=>{  //nut comment
                   this.state.allPosts[index].statusComment=!this.state.allPosts[index].statusComment; 
                   this.forceUpdate(); 
                   console.log(this.state.statusComment)
-              }}>
+              }}
+                style={{justifyContent: 'center'}}
+              >
               
-              <Text style={{color: commentColor}}><Icon active name="chatbubbles" style={{color: commentColor}}/> Comments</Text>
+              <Text style={{color: commentColor}}><Icon active name="chatbubbles" style={{color: commentColor}}/> Comments ({this.state.commentsOfPost[index]})</Text>
               </Button>
               </Body>
-              <Right>
-                  <Text><Icon name='md-time'/> 11h ago</Text>
+              <Right style={{flex: 2/10}}>
+                  <Text><Icon name='md-time'/> Share</Text>
               </Right>
           </CardItem>
         </Card>

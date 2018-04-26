@@ -118,7 +118,7 @@ export default class listuser extends Component {
             style={{}} 
             backgroundColor='#00903b' 
             androidStatusBarColor='#00903b'>
-                <Left style={{flex: 1}} >
+                <Left style={{flex: 3/10}} >
                     <TouchableOpacity onPress={ () => {this.props.navigation.navigate('DrawerToggle')}}>
                         <Icon android='md-menu' ios='md-menu' style={{color: 'white'}}/>
                     </TouchableOpacity>
@@ -126,11 +126,11 @@ export default class listuser extends Component {
                 <Body style={{flex:1, alignItems: 'center'}}>
                     <Title style={{color: 'white'}}>Users Infomation</Title>
                 </Body>
-                <Right>
+                <Right style={{flex: 4/10}}>
                 
                 </Right>
             </Header>
-            <Content style={{flex: 1}}>
+            <Content style={{flex: 3/10}}>
                 <List
                   style={{}}
                 >
