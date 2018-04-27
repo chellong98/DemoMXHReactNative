@@ -39,6 +39,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4bc7e4c88d8a58037f153bc224b47da51ae40f2f">
+        <dex dex="/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/pre-dexed/debug/todoapp-react-native-image-picker-unspecified_d5508e0b9221017570609fa3f82ccc6f4ded7cdf.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -117,6 +126,15 @@
         revision="23.0.1"
         sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
         <dex dex="/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_fccd90c9b959f097c6685d6008edfcedd0d1175b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-version-check/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f33a3510af3f8fcceb270279649c3c4791df05b0">
+        <dex dex="/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/pre-dexed/debug/todoapp-react-native-version-check-unspecified_fed417f91af42672eb6349a92fc645fd500e599e.jar" />
     </item>
     <item
         is-multidex="false"

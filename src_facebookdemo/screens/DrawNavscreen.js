@@ -20,7 +20,7 @@ export default class drawnav extends Component<Props> {
           });
         }}>
           <Left>
-            <Text><Icon android='md-person' ios='md-person'/> {value.hoten}</Text>
+            <Text><Icon android='md-person' ios='md-person'/> {value.hoten} ({value===account ? 'me' : 'friend'})</Text>
           </Left>
         </ListItem> 
     

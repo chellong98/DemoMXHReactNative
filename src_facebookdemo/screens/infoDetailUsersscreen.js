@@ -27,8 +27,9 @@ export default class infodetailuser extends Component<Props> {
       allPosts : [],
       likesOfPost: [],
       commentsOfPost: [],
+      idNguoiLike: [],
     },
-    this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, likesOfPost, commentsOfPost)=>{
+    this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, likesOfPost, commentsOfPost, idNguoiLike)=>{
       // console.log("response");  
       // console.log(allPosts);  
       // console.log('like of post')
@@ -39,12 +40,35 @@ export default class infodetailuser extends Component<Props> {
       }
       // this.forceUpdate()
       this.setState({allPosts: allPosts})
-      this.setState({likesOfPost: likesOfPost})
+      this.setState({likesOfPost: likesOfPost}) 
       this.setState({commentsOfPost: commentsOfPost})
+      this.setState({idNguoiLike: idNguoiLike})
+      for(i=0; i<idNguoiLike.length; i++) {
+        // console.log('id nguoi like')
+        // console.log(idNguoiLike[i])
+        // if(idNguoiLike.length[i].)
+        if(idNguoiLike[i].idNguoiLike==global.account.sothutu) {
+          console.log('id nguoi like')
+          console.log(idNguoiLike[i].idBaiDang + " " + idNguoiLike[i].idNguoiLike)
+          var idBaiDang = idNguoiLike[i].idBaiDang;
+          for(i=0; i<this.state.allPosts.length; i++) {
+            if(this.state.allPosts[i].idBaiDang==idBaiDang ) {
+              this.state.allPosts[i].statusLike = true;
+              this.forceUpdate();
+            }
+          }
+        }
+      }
       // console.log('allposts')
       // console.log(this.state.allPosts);
      
     })
+  }
+
+  componentDidMount() {
+    for(i=0; i<this.state.idNguoiLike.length; i++) {
+      
+    }
   }
 
   onLayout(event) {

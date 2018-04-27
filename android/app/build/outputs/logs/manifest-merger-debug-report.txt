@@ -24,6 +24,7 @@ MERGED from [com.facebook.react:react-native:0.54.3] /Users/imac/Desktop/ReactNa
 		ADDED from /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/AndroidManifest.xml:5:22-75
 application
 ADDED from /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.react:react-native:0.54.3] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/AndroidManifest.xml:13:5-20
 MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.1] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
@@ -65,6 +66,8 @@ ADDED from /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/ma
 		ADDED from /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/AndroidManifest.xml:23:17-81
 uses-sdk
 INJECTED from /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [todoapp:react-native-version-check:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-version-check/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.54.3] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.1] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
@@ -82,6 +85,22 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/imac/Desktop/ReactNati
 	android:minSdkVersion
 		INJECTED from /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/AndroidManifest.xml
+provider#android.support.v4.content.FileProvider
+ADDED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:12:9-20:20
+	android:authorities
+		ADDED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:14:13-60
+	android:grantUriPermissions
+		ADDED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:16:13-47
+	android:exported
+		ADDED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:13:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:17:13-19:58
+	android:resource
+		ADDED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:19:17-55
+	android:name
+		ADDED from [todoapp:react-native-image-picker:unspecified] /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/AndroidManifest.xml:18:17-67
 android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from /Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 android:uses-permission#android.permission.READ_PHONE_STATE
