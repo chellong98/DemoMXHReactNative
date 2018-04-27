@@ -37,7 +37,7 @@ export default class infoDetailUsersContainer extends Component<Props> {
     // console.log(status)     
     
     callback(
-      status.data.allPosts, 
+      status.data.allPosts,  
       status.data.likesOfPost, 
       status.data.commentsOfPost, 
       status.data.idNguoiLike);
@@ -50,7 +50,7 @@ export default class infoDetailUsersContainer extends Component<Props> {
     //  this.layToanBoBaiDang(user.sothutu)
      //truyen vao id nguoi dc chon
     // console.log("user");
-    // console.log(user)
+    // console.log(user) 
     return (
       <InfoUsersScreen 
       navigation={this.props.navigation} 
