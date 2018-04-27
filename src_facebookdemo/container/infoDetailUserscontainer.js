@@ -35,7 +35,7 @@ export default class infoDetailUsersContainer extends Component<Props> {
     this.services.update((status)=>{  
     // console.log("response");
     // console.log(status)     
-    
+       
     callback(status.data.allPosts, status.data.likesOfPost, status.data.commentsOfPost);
     }, idUser);   
   }
