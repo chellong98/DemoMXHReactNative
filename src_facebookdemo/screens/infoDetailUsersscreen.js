@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View , Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
+import {View ,Alert, Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
 import {Container, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
 import Setting from './../utils/setting';
 export interface Props { 
@@ -23,16 +23,18 @@ export default class infodetailuser extends Component<Props> {
     this.state = {
       status : false,
       width: 0,
+      height: 0,
       text: "",
       allPosts : [],
       likesOfPost: [],
       commentsOfPost: [],
       idNguoiLike: [],
+      imageUri: '',
     },
     this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, likesOfPost, commentsOfPost, idNguoiLike)=>{
       // console.log("response");  
       // console.log(allPosts);  
-      // console.log('like of post')
+      // console.log('like of post') 
       // console.log(likesOfPost)
       for(i=0; i<allPosts.length; i++) {
         allPosts[i].statusLike = false //them 1 thuoc tinh vao doi tuong trong mang
@@ -65,18 +67,15 @@ export default class infodetailuser extends Component<Props> {
     })
   }
 
-  componentDidMount() {
-    for(i=0; i<this.state.idNguoiLike.length; i++) {
-      
-    }
-  }
 
   onLayout(event) {
     const {x,y,width, height} = event.nativeEvent.layout;
     if(this.state.width==0) {
       this.setState({width: width});
+      
+      this.setState({height: height})
     }
-    // console.log("width" + width ); 
+    // console.log("height" + height ); 
   }
 
   taoHang(value, index, user) {
@@ -156,9 +155,38 @@ export default class infodetailuser extends Component<Props> {
         console.log('User tapped custom button: ', response.customButton);
       } else {
         let source = {uri: response.uri}
-        console.log("source: " + source)
+        // console.log("source: ")
+        // console.log(source);
+        this.setState({imageUri: source.uri})
       }
     })
+  }
+
+  renderImageUpload() {
+    if(this.state.imageUri!=='') {
+      console.log("source")
+      console.log(this.state.source)
+      return (
+        <Item style={{flex: 1, borderBottomWidth: 0, paddingTop: 10}}>
+          <Image 
+          style={{width: this.state.width-20, height: this.state.height}}
+          source={{uri: this.state.imageUri}}
+          />
+        </Item>
+      )
+    } else {
+      return null;
+    }
+    
+  }
+
+  postBaiDang() {
+    if(this.state.text==='') {
+      Alert.alert('da viet gi dau ma dang :v')
+      return;
+    }
+    this.props.postBaiDang(user.sothutu, this.state.text)
+    Keyboard.dismiss();
   }
 
   renderCardStatus(user) {
@@ -181,6 +209,9 @@ export default class infodetailuser extends Component<Props> {
           // value={this.state.text}/>
           />
           </Item>
+          {
+            this.renderImageUpload()
+          }
           <Item style={{flex: 1, borderBottomWidth: 0, paddingTop: 10}}>
             <Left>
               <Button rounded light onPress={()=>this.upLoadImage()}>
@@ -190,10 +221,7 @@ export default class infodetailuser extends Component<Props> {
           </Item>
           <Item style={{ flex: 1, width: this.state.width-20, alignItems: 'center', borderBottomWidth: 0, paddingTop: 10}}>
             <Button rounded style={{flex: 1, backgroundColor: '#00903b', justifyContent: 'center'}}
-              onPress={()=>{
-                this.props.postBaiDang(user.sothutu, this.state.text)
-                Keyboard.dismiss();
-              }} 
+              onPress={()=>this.postBaiDang()} 
             >
               <Text style={{color: 'white'}}>Đăng Bài</Text>
             </Button>
@@ -223,7 +251,13 @@ export default class infodetailuser extends Component<Props> {
             <Icon name='ios-people'/>
           </Item>
           <Right style={{flex: 2/10}}>
-          <Button transparent onPress={()=>{this.setState({status: !this.state.status})}}>
+          <Button transparent onPress={()=>{
+            if(this.props.user!=global.account) {
+              Alert.alert('chuc nang dang len tuong nha ban be chua lam!')
+              return;
+            }
+            this.setState({status: !this.state.status});
+          }}>
             <Icon android='md-add' ios='md-add' style={{color: 'white'}}/>
           </Button>
           </Right>

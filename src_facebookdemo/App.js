@@ -6,6 +6,7 @@ import {StackNavigator, DrawerNavigator} from 'react-navigation';
 import ListUsersContainer from './container/ListUserscontainer';
 import CustomDrawNav from './container/CustomDrawNav';
 import InfoDetailUser from './container/infoDetailUserscontainer';
+import ThisPostContainer from './container/ThisPostContainer';
 const deviceWidth = Dimensions.get("window").width;
 var navigationOptions = {
     navigationOptions:{
@@ -34,11 +35,14 @@ const Draw = DrawerNavigator({
      },
      InfoDetailUser: {
          screen: InfoDetailUser
-     } 
+     },
+     ThisPostContainer: {
+         screen: ThisPostContainer
+     }
 
 },
 {
-    initialRouteName: 'SplashContainer',
+    initialRouteName: 'ThisPostContainer',
     navigationOptions:{
         gesturesEnabled: false,   header: null
     }
