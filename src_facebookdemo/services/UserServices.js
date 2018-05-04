@@ -1,6 +1,10 @@
 import Services from './Services';
 import Setting from './../utils/setting';
-
+var header = {
+  
+    'Content-Type': 'multipart/form-data'
+    
+};
 export default class userservice extends Services {
     constructor(props) {
         super(props);
@@ -12,10 +16,14 @@ export default class userservice extends Services {
 
     update(callback, check) { 
         console.log(check.data);
-        this.http.post(Setting.SERVER_NAME+check.url, check.data) //truyen data ve server
+        this.http.post(Setting.SERVER_NAME+check.url, check.data, header) //truyen data ve server
         .then(response =>{
-            // console.log(response)
-            return response.json()}) //tra ve json
-        .then(responseJson=>callback(responseJson)) 
+             
+            return response.text()}) //tra ve json
+        .then(responseJson=>{
+            console.log(responseJson)
+           // return;
+          //  callback(responseJson)}) 
+          callback(JSON.parse(responseJson))}) 
     }       
 }    

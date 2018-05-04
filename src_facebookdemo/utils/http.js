@@ -6,9 +6,10 @@ export default class Http {
         })
     }
 
-    post(url,  body) {
+    post(url,  body, headers) {
         return fetch(url, {
             method: 'POST',
+            headers: headers,
             body: body,
         })
     }

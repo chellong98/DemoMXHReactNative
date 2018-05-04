@@ -42,7 +42,7 @@ const Draw = DrawerNavigator({
 
 },
 {
-    initialRouteName: 'ThisPostContainer',
+    initialRouteName: 'SplashContainer',
     navigationOptions:{
         gesturesEnabled: false,   header: null
     }

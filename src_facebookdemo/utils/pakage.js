@@ -14,10 +14,22 @@ config = {
     //     {name: 'lê hiếu'},
     //     {name: 'linh vũ'},
     // ]
-    postBaiDang(idNguoiDang, noidung) {
+    getRamdomString() {
+        var str = '';
+        for(i=0; i<10; i++) {
+            str += String.fromCharCode(Math.floor((Math.random() * 26) + 97)) //random 97 - 122
+        }
+        return str;
+    },
+    postBaiDang(idNguoiDang, noidung, imageUri) {
+        console.log( "url file: "+imageUri);
         var form = new FormData(); //tao form trong
         form.append("idnguoidang",idNguoiDang); //them json vào form
         form.append("noidung",noidung);
+        form.append("image", {
+            uri: imageUri ,
+            type: 'image/jpeg',
+            name: this.getRamdomString()} );
         // form.append('image', duong dng,kieu fike )
         return {url: 'index.php/First_controller/postBaiDangController', data: form}
     },

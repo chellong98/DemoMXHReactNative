@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import {View ,Alert, Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
 import {Container, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
+import PopupDialog, { SlideAnimation , DialogButton} from 'react-native-popup-dialog'; //inport dialog 
 import Setting from './../utils/setting';
+import ThisPostContainer from './../container/ThisPostContainer';
+const deviceSize = Dimensions.get("window");
+const color = '#00903b';
 export interface Props { 
   navigation: any, 
   postBaiDang: Function,
@@ -65,6 +69,10 @@ export default class infodetailuser extends Component<Props> {
       // console.log(this.state.allPosts);
      
     })
+
+    this.slideAnimation = new SlideAnimation({ //new animation dialog
+      slideFrom: 'bottom'
+    })
   }
 
 
@@ -123,7 +131,8 @@ export default class infodetailuser extends Component<Props> {
               <Button transparent onPress={()=>{  //nut comment
                   this.state.allPosts[index].statusComment=!this.state.allPosts[index].statusComment; 
                   this.forceUpdate(); 
-                  console.log(this.state.statusComment)
+                  // console.log(this.state.statusComment)
+                  this.popupDialog.show() //show dialog
               }}
                 style={{justifyContent: 'center'}}
               >
@@ -154,18 +163,17 @@ export default class infodetailuser extends Component<Props> {
       else if (response.customButton) {
         console.log('User tapped custom button: ', response.customButton);
       } else {
-        let source = {uri: response.uri}
+       
         // console.log("source: ")
         // console.log(source);
-        this.setState({imageUri: source.uri})
+      
+        this.setState({imageUri: response.uri})
       }
     })
   }
 
   renderImageUpload() {
     if(this.state.imageUri!=='') {
-      console.log("source")
-      console.log(this.state.source)
       return (
         <Item style={{flex: 1, borderBottomWidth: 0, paddingTop: 10}}>
           <Image 
@@ -180,12 +188,13 @@ export default class infodetailuser extends Component<Props> {
     
   }
 
-  postBaiDang() {
+  postBaiDang(user) {
     if(this.state.text==='') {
       Alert.alert('da viet gi dau ma dang :v')
       return;
     }
-    this.props.postBaiDang(user.sothutu, this.state.text)
+    
+    this.props.postBaiDang(user.sothutu, this.state.text, this.state.imageUri)
     Keyboard.dismiss();
   }
 
@@ -221,7 +230,7 @@ export default class infodetailuser extends Component<Props> {
           </Item>
           <Item style={{ flex: 1, width: this.state.width-20, alignItems: 'center', borderBottomWidth: 0, paddingTop: 10}}>
             <Button rounded style={{flex: 1, backgroundColor: '#00903b', justifyContent: 'center'}}
-              onPress={()=>this.postBaiDang()} 
+              onPress={()=>this.postBaiDang(user)} 
             >
               <Text style={{color: 'white'}}>Đăng Bài</Text>
             </Button>
@@ -237,6 +246,21 @@ export default class infodetailuser extends Component<Props> {
     var user = this.props.user;
     return (
       <Container>
+      <PopupDialog  
+        height = {deviceSize.height-100}
+        ref={(popupDialog)=>{this.popupDialog = popupDialog}}
+        dialogAnimation= {this.slideAnimation}
+      >
+        <ThisPostContainer/>
+        <DialogButton
+          buttonStyle={{backgroundColor: color, borderRadius: 50, width: 30, height: 30, marginBottom: 10, marginTop: 10,}}
+          onPress={()=>{this.popupDialog.dismiss()}}
+          text='X'
+          activeOpacity={0}
+        /> 
+        
+      </PopupDialog>
+      
         <Header searchBar rounded style={{}} backgroundColor='#00903b' androidStatusBarColor='#00903b'>
         <Left style={{flex: 2/10}}>
           <TouchableOpacity onPress={()=>{

@@ -16,14 +16,14 @@ export default class infoDetailUsersContainer extends Component<Props> {
     }
   }
   
-  postBaiDang(idnguoidang, noidung) {
-    var baiDang = Pakage.postBaiDang(idnguoidang, noidung);
+  postBaiDang(idnguoidang, noidung, imageUri) {
+    var baiDang = Pakage.postBaiDang(idnguoidang, noidung, imageUri);
     // console.log("bai Dang");
     // console.log(baiDang);
     this.services = new UserService();
     this.services.update((status)=>{
-      // console.log("response");
-      // console.log(status);  
+      console.log("response");
+      console.log(status);  
     }, baiDang);
   }
 
@@ -55,7 +55,7 @@ export default class infoDetailUsersContainer extends Component<Props> {
       <InfoUsersScreen 
       navigation={this.props.navigation} 
       user={user} 
-      postBaiDang={(idnguoidang, noidung)=>this.postBaiDang(idnguoidang, noidung)}
+      postBaiDang={(idnguoidang, noidung, imageUri)=>this.postBaiDang(idnguoidang, noidung, imageUri)}
       layToanBoBaiDang={(idUser, callback)=>{this.layToanBoBaiDang(idUser, callback)}}
       />
     )
