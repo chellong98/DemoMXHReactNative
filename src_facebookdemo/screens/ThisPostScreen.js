@@ -51,7 +51,7 @@ export default class thispostscreen extends Component {
                         </Left>
                         <Body style={{flex: 8/10}}>
                             <Item>
-                                <Input placeholder='Comment...' style={{color: color}}/>
+                                <Input multiline={true} placeholder='Comment...' style={{color: color}}/>
                             </Item>
                         </Body>
                         <Right style={{flex: 1/10}}>

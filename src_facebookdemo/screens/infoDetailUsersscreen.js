@@ -3,6 +3,7 @@ import {View ,Alert, Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Tex
 import {Container, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
 import PopupDialog, { SlideAnimation , DialogButton} from 'react-native-popup-dialog'; //inport dialog 
 import Setting from './../utils/setting';
+import Pakage from './../utils/pakage';
 import ThisPostContainer from './../container/ThisPostContainer';
 const deviceSize = Dimensions.get("window");
 const color = '#00903b';
@@ -86,9 +87,16 @@ export default class infodetailuser extends Component<Props> {
     // console.log("height" + height ); 
   }
 
+
+
   taoHang(value, index, user) {
     var likeColor = value.statusLike==true ? '#00903b' : undefined;
     var commentColor = value.statusComment==true ? '#00903b' : undefined;
+    var noiDungBaiDang = JSON.parse(value.noiDungBaiDang)
+    var imageSize = Pakage.getSizeImage(deviceSize.width ,noiDungBaiDang.imageSize.width,noiDungBaiDang.imageSize.height);
+    console.log('width / height')
+ 
+    // console.log(noiDungBaiDang)
     // console.log("like of post: " + this.state.likesOfPost[index])
     return (
       <ListItem key={index} style={{borderBottomWidth: 0}}>
@@ -108,11 +116,16 @@ export default class infodetailuser extends Component<Props> {
             </Item>
           </CardItem>
           <CardItem>
-            <Body>
+            <Content>
               <View>
-                <Text>{value.noiDungBaiDang}</Text>
+                <Text>{noiDungBaiDang.text}</Text>
               </View>
-            </Body>
+              <View>
+                <Image 
+                style={{ resizeMode: 'contain', width: imageSize.width, height: imageSize.height, paddingTop: 10}}
+                source={{uri: Setting.SERVER_NAME+noiDungBaiDang.image.replace("\\","/")}}/>
+              </View>
+            </Content>
           </CardItem>
           <CardItem>
             <Left style={{flex: 3/10}}>
@@ -213,6 +226,7 @@ export default class infodetailuser extends Component<Props> {
           placeholder='Bạn đang nghĩ gì?'
           style={{width: '100%'}}
           onChangeText={(text)=>this.setState({text})}
+          returnKeyLabel = "done"
 
           // onChangeText={(text) => this.setState({text})}
           // value={this.state.text}/>

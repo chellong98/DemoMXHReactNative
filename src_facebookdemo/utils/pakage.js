@@ -38,6 +38,12 @@ config = {
         form.append('idUser', id);
         return {url: 'index.php/First_controller/layToanBoBaiDangController',data: form}
     },
+
+    getSizeImage(widthLayout, width, height) {
+        // return 1.0*width/height;
+        return {'width' : widthLayout, 'height' : widthLayout*(1.0*height/width)}
+    },
+
     async save(key, str) {    
         try {
             await AsyncStorage.setItem('@ChelLong:'+key, str);

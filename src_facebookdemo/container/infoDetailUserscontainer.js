@@ -22,8 +22,8 @@ export default class infoDetailUsersContainer extends Component<Props> {
     // console.log(baiDang);
     this.services = new UserService();
     this.services.update((status)=>{
-      console.log("response");
-      console.log(status);  
+      // console.log("response");
+      // console.log(status);  
     }, baiDang);
   }
 
@@ -34,7 +34,7 @@ export default class infoDetailUsersContainer extends Component<Props> {
     this.services = new UserService();
     this.services.update((status)=>{  
     // console.log("response");
-    // console.log(status)     
+    // console.log(status)       
     
     callback(
       status.data.allPosts,  
