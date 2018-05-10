@@ -16,11 +16,12 @@ export default class userservice extends Services {
 
     update(callback, check) { 
         console.log(check.data);
-        this.http.post(Setting.SERVER_NAME+check.url, check.data, header) //truyen data ve server
+        this.http.post(Setting.SERVER_API+check.url, check.data, header) //truyen data ve server
         .then(response =>{
              
             return response.text()}) //tra ve json
         .then(responseJson=>{
+            console.log('responseJson')
             console.log(responseJson)
            // return;
           //  callback(responseJson)}) 

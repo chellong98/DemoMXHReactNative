@@ -8,6 +8,7 @@ import CustomDrawNav from './container/CustomDrawNav';
 import InfoDetailUser from './container/infoDetailUserscontainer';
 import ThisPostContainer from './container/ThisPostContainer';
 const deviceWidth = Dimensions.get("window").width;
+import {Root} from 'native-base'
 var navigationOptions = {
     navigationOptions:{
             header:null,   
@@ -51,4 +52,7 @@ const Draw = DrawerNavigator({
 }
 );
 
-export default Stack;
+export default () =>
+<Root>
+  <Stack />
+</Root>;;

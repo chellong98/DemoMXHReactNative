@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View,Keyboard,Text, ImageBackground,TextInput,Alert,TouchableOpacity} from 'react-native';
+import {View,Keyboard,Text, ImageBackground,TextInput,KeyboardAvoidingView,Alert,TouchableOpacity} from 'react-native';
 import {Item,Input,Icon,Button,Left, Right,Content} from 'native-base';
 import ButtonLoading from 'rn-gn-buttonloading';
 import Pakage from './../utils/pakage';
@@ -38,11 +38,11 @@ export default class loginscreen extends Component<Props> {
         source = {srcimage}
         style={{flex: 1, width: '100%', justifyContent: 'center', alignItems: 'center'}}
       >
-        <View style={{width: '100%', alignItems: 'center', paddingHorizontal: 20,  backgroundColor: null, marginTop: 200}}>
+        <KeyboardAvoidingView keyboardVerticalOffset={150} behavior="padding" style={{width: '100%', alignItems: 'center', paddingHorizontal: 20,  backgroundColor: null, marginTop: 200}}>
           <View >
             <Text style={{color: '#67DAF9', fontSize: 20}}>REACT NATIVE</Text>
           </View>
-          <View style={{width: '100%',marginTop: 10,}}>
+          <View  style={{width: '100%',marginTop: 10,}}>
               <Item rounded style={{backgroundColor: 'rgba(255,255,255,0.6)', marginTop: 20}}>
                 <Icon android='md-contact' ios='md-contact' style={{color: 'white'}}/>
                 <Input 
@@ -50,6 +50,7 @@ export default class loginscreen extends Component<Props> {
                   placeholder='Username'
                   placeholderTextColor= 'white'
                   selectionColor = 'white'
+                  returnKeyType="next"
                   returnKeyLabel = "next"
                   style={{color: 'white'}}
                   onChangeText={(username)=>this.setState({username: username})}
@@ -62,6 +63,7 @@ export default class loginscreen extends Component<Props> {
                   placeholder='Password'
                   placeholderTextColor= 'white'
                   secureTextEntry
+                  returnKeyType = 'done'
                   style={{color: 'white'}}
                   onChangeText={(password)=>this.setState({password: password})}
                   />
@@ -105,20 +107,24 @@ export default class loginscreen extends Component<Props> {
                   }}
                 />
               </Item>
-              <Item style={{ marginTop: 20, borderBottomWidth: 0}}>
-                <Left>
-                  <TouchableOpacity style={{borderBottomWidth: 1, borderLeftWidth: 1, borderColor: 'white'}}>
-                    <Text style={{color: 'white', padding: 5}}>Create Account</Text>
-                  </TouchableOpacity>
-                </Left>
-                <Right>
-                  <TouchableOpacity style={{ borderBottomWidth: 1, borderRightWidth: 1, borderColor: 'white'}}>
-                    <Text style={{color: 'white', padding: 5}}>Forgot Password?</Text>
-                  </TouchableOpacity>
-                </Right>
-              </Item>
-          </View>
-        </View>
+              <View style={{ marginTop: 20, borderWidth: 1, borderColor: 'white', flexDirection: 'row', borderRadius: 20,}}>
+                
+                  <Left style={{justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderBottomLeftRadius: 20, borderTopLeftRadius: 20, borderColor: 'white',paddingVertical: 10, backgroundColor: 'rgba(255,255,255,0.6)'}}>
+                    <TouchableOpacity>
+                      <Text style={{color: 'white'}}>Đăng kí</Text>
+                    </TouchableOpacity>
+                  </Left>
+                
+                
+                  <Right style={{ justifyContent: 'center', alignItems: 'center',backgroundColor: 'rgba(255,255,255,0.6)', paddingVertical: 10, borderBottomRightRadius: 20, borderTopRightRadius: 20}}>
+                    <TouchableOpacity>
+                      <Text style={{color: 'white'}}>Quên mật khẩu?</Text>
+                    </TouchableOpacity>
+                  </Right>
+                
+              </View>
+            </View>
+        </KeyboardAvoidingView>
         
       </ImageBackground>
     )

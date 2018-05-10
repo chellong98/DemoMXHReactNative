@@ -1,25 +1,44 @@
 import React, { Component } from 'react';
-import {View ,Alert, ScrollView, Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
-import {Container, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
-
+import {View ,Alert, ScrollView,  Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
+import {Container, Card,List,Toast, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
+import Setting from './../utils/setting';
+import { Root } from "native-base";
 const deviceSize = Dimensions.get("window");
-var avatar = {uri: 'https://www.bin.vn/upload/article/noavatar_1418273249.jpg'}
 var color = '#00903b'
-var list = [
-    'Javascript, ngôn ngữ luôn nằm trong những hot languages trong các năm gần đây. Xuất hiện ở hầu hết các khía cạnh của lập trình như lập trình web, lập trình mobile application, VR, AR, 3D game, lập trình lệnh cho Drone, ... Cho tới bây giờ tôi vẫn không hiểu tại sao javascript lại có thể phổ biến đến vậy, và rốt cuộc điều gì hay ho ở javascript khiến nhà nhà đều học javascipt, người người đều là full stack, hay liệu có đứa nào giống mình không hiểu gì về javascript mà vẫn trở thành full stack developer hay không. Trong lúc học, tìm hiểu về javascript cùng mọi thứ liên quan đến nó, tôi đã vấp phải vô vàn những câu hỏi về javascript, nên tôi đã nảy ra ý định tập trung các câu hỏi đó vào một nơi, để sau này có quên thì còn có chỗ mà tham khảo. Trong bài post lần này tôi sẽ tập trung vào nhữn', 'b', 'c',
-];
-export default class thispostscreen extends Component {
+
+export interface Props {
+    navigation: any,
+    user: any,
+    comments: any,
+    postComment: Function,
+}
+export default class thispostscreen extends Component<Props> {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showToast: false,
+            text: ''
+        }
+        console.log('comment')
+        console.log(this.props.comments)
+    }
     taoHang(value, index) {
+        var ndComment = JSON.parse(value.noiDungComment)
         return (
             <ListItem style={{flex: 1,}}>
                 <Left style={{flex: 1/10, position: 'absolute', top: 20 }}>
-                    <Thumbnail circular small source={avatar}/>
+                    <Thumbnail circular small source={{uri: Setting.SERVER_API+value.image}}/>
                 </Left>
                 <Body style={{flex: 8/10, paddingLeft: 50, }}>
-                    <View style={{backgroundColor: 'white', flexDirection: 'column', padding: 20, paddingTop: 0, borderRadius: 20}}>
-                        <Text style={{fontWeight: 'bold', color: color}}>long</Text>
-                        <View style={{}}>
-                            <Text>{value}</Text>
+                    <View style={{ flexDirection: 'column'}}>
+                        <View>
+                            <Text style={{fontWeight: 'bold', color: color}}>{value.hoten}</Text>
+                        </View>
+                        <View style={{paddingLeft: 10}}>
+                            <Text minimumFontScale={0.5} style={{fontSize: 10}}>{value.ngayComment}</Text>
+                        </View>
+                        <View style={{backgroundColor: 'rgba(0, 144, 59, 0.7)', borderRadius: 20, padding: 15, marginLeft: 10, marginTop: 10}}>
+                            <Text style={{color: 'white'}}>{ndComment.ndComment}</Text>
                         </View>
                     </View>
                     <View>
@@ -30,8 +49,12 @@ export default class thispostscreen extends Component {
             </ListItem>
         )
     }
+    
+  
+
     render() {
         return (
+            <Root>
             <Container>
                 <Header 
                     style={{height: deviceSize.height/5, backgroundColor: color, alignItems: 'center', justifyContent: 'center'}} androidStatusBarColor={color}
@@ -39,24 +62,64 @@ export default class thispostscreen extends Component {
 
                     <View style={{paddingBottom: 10, paddingTop: 10, alignItem: 'center', justifyContent: 'center',}}>
                         <View style={{flexDirection: 'column', alignItems: 'center',}}>
-                            <Thumbnail large source={avatar} style={{borderColor: 'white'}}/>
-                            <Text style={{paddingTop: 10, color: 'white'}}>long</Text>
+                            <Thumbnail large source={{uri: Setting.SERVER_API+this.props.user.image}} style={{borderColor: 'white'}}/>
+                            <Text style={{paddingTop: 10, color: 'white'}}>{this.props.user.hoten}</Text>
                         </View>
                         
                     </View>
                 </Header>
                 <Card style={{ flexDirection: 'row', paddingHorizontal: 10, flex: 2/10}}>
                         <Left style={{flex: 1/10}}>
-                            <Thumbnail circular small source={avatar}/>
+                            <Thumbnail circular small source={{uri: Setting.SERVER_API+global.account.image}}/>
                         </Left>
                         <Body style={{flex: 8/10}}>
                             <Item>
-                                <Input multiline={true} placeholder='Comment...' style={{color: color}}/>
+                                <Input 
+                                multiline={true} 
+                                placeholder='Comment...' 
+                                style={{color: color}}
+                                onChangeText={(text)=>this.setState({text})}
+                                value={this.state.text}
+                                />
                             </Item>
                         </Body>
                         <Right style={{flex: 1/10}}>
-                            <TouchableOpacity>
-                                <Icon android='md-send' ios='md-send'/>
+                            <TouchableOpacity onPress={()=>{
+                                if(this.state.text=='') {
+                                    Toast.show({
+                                        text: "Viết gì đó đi bạn!",
+                                        buttonText: "Okay",
+                                        type: 'warning',
+                                        duration: 3000,
+                                    })
+                                    return;
+                                }
+                                this.setState({text: ''})
+                                this.props.postComment(global.account.sothutu, this.state.text, 
+                                    (status)=>{
+                                        var comment = {
+                                            email: global.account.email,
+                                            gioitinh: global.account.gioitinh,
+                                            hoten: global.account.hoten,
+                                            idBaiDang: status.data.idPost,
+                                            idComment: 0,
+                                            idNguoiDang: status.data.idAccount,
+                                            image: global.account.image,
+                                            imageCover: global.account.imageCover,
+                                            linkfacebook: global.account,
+                                            ngayComment: status.data.ngayComment,
+                                            ngaysinh: global.account.ngaysinh,
+                                            noiDungComment: status.data.ndComment,
+                                            password: global.account.password,
+                                            sothutu: global.account.sothutu,
+                                        }
+                                        this.props.comments.splice(0,0,comment);
+                                        this.forceUpdate();
+                                        Keyboard.dismiss()
+                                    }
+                                )   
+                            }}>
+                                <Icon android='md-send' ios='md-send' style={{color: color}}/>
                             </TouchableOpacity>
                         </Right>
                     </Card>
@@ -65,7 +128,7 @@ export default class thispostscreen extends Component {
                     <View style={{height: deviceSize/5}}>
                         <List>
                             {
-                                list.map((value, index)=>{
+                                this.props.comments.map((value, index)=>{
                                     return this.taoHang(value, index)
                                 })
                             }
@@ -73,6 +136,8 @@ export default class thispostscreen extends Component {
                     </View>
                 </Content>
             </Container>
+            </Root>
         )
     }
+    
 }

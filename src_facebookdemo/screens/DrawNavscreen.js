@@ -36,9 +36,16 @@ export default class drawnav extends Component<Props> {
     // console.log(listUsers)
     return (
       <Container>
-        <View style={{backgroundColor: '#00903b', flex: 1/7}}>
+        <View style={{backgroundColor: '#00903b', flex: 1/6}}>
             <Item style={{flexDirection: 'row', borderBottomWidth: 0, paddingTop: 20, paddingLeft: 10, paddingBottom: 20}}>
-                <Thumbnail source={{uri: Setting.SERVER_API+account.image}}/>
+                <TouchableOpacity onPress={()=>{
+                  this.props.navigation.navigate('InfoDetailUser',{ //gui user va account hien tai sang new feed
+                    user: account,
+                    account: account
+                  })
+                }}>
+                  <Thumbnail source={{uri: Setting.SERVER_API+account.image}}/>
+                </TouchableOpacity>
                 <View style={{paddingLeft: 20}}>
                     <Title style={{color: 'white'}}>{account.email}</Title>
                     <Text style={{color: 'white'}}>Sinh viên</Text>

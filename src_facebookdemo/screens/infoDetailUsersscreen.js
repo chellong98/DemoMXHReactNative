@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
 import {View ,Alert, Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
-import {Container, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
+import {Container, Toast, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
 import PopupDialog, { SlideAnimation , DialogButton} from 'react-native-popup-dialog'; //inport dialog 
 import Setting from './../utils/setting';
 import Pakage from './../utils/pakage';
 import ThisPostContainer from './../container/ThisPostContainer';
+import {Root} from 'native-base';
+
 const deviceSize = Dimensions.get("window");
 const color = '#00903b';
 export interface Props { 
   navigation: any, 
   postBaiDang: Function,
   layToanBoBaiDang: Function,
+  postLike: Function,
   user: any,
 
 }
-var imagePicker = require('react-native-image-picker');
-var options = {
-  title: 'Select image',
-  storageOptions : {
-    skipBackup: true,
-    path: 'image',
-  }
-}
+
 export default class infodetailuser extends Component<Props> {
   constructor(props) {
     super(props);
@@ -33,39 +29,30 @@ export default class infodetailuser extends Component<Props> {
       allPosts : [],
       likesOfPost: [],
       commentsOfPost: [],
-      idNguoiLike: [],
+      NguoiLike: [],
       imageUri: '',
+      showToast: false
     },
-    this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, likesOfPost, commentsOfPost, idNguoiLike)=>{
-      // console.log("response");  
+    this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, NguoiLike)=>{
+      // console.log("all post");  
       // console.log(allPosts);  
       // console.log('like of post') 
       // console.log(likesOfPost)
       for(i=0; i<allPosts.length; i++) {
         allPosts[i].statusLike = false //them 1 thuoc tinh vao doi tuong trong mang
         allPosts[i].statusComment = false 
-      }
-      // this.forceUpdate()
-      this.setState({allPosts: allPosts})
-      this.setState({likesOfPost: likesOfPost}) 
-      this.setState({commentsOfPost: commentsOfPost})
-      this.setState({idNguoiLike: idNguoiLike})
-      for(i=0; i<idNguoiLike.length; i++) {
-        // console.log('id nguoi like')
-        // console.log(idNguoiLike[i])
-        // if(idNguoiLike.length[i].)
-        if(idNguoiLike[i].idNguoiLike==global.account.sothutu) {
-          console.log('id nguoi like')
-          console.log(idNguoiLike[i].idBaiDang + " " + idNguoiLike[i].idNguoiLike)
-          var idBaiDang = idNguoiLike[i].idBaiDang;
-          for(i=0; i<this.state.allPosts.length; i++) {
-            if(this.state.allPosts[i].idBaiDang==idBaiDang ) {
-              this.state.allPosts[i].statusLike = true;
-              this.forceUpdate();
+        if(allPosts[i].NguoiLike.length>0) {
+          for(j=0; j<NguoiLike.length; j++) {
+            if(NguoiLike[j].idNguoiLike==global.account.sothutu) {
+              allPosts[i].statusLike=true;
             }
           }
         }
       }
+      // this.forceUpdate()
+      this.setState({allPosts: allPosts})
+      for(i=0; i<allPosts; i++) {}
+
       // console.log('allposts')
       // console.log(this.state.allPosts);
      
@@ -86,14 +73,24 @@ export default class infodetailuser extends Component<Props> {
     }
     // console.log("height" + height ); 
   }
+//
 
-
-
-  taoHang(value, index, user) {
+  showimage(noiDungBaiDang)
+  {
+    
+    if (noiDungBaiDang.image!=null &&noiDungBaiDang.image.length>1){
+      var imageSize = Pakage.getSizeImage(deviceSize.width-30 ,noiDungBaiDang.imageSize.width,noiDungBaiDang.imageSize.height);
+      // console.log(noiDungBaiDang.image + " " + noiDungBaiDang.imageSize.width + " " + noiDungBaiDang.imageSize.height)
+      return ( <Image 
+        style={{ resizeMode: 'contain', width: imageSize.width-40, height: imageSize.height}}
+        source={{uri: Setting.SERVER_API+noiDungBaiDang.image.replace("\\","/")}}/>
+      )
+    }
+  }
+  taoHang(value, index, user) {  
     var likeColor = value.statusLike==true ? '#00903b' : undefined;
     var commentColor = value.statusComment==true ? '#00903b' : undefined;
     var noiDungBaiDang = JSON.parse(value.noiDungBaiDang)
-    var imageSize = Pakage.getSizeImage(deviceSize.width ,noiDungBaiDang.imageSize.width,noiDungBaiDang.imageSize.height);
     console.log('width / height')
  
     // console.log(noiDungBaiDang)
@@ -117,13 +114,12 @@ export default class infodetailuser extends Component<Props> {
           </CardItem>
           <CardItem>
             <Content>
-              <View>
+              <View style={{paddingBottom: 10}}>
                 <Text>{noiDungBaiDang.text}</Text>
               </View>
               <View>
-                <Image 
-                style={{ resizeMode: 'contain', width: imageSize.width, height: imageSize.height, paddingTop: 10}}
-                source={{uri: Setting.SERVER_NAME+noiDungBaiDang.image.replace("\\","/")}}/>
+              {this.showimage(noiDungBaiDang)}
+               
               </View>
             </Content>
           </CardItem>
@@ -135,22 +131,33 @@ export default class infodetailuser extends Component<Props> {
                   this.state.allPosts[index].statusLike=!this.state.allPosts[index].statusLike; 
                   this.forceUpdate(); 
                   console.log(this.state.statusLike)
+                  if(value.statusLike) {
+                    value.NguoiLike.length++;
+                    this.props.postLike(value.idBaiDang, global.account.sothutu)
+                  } else {
+                    value.NguoiLike.length--;
                   }
+                  this.forceUpdate()
+                }
               }>
-                <Text style={{color: likeColor}}><Icon active name='thumbs-up' style={{color: likeColor}}/>Like ({this.state.likesOfPost[index]})</Text>
+                <Text style={{color: likeColor}}><Icon active name='thumbs-up' style={{color: likeColor}}/>Like ({value.NguoiLike.length})</Text>
               </Button>
             </Left> 
             <Body style={{flex: 5/10, alignItems: 'center'}}>
               <Button transparent onPress={()=>{  //nut comment
                   this.state.allPosts[index].statusComment=!this.state.allPosts[index].statusComment; 
-                  this.forceUpdate(); 
+                  console.log('id bai dang ' + value.idBaiDang)
+                  this.dialog.loadComment(value.idBaiDang); //ref loadComment
+                  this.forceUpdate();
                   // console.log(this.state.statusComment)
                   this.popupDialog.show() //show dialog
+                  
+                  // console.log('idbaiDang : ' + this.state.idBaiDang)
               }}
                 style={{justifyContent: 'center'}}
               >
               
-              <Text style={{color: commentColor}}><Icon active name="chatbubbles" style={{color: commentColor}}/> Comments ({this.state.commentsOfPost[index]})</Text>
+              <Text style={{color: commentColor}}><Icon active name="chatbubbles" style={{color: commentColor}}/> Comments ({value.soLuongComment})</Text>
               </Button>
               </Body>
               <Right style={{flex: 2/10}}>
@@ -160,29 +167,6 @@ export default class infodetailuser extends Component<Props> {
         </Card>
       </ListItem>
     )
-  }
-
-  upLoadImage() {
-    imagePicker.showImagePicker(options, (response)=>{
-      console.log("response image picker")
-      console.log(response);
-
-      if (response.didCancel) {
-        console.log('User cancelled image picker');
-      }
-      else if (response.error) {
-        console.log('ImagePicker Error: ', response.error);
-      }
-      else if (response.customButton) {
-        console.log('User tapped custom button: ', response.customButton);
-      } else {
-       
-        // console.log("source: ")
-        // console.log(source);
-      
-        this.setState({imageUri: response.uri})
-      }
-    })
   }
 
   renderImageUpload() {
@@ -197,7 +181,7 @@ export default class infodetailuser extends Component<Props> {
       )
     } else {
       return null;
-    }
+    } 
     
   }
 
@@ -207,9 +191,42 @@ export default class infodetailuser extends Component<Props> {
       return;
     }
     
-    this.props.postBaiDang(user.sothutu, this.state.text, this.state.imageUri)
+    this.props.postBaiDang(user.sothutu, this.state.text, this.state.imageUri,
+    (status)=>{
+      console.log('new post')
+      console.log(status)
+      // this.setState({'newPost' : status})
+      var post = {
+          'idBaiDang' : 0,
+          'idNguoiDang' : this.props.user.sothutu,
+          'ngayDang' : status.data.ngayDang,
+          'noiDungBaiDang' : JSON.stringify({'text' : status.data.noiDungBaiDang, 'image': status.data.image, 'imageSize' : JSON.parse(status.data.imageSize)}),
+          'statusComment' : false,
+          'statusLike' : false,
+          'NguoiLike': [],
+          'soLuongComment': 0,
+      }
+      // console.log(status.data.imageSize)
+      this.state.allPosts.splice(0,0,post);
+      
+      console.log('allpost')
+      console.log(this.state.allPosts);
+      this.setState({text: ""});
+      Toast.show({
+        text: 'đăng bài thành công!',
+        type: 'success',
+        position: 'bottom',
+        duration: 3000,
+        buttonText: 'OK'
+      })
+    })
+    // this.state.allPosts.push(this.props.newPost);
+    // console.log('new post')
+    // console.log(this.state.newPost)
+    
+    this.forceUpdate()
     Keyboard.dismiss();
-  }
+  }  
 
   renderCardStatus(user) {
     
@@ -226,6 +243,7 @@ export default class infodetailuser extends Component<Props> {
           placeholder='Bạn đang nghĩ gì?'
           style={{width: '100%'}}
           onChangeText={(text)=>this.setState({text})}
+          value={this.state.text}
           returnKeyLabel = "done"
 
           // onChangeText={(text) => this.setState({text})}
@@ -237,47 +255,57 @@ export default class infodetailuser extends Component<Props> {
           }
           <Item style={{flex: 1, borderBottomWidth: 0, paddingTop: 10}}>
             <Left>
-              <Button rounded light onPress={()=>this.upLoadImage()}>
+              <Button rounded light onPress={()=>Pakage.upLoadImage((imageUri)=>{this.setState({imageUri: imageUri})})}>
               <Text style={{padding: 10}}>Image</Text>
               </Button>    
             </Left>
           </Item>
           <Item style={{ flex: 1, width: this.state.width-20, alignItems: 'center', borderBottomWidth: 0, paddingTop: 10}}>
             <Button rounded style={{flex: 1, backgroundColor: '#00903b', justifyContent: 'center'}}
-              onPress={()=>this.postBaiDang(user)} 
+            
+              onPress={()=>
+                this.postBaiDang(user)
+              } 
             >
               <Text style={{color: 'white'}}>Đăng Bài</Text>
             </Button>
           </Item>
         </CardItem>
       )
-    } else {
-      return null;
-    }
+    } 
   }
   render() {
     
     var user = this.props.user;
+    // console.log('user')
+    // console.log(user)
     return (
+      <Root>
       <Container>
-      <PopupDialog  
-        height = {deviceSize.height-100}
-        ref={(popupDialog)=>{this.popupDialog = popupDialog}}
-        dialogAnimation= {this.slideAnimation}
-      >
-        <ThisPostContainer/>
-        <DialogButton
-          buttonStyle={{backgroundColor: color, borderRadius: 50, width: 30, height: 30, marginBottom: 10, marginTop: 10,}}
-          onPress={()=>{this.popupDialog.dismiss()}}
-          text='X'
-          activeOpacity={0}
-        /> 
-        
-      </PopupDialog>
-      
+        <PopupDialog  
+          height = {deviceSize.height-100}
+          ref={(popupDialog)=>{this.popupDialog = popupDialog}}
+          dialogAnimation= {this.slideAnimation}
+        >
+          <ThisPostContainer 
+            navigation={this.props.navigation} 
+            user={this.props.user} 
+            ref={(dialog)=>this.dialog = dialog}/>
+          <DialogButton
+          buttonStyle={{ height: '5%' }}
+            onPress={()=>{this.popupDialog.dismiss()}}
+            text='X'
+            textStyle = {{color: color, position: 'absolute', top: 0}}
+          >
+          <Icon android='md-arrow-back' ios='md-arrow-back'/>
+          </DialogButton> 
+          
+        </PopupDialog>
+       
         <Header searchBar rounded style={{}} backgroundColor='#00903b' androidStatusBarColor='#00903b'>
         <Left style={{flex: 2/10}}>
           <TouchableOpacity onPress={()=>{
+            this.props.navigation.g
             this.props.navigation.navigate('ListUsersContainer', {dataUsers: global.listUsers});
           }}>
             <Icon android='md-arrow-back' ios='md-arrow-back' style={{color: 'white'}}/>
@@ -294,7 +322,8 @@ export default class infodetailuser extends Component<Props> {
               Alert.alert('chuc nang dang len tuong nha ban be chua lam!')
               return;
             }
-            this.setState({status: !this.state.status});
+            if(!this.state.status) this.setState({status: !this.state.status});
+            
           }}>
             <Icon android='md-add' ios='md-add' style={{color: 'white'}}/>
           </Button>
@@ -304,6 +333,7 @@ export default class infodetailuser extends Component<Props> {
           <Card style={{flex: 0}}>
             <CardItem>
               <Left>
+              
                 <Thumbnail source={{uri: Setting.SERVER_API+user.image}} />
                 <Body>
                   <Text style={{color: '#00903b'}}>{user.hoten}</Text>
@@ -347,6 +377,7 @@ export default class infodetailuser extends Component<Props> {
           </List>
         </Content> 
       </Container>
+      </Root>
     )
   }
 };
