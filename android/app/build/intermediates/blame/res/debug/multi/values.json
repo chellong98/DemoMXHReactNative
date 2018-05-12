@@ -2119,20 +2119,27 @@
                     "startLine": 258,
                     "startColumn": 4,
                     "startOffset": 31587,
-                    "endColumn": 44,
-                    "endOffset": 31627
+                    "endColumn": 46,
+                    "endOffset": 31629
                 },
                 "from": {
-                    "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/res/values/strings.xml"
+                    "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 16,
+                        "endColumn": 46,
+                        "endOffset": 58
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 259,
                     "startColumn": 4,
-                    "startOffset": 31632,
+                    "startOffset": 31634,
                     "endColumn": 93,
-                    "endOffset": 31721
+                    "endOffset": 31723
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2142,9 +2149,9 @@
                 "to": {
                     "startLine": 260,
                     "startColumn": 4,
-                    "startOffset": 31726,
+                    "startOffset": 31728,
                     "endColumn": 102,
-                    "endOffset": 31824
+                    "endOffset": 31826
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2154,9 +2161,9 @@
                 "to": {
                     "startLine": 261,
                     "startColumn": 4,
-                    "startOffset": 31829,
+                    "startOffset": 31831,
                     "endColumn": 112,
-                    "endOffset": 31937
+                    "endOffset": 31939
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2166,9 +2173,9 @@
                 "to": {
                     "startLine": 262,
                     "startColumn": 4,
-                    "startOffset": 31942,
+                    "startOffset": 31944,
                     "endColumn": 161,
-                    "endOffset": 32099
+                    "endOffset": 32101
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2178,9 +2185,9 @@
                 "to": {
                     "startLine": 263,
                     "startColumn": 4,
-                    "startOffset": 32104,
+                    "startOffset": 32106,
                     "endColumn": 113,
-                    "endOffset": 32213
+                    "endOffset": 32215
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2190,9 +2197,9 @@
                 "to": {
                     "startLine": 264,
                     "startColumn": 4,
-                    "startOffset": 32218,
+                    "startOffset": 32220,
                     "endColumn": 106,
-                    "endOffset": 32320
+                    "endOffset": 32322
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2202,9 +2209,9 @@
                 "to": {
                     "startLine": 265,
                     "startColumn": 4,
-                    "startOffset": 32325,
+                    "startOffset": 32327,
                     "endColumn": 111,
-                    "endOffset": 32432
+                    "endOffset": 32434
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2214,9 +2221,9 @@
                 "to": {
                     "startLine": 266,
                     "startColumn": 4,
-                    "startOffset": 32437,
+                    "startOffset": 32439,
                     "endColumn": 102,
-                    "endOffset": 32535
+                    "endOffset": 32537
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2226,9 +2233,9 @@
                 "to": {
                     "startLine": 267,
                     "startColumn": 4,
-                    "startOffset": 32540,
+                    "startOffset": 32542,
                     "endColumn": 120,
-                    "endOffset": 32656
+                    "endOffset": 32658
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2238,9 +2245,9 @@
                 "to": {
                     "startLine": 268,
                     "startColumn": 4,
-                    "startOffset": 32661,
+                    "startOffset": 32663,
                     "endColumn": 125,
-                    "endOffset": 32782
+                    "endOffset": 32784
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2250,9 +2257,9 @@
                 "to": {
                     "startLine": 269,
                     "startColumn": 4,
-                    "startOffset": 32787,
+                    "startOffset": 32789,
                     "endColumn": 190,
-                    "endOffset": 32973
+                    "endOffset": 32975
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2262,9 +2269,9 @@
                 "to": {
                     "startLine": 270,
                     "startColumn": 4,
-                    "startOffset": 32978,
+                    "startOffset": 32980,
                     "endColumn": 107,
-                    "endOffset": 33081
+                    "endOffset": 33083
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2274,9 +2281,9 @@
                 "to": {
                     "startLine": 271,
                     "startColumn": 4,
-                    "startOffset": 33086,
+                    "startOffset": 33088,
                     "endColumn": 112,
-                    "endOffset": 33194
+                    "endOffset": 33196
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2286,9 +2293,9 @@
                 "to": {
                     "startLine": 272,
                     "startColumn": 4,
-                    "startOffset": 33199,
+                    "startOffset": 33201,
                     "endColumn": 112,
-                    "endOffset": 33307
+                    "endOffset": 33309
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2298,9 +2305,9 @@
                 "to": {
                     "startLine": 273,
                     "startColumn": 4,
-                    "startOffset": 33312,
+                    "startOffset": 33314,
                     "endColumn": 107,
-                    "endOffset": 33415
+                    "endOffset": 33417
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2310,9 +2317,9 @@
                 "to": {
                     "startLine": 274,
                     "startColumn": 4,
-                    "startOffset": 33420,
+                    "startOffset": 33422,
                     "endColumn": 111,
-                    "endOffset": 33527
+                    "endOffset": 33529
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2322,9 +2329,9 @@
                 "to": {
                     "startLine": 275,
                     "startColumn": 4,
-                    "startOffset": 33532,
+                    "startOffset": 33534,
                     "endColumn": 128,
-                    "endOffset": 33656
+                    "endOffset": 33658
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2334,9 +2341,9 @@
                 "to": {
                     "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 33661,
+                    "startOffset": 33663,
                     "endColumn": 110,
-                    "endOffset": 33767
+                    "endOffset": 33769
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2346,9 +2353,9 @@
                 "to": {
                     "startLine": 277,
                     "startColumn": 4,
-                    "startOffset": 33772,
+                    "startOffset": 33774,
                     "endColumn": 92,
-                    "endOffset": 33860
+                    "endOffset": 33862
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2358,9 +2365,9 @@
                 "to": {
                     "startLine": 278,
                     "startColumn": 4,
-                    "startOffset": 33865,
+                    "startOffset": 33867,
                     "endColumn": 131,
-                    "endOffset": 33992
+                    "endOffset": 33994
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2370,9 +2377,9 @@
                 "to": {
                     "startLine": 279,
                     "startColumn": 4,
-                    "startOffset": 33997,
+                    "startOffset": 33999,
                     "endColumn": 124,
-                    "endOffset": 34117
+                    "endOffset": 34119
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2382,9 +2389,9 @@
                 "to": {
                     "startLine": 280,
                     "startColumn": 4,
-                    "startOffset": 34122,
+                    "startOffset": 34124,
                     "endColumn": 97,
-                    "endOffset": 34215
+                    "endOffset": 34217
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2394,9 +2401,9 @@
                 "to": {
                     "startLine": 281,
                     "startColumn": 4,
-                    "startOffset": 34220,
+                    "startOffset": 34222,
                     "endColumn": 98,
-                    "endOffset": 34314
+                    "endOffset": 34316
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2406,9 +2413,9 @@
                 "to": {
                     "startLine": 282,
                     "startColumn": 4,
-                    "startOffset": 34319,
+                    "startOffset": 34321,
                     "endColumn": 113,
-                    "endOffset": 34428
+                    "endOffset": 34430
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2418,9 +2425,9 @@
                 "to": {
                     "startLine": 283,
                     "startColumn": 4,
-                    "startOffset": 34433,
+                    "startOffset": 34435,
                     "endColumn": 70,
-                    "endOffset": 34499
+                    "endOffset": 34501
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2430,9 +2437,9 @@
                 "to": {
                     "startLine": 284,
                     "startColumn": 4,
-                    "startOffset": 34504,
+                    "startOffset": 34506,
                     "endColumn": 77,
-                    "endOffset": 34577
+                    "endOffset": 34579
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2442,9 +2449,9 @@
                 "to": {
                     "startLine": 285,
                     "startColumn": 4,
-                    "startOffset": 34582,
+                    "startOffset": 34584,
                     "endColumn": 89,
-                    "endOffset": 34667
+                    "endOffset": 34669
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2454,9 +2461,9 @@
                 "to": {
                     "startLine": 286,
                     "startColumn": 4,
-                    "startOffset": 34672,
+                    "startOffset": 34674,
                     "endColumn": 87,
-                    "endOffset": 34755
+                    "endOffset": 34757
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2466,9 +2473,9 @@
                 "to": {
                     "startLine": 287,
                     "startColumn": 4,
-                    "startOffset": 34760,
+                    "startOffset": 34762,
                     "endColumn": 95,
-                    "endOffset": 34851
+                    "endOffset": 34853
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2478,10 +2485,10 @@
                 "to": {
                     "startLine": 288,
                     "startColumn": 4,
-                    "startOffset": 34856,
+                    "startOffset": 34858,
                     "endLine": 291,
                     "endColumn": 10,
-                    "endOffset": 35099
+                    "endOffset": 35101
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -2491,31 +2498,23 @@
                 "to": {
                     "startLine": 292,
                     "startColumn": 4,
-                    "startOffset": 35104,
+                    "startOffset": 35106,
                     "endLine": 294,
                     "endColumn": 12,
-                    "endOffset": 35192
+                    "endOffset": 35194
                 },
                 "from": {
-                    "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/res/values/styles.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 54,
-                        "endLine": 5,
-                        "endColumn": 12,
-                        "endOffset": 142
-                    }
+                    "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/src/main/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 295,
                     "startColumn": 4,
-                    "startOffset": 35197,
+                    "startOffset": 35199,
                     "endLine": 301,
                     "endColumn": 12,
-                    "endOffset": 35693
+                    "endOffset": 35695
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2525,9 +2524,9 @@
                 "to": {
                     "startLine": 302,
                     "startColumn": 4,
-                    "startOffset": 35698,
+                    "startOffset": 35700,
                     "endColumn": 88,
-                    "endOffset": 35782
+                    "endOffset": 35784
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2537,10 +2536,10 @@
                 "to": {
                     "startLine": 303,
                     "startColumn": 4,
-                    "startOffset": 35787,
+                    "startOffset": 35789,
                     "endLine": 306,
                     "endColumn": 12,
-                    "endOffset": 36029
+                    "endOffset": 36031
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2550,10 +2549,10 @@
                 "to": {
                     "startLine": 307,
                     "startColumn": 4,
-                    "startOffset": 36034,
+                    "startOffset": 36036,
                     "endLine": 310,
                     "endColumn": 12,
-                    "endOffset": 36310
+                    "endOffset": 36312
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2563,10 +2562,10 @@
                 "to": {
                     "startLine": 311,
                     "startColumn": 4,
-                    "startOffset": 36315,
+                    "startOffset": 36317,
                     "endLine": 315,
                     "endColumn": 12,
-                    "endOffset": 36595
+                    "endOffset": 36597
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2576,10 +2575,10 @@
                 "to": {
                     "startLine": 316,
                     "startColumn": 4,
-                    "startOffset": 36600,
+                    "startOffset": 36602,
                     "endLine": 321,
                     "endColumn": 12,
-                    "endOffset": 36988
+                    "endOffset": 36990
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2589,10 +2588,10 @@
                 "to": {
                     "startLine": 322,
                     "startColumn": 4,
-                    "startOffset": 36993,
+                    "startOffset": 36995,
                     "endLine": 328,
                     "endColumn": 12,
-                    "endOffset": 37465
+                    "endOffset": 37467
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2602,10 +2601,10 @@
                 "to": {
                     "startLine": 329,
                     "startColumn": 4,
-                    "startOffset": 37470,
+                    "startOffset": 37472,
                     "endLine": 332,
                     "endColumn": 12,
-                    "endOffset": 37687
+                    "endOffset": 37689
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2615,10 +2614,10 @@
                 "to": {
                     "startLine": 333,
                     "startColumn": 4,
-                    "startOffset": 37692,
+                    "startOffset": 37694,
                     "endLine": 336,
                     "endColumn": 12,
-                    "endOffset": 37909
+                    "endOffset": 37911
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2628,10 +2627,10 @@
                 "to": {
                     "startLine": 337,
                     "startColumn": 4,
-                    "startOffset": 37914,
+                    "startOffset": 37916,
                     "endLine": 341,
                     "endColumn": 12,
-                    "endOffset": 38177
+                    "endOffset": 38179
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2641,10 +2640,10 @@
                 "to": {
                     "startLine": 342,
                     "startColumn": 4,
-                    "startOffset": 38182,
+                    "startOffset": 38184,
                     "endLine": 345,
                     "endColumn": 12,
-                    "endOffset": 38404
+                    "endOffset": 38406
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2654,10 +2653,10 @@
                 "to": {
                     "startLine": 346,
                     "startColumn": 4,
-                    "startOffset": 38409,
+                    "startOffset": 38411,
                     "endLine": 349,
                     "endColumn": 12,
-                    "endOffset": 38634
+                    "endOffset": 38636
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2667,10 +2666,10 @@
                 "to": {
                     "startLine": 350,
                     "startColumn": 4,
-                    "startOffset": 38639,
+                    "startOffset": 38641,
                     "endLine": 353,
                     "endColumn": 12,
-                    "endOffset": 38864
+                    "endOffset": 38866
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2680,10 +2679,10 @@
                 "to": {
                     "startLine": 354,
                     "startColumn": 4,
-                    "startOffset": 38869,
+                    "startOffset": 38871,
                     "endLine": 357,
                     "endColumn": 12,
-                    "endOffset": 39094
+                    "endOffset": 39096
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2693,10 +2692,10 @@
                 "to": {
                     "startLine": 358,
                     "startColumn": 4,
-                    "startOffset": 39099,
+                    "startOffset": 39101,
                     "endLine": 361,
                     "endColumn": 12,
-                    "endOffset": 39324
+                    "endOffset": 39326
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2706,10 +2705,10 @@
                 "to": {
                     "startLine": 362,
                     "startColumn": 4,
-                    "startOffset": 39329,
+                    "startOffset": 39331,
                     "endLine": 365,
                     "endColumn": 12,
-                    "endOffset": 39551
+                    "endOffset": 39553
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2719,10 +2718,10 @@
                 "to": {
                     "startLine": 366,
                     "startColumn": 4,
-                    "startOffset": 39556,
+                    "startOffset": 39558,
                     "endLine": 369,
                     "endColumn": 12,
-                    "endOffset": 39790
+                    "endOffset": 39792
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2732,10 +2731,10 @@
                 "to": {
                     "startLine": 370,
                     "startColumn": 4,
-                    "startOffset": 39795,
+                    "startOffset": 39797,
                     "endLine": 373,
                     "endColumn": 12,
-                    "endOffset": 40016
+                    "endOffset": 40018
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2745,10 +2744,10 @@
                 "to": {
                     "startLine": 374,
                     "startColumn": 4,
-                    "startOffset": 40021,
+                    "startOffset": 40023,
                     "endLine": 377,
                     "endColumn": 12,
-                    "endOffset": 40261
+                    "endOffset": 40263
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2758,10 +2757,10 @@
                 "to": {
                     "startLine": 378,
                     "startColumn": 4,
-                    "startOffset": 40266,
+                    "startOffset": 40268,
                     "endLine": 379,
                     "endColumn": 12,
-                    "endOffset": 40391
+                    "endOffset": 40393
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2771,10 +2770,10 @@
                 "to": {
                     "startLine": 380,
                     "startColumn": 4,
-                    "startOffset": 40396,
+                    "startOffset": 40398,
                     "endLine": 381,
                     "endColumn": 12,
-                    "endOffset": 40521
+                    "endOffset": 40523
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2784,10 +2783,10 @@
                 "to": {
                     "startLine": 382,
                     "startColumn": 4,
-                    "startOffset": 40526,
+                    "startOffset": 40528,
                     "endLine": 385,
                     "endColumn": 12,
-                    "endOffset": 40751
+                    "endOffset": 40753
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2797,10 +2796,10 @@
                 "to": {
                     "startLine": 386,
                     "startColumn": 4,
-                    "startOffset": 40756,
+                    "startOffset": 40758,
                     "endLine": 389,
                     "endColumn": 12,
-                    "endOffset": 40999
+                    "endOffset": 41001
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2810,10 +2809,10 @@
                 "to": {
                     "startLine": 390,
                     "startColumn": 4,
-                    "startOffset": 41004,
+                    "startOffset": 41006,
                     "endLine": 393,
                     "endColumn": 12,
-                    "endOffset": 41218
+                    "endOffset": 41220
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2823,10 +2822,10 @@
                 "to": {
                     "startLine": 394,
                     "startColumn": 4,
-                    "startOffset": 41223,
+                    "startOffset": 41225,
                     "endLine": 398,
                     "endColumn": 12,
-                    "endOffset": 41501
+                    "endOffset": 41503
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2836,10 +2835,10 @@
                 "to": {
                     "startLine": 399,
                     "startColumn": 4,
-                    "startOffset": 41506,
+                    "startOffset": 41508,
                     "endLine": 402,
                     "endColumn": 12,
-                    "endOffset": 41709
+                    "endOffset": 41711
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2849,10 +2848,10 @@
                 "to": {
                     "startLine": 403,
                     "startColumn": 4,
-                    "startOffset": 41714,
+                    "startOffset": 41716,
                     "endLine": 405,
                     "endColumn": 12,
-                    "endOffset": 41840
+                    "endOffset": 41842
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2862,10 +2861,10 @@
                 "to": {
                     "startLine": 406,
                     "startColumn": 4,
-                    "startOffset": 41845,
+                    "startOffset": 41847,
                     "endLine": 409,
                     "endColumn": 12,
-                    "endOffset": 42067
+                    "endOffset": 42069
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2875,10 +2874,10 @@
                 "to": {
                     "startLine": 410,
                     "startColumn": 4,
-                    "startOffset": 42072,
+                    "startOffset": 42074,
                     "endLine": 413,
                     "endColumn": 12,
-                    "endOffset": 42313
+                    "endOffset": 42315
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2888,10 +2887,10 @@
                 "to": {
                     "startLine": 414,
                     "startColumn": 4,
-                    "startOffset": 42318,
+                    "startOffset": 42320,
                     "endLine": 417,
                     "endColumn": 12,
-                    "endOffset": 42538
+                    "endOffset": 42540
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2901,10 +2900,10 @@
                 "to": {
                     "startLine": 418,
                     "startColumn": 4,
-                    "startOffset": 42543,
+                    "startOffset": 42545,
                     "endLine": 421,
                     "endColumn": 12,
-                    "endOffset": 42785
+                    "endOffset": 42787
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2914,10 +2913,10 @@
                 "to": {
                     "startLine": 422,
                     "startColumn": 4,
-                    "startOffset": 42790,
+                    "startOffset": 42792,
                     "endLine": 425,
                     "endColumn": 12,
-                    "endOffset": 43006
+                    "endOffset": 43008
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2927,10 +2926,10 @@
                 "to": {
                     "startLine": 426,
                     "startColumn": 4,
-                    "startOffset": 43011,
+                    "startOffset": 43013,
                     "endLine": 429,
                     "endColumn": 12,
-                    "endOffset": 43251
+                    "endOffset": 43253
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2940,10 +2939,10 @@
                 "to": {
                     "startLine": 430,
                     "startColumn": 4,
-                    "startOffset": 43256,
+                    "startOffset": 43258,
                     "endLine": 433,
                     "endColumn": 12,
-                    "endOffset": 43525
+                    "endOffset": 43527
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2953,10 +2952,10 @@
                 "to": {
                     "startLine": 434,
                     "startColumn": 4,
-                    "startOffset": 43530,
+                    "startOffset": 43532,
                     "endLine": 437,
                     "endColumn": 12,
-                    "endOffset": 43826
+                    "endOffset": 43828
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2966,10 +2965,10 @@
                 "to": {
                     "startLine": 438,
                     "startColumn": 4,
-                    "startOffset": 43831,
+                    "startOffset": 43833,
                     "endLine": 441,
                     "endColumn": 12,
-                    "endOffset": 44150
+                    "endOffset": 44152
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2979,10 +2978,10 @@
                 "to": {
                     "startLine": 442,
                     "startColumn": 4,
-                    "startOffset": 44155,
+                    "startOffset": 44157,
                     "endLine": 445,
                     "endColumn": 12,
-                    "endOffset": 44441
+                    "endOffset": 44443
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -2992,10 +2991,10 @@
                 "to": {
                     "startLine": 446,
                     "startColumn": 4,
-                    "startOffset": 44446,
+                    "startOffset": 44448,
                     "endLine": 449,
                     "endColumn": 12,
-                    "endOffset": 44755
+                    "endOffset": 44757
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3005,9 +3004,9 @@
                 "to": {
                     "startLine": 450,
                     "startColumn": 4,
-                    "startOffset": 44760,
+                    "startOffset": 44762,
                     "endColumn": 136,
-                    "endOffset": 44892
+                    "endOffset": 44894
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3017,9 +3016,9 @@
                 "to": {
                     "startLine": 451,
                     "startColumn": 4,
-                    "startOffset": 44897,
+                    "startOffset": 44899,
                     "endColumn": 130,
-                    "endOffset": 45023
+                    "endOffset": 45025
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3029,9 +3028,9 @@
                 "to": {
                     "startLine": 452,
                     "startColumn": 4,
-                    "startOffset": 45028,
+                    "startOffset": 45030,
                     "endColumn": 104,
-                    "endOffset": 45128
+                    "endOffset": 45130
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3041,10 +3040,10 @@
                 "to": {
                     "startLine": 453,
                     "startColumn": 4,
-                    "startOffset": 45133,
+                    "startOffset": 45135,
                     "endLine": 455,
                     "endColumn": 12,
-                    "endOffset": 45332
+                    "endOffset": 45334
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3054,10 +3053,10 @@
                 "to": {
                     "startLine": 456,
                     "startColumn": 4,
-                    "startOffset": 45337,
+                    "startOffset": 45339,
                     "endLine": 458,
                     "endColumn": 12,
-                    "endOffset": 45540
+                    "endOffset": 45542
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3067,10 +3066,10 @@
                 "to": {
                     "startLine": 459,
                     "startColumn": 4,
-                    "startOffset": 45545,
+                    "startOffset": 45547,
                     "endLine": 460,
                     "endColumn": 12,
-                    "endOffset": 45664
+                    "endOffset": 45666
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3080,10 +3079,10 @@
                 "to": {
                     "startLine": 461,
                     "startColumn": 4,
-                    "startOffset": 45669,
+                    "startOffset": 45671,
                     "endLine": 462,
                     "endColumn": 12,
-                    "endOffset": 45788
+                    "endOffset": 45790
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3093,9 +3092,9 @@
                 "to": {
                     "startLine": 463,
                     "startColumn": 4,
-                    "startOffset": 45793,
+                    "startOffset": 45795,
                     "endColumn": 104,
-                    "endOffset": 45893
+                    "endOffset": 45895
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3105,9 +3104,9 @@
                 "to": {
                     "startLine": 464,
                     "startColumn": 4,
-                    "startOffset": 45898,
+                    "startOffset": 45900,
                     "endColumn": 116,
-                    "endOffset": 46010
+                    "endOffset": 46012
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3117,10 +3116,10 @@
                 "to": {
                     "startLine": 465,
                     "startColumn": 4,
-                    "startOffset": 46015,
+                    "startOffset": 46017,
                     "endLine": 467,
                     "endColumn": 12,
-                    "endOffset": 46224
+                    "endOffset": 46226
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3130,10 +3129,10 @@
                 "to": {
                     "startLine": 468,
                     "startColumn": 4,
-                    "startOffset": 46229,
+                    "startOffset": 46231,
                     "endLine": 469,
                     "endColumn": 12,
-                    "endOffset": 46370
+                    "endOffset": 46372
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3143,10 +3142,10 @@
                 "to": {
                     "startLine": 470,
                     "startColumn": 4,
-                    "startOffset": 46375,
+                    "startOffset": 46377,
                     "endLine": 471,
                     "endColumn": 12,
-                    "endOffset": 46510
+                    "endOffset": 46512
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3156,10 +3155,10 @@
                 "to": {
                     "startLine": 472,
                     "startColumn": 4,
-                    "startOffset": 46515,
+                    "startOffset": 46517,
                     "endLine": 473,
                     "endColumn": 12,
-                    "endOffset": 46596
+                    "endOffset": 46598
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3169,10 +3168,10 @@
                 "to": {
                     "startLine": 474,
                     "startColumn": 4,
-                    "startOffset": 46601,
+                    "startOffset": 46603,
                     "endLine": 478,
                     "endColumn": 12,
-                    "endOffset": 46944
+                    "endOffset": 46946
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3182,9 +3181,9 @@
                 "to": {
                     "startLine": 479,
                     "startColumn": 4,
-                    "startOffset": 46949,
+                    "startOffset": 46951,
                     "endColumn": 87,
-                    "endOffset": 47032
+                    "endOffset": 47034
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3194,10 +3193,10 @@
                 "to": {
                     "startLine": 480,
                     "startColumn": 4,
-                    "startOffset": 47037,
+                    "startOffset": 47039,
                     "endLine": 483,
                     "endColumn": 12,
-                    "endOffset": 47262
+                    "endOffset": 47264
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3207,10 +3206,10 @@
                 "to": {
                     "startLine": 484,
                     "startColumn": 4,
-                    "startOffset": 47267,
+                    "startOffset": 47269,
                     "endLine": 489,
                     "endColumn": 12,
-                    "endOffset": 47664
+                    "endOffset": 47666
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3220,10 +3219,10 @@
                 "to": {
                     "startLine": 490,
                     "startColumn": 4,
-                    "startOffset": 47669,
+                    "startOffset": 47671,
                     "endLine": 493,
                     "endColumn": 12,
-                    "endOffset": 47897
+                    "endOffset": 47899
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3233,9 +3232,9 @@
                 "to": {
                     "startLine": 494,
                     "startColumn": 4,
-                    "startOffset": 47902,
+                    "startOffset": 47904,
                     "endColumn": 81,
-                    "endOffset": 47979
+                    "endOffset": 47981
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3245,10 +3244,10 @@
                 "to": {
                     "startLine": 495,
                     "startColumn": 4,
-                    "startOffset": 47984,
+                    "startOffset": 47986,
                     "endLine": 496,
                     "endColumn": 12,
-                    "endOffset": 48077
+                    "endOffset": 48079
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3258,10 +3257,10 @@
                 "to": {
                     "startLine": 497,
                     "startColumn": 4,
-                    "startOffset": 48082,
+                    "startOffset": 48084,
                     "endLine": 507,
                     "endColumn": 12,
-                    "endOffset": 48669
+                    "endOffset": 48671
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3271,9 +3270,9 @@
                 "to": {
                     "startLine": 508,
                     "startColumn": 4,
-                    "startOffset": 48674,
+                    "startOffset": 48676,
                     "endColumn": 99,
-                    "endOffset": 48769
+                    "endOffset": 48771
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3283,10 +3282,10 @@
                 "to": {
                     "startLine": 509,
                     "startColumn": 4,
-                    "startOffset": 48774,
+                    "startOffset": 48776,
                     "endLine": 512,
                     "endColumn": 12,
-                    "endOffset": 49005
+                    "endOffset": 49007
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3296,10 +3295,10 @@
                 "to": {
                     "startLine": 513,
                     "startColumn": 4,
-                    "startOffset": 49010,
+                    "startOffset": 49012,
                     "endLine": 518,
                     "endColumn": 12,
-                    "endOffset": 49413
+                    "endOffset": 49415
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3309,10 +3308,10 @@
                 "to": {
                     "startLine": 519,
                     "startColumn": 4,
-                    "startOffset": 49418,
+                    "startOffset": 49420,
                     "endLine": 522,
                     "endColumn": 12,
-                    "endOffset": 49652
+                    "endOffset": 49654
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3322,9 +3321,9 @@
                 "to": {
                     "startLine": 523,
                     "startColumn": 4,
-                    "startOffset": 49657,
+                    "startOffset": 49659,
                     "endColumn": 93,
-                    "endOffset": 49746
+                    "endOffset": 49748
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3334,9 +3333,9 @@
                 "to": {
                     "startLine": 524,
                     "startColumn": 4,
-                    "startOffset": 49751,
+                    "startOffset": 49753,
                     "endColumn": 88,
-                    "endOffset": 49835
+                    "endOffset": 49837
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3346,10 +3345,10 @@
                 "to": {
                     "startLine": 525,
                     "startColumn": 4,
-                    "startOffset": 49840,
+                    "startOffset": 49842,
                     "endLine": 528,
                     "endColumn": 12,
-                    "endOffset": 50072
+                    "endOffset": 50074
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3359,10 +3358,10 @@
                 "to": {
                     "startLine": 529,
                     "startColumn": 4,
-                    "startOffset": 50077,
+                    "startOffset": 50079,
                     "endLine": 554,
                     "endColumn": 12,
-                    "endOffset": 51995
+                    "endOffset": 51997
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3372,10 +3371,10 @@
                 "to": {
                     "startLine": 555,
                     "startColumn": 4,
-                    "startOffset": 52000,
+                    "startOffset": 52002,
                     "endLine": 558,
                     "endColumn": 12,
-                    "endOffset": 52237
+                    "endOffset": 52239
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3385,10 +3384,10 @@
                 "to": {
                     "startLine": 559,
                     "startColumn": 4,
-                    "startOffset": 52242,
+                    "startOffset": 52244,
                     "endLine": 585,
                     "endColumn": 12,
-                    "endOffset": 54291
+                    "endOffset": 54293
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3398,10 +3397,10 @@
                 "to": {
                     "startLine": 586,
                     "startColumn": 4,
-                    "startOffset": 54296,
+                    "startOffset": 54298,
                     "endLine": 732,
                     "endColumn": 12,
-                    "endOffset": 63153
+                    "endOffset": 63155
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3411,10 +3410,10 @@
                 "to": {
                     "startLine": 733,
                     "startColumn": 4,
-                    "startOffset": 63158,
+                    "startOffset": 63160,
                     "endLine": 754,
                     "endColumn": 12,
-                    "endOffset": 64420
+                    "endOffset": 64422
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3424,10 +3423,10 @@
                 "to": {
                     "startLine": 755,
                     "startColumn": 4,
-                    "startOffset": 64425,
+                    "startOffset": 64427,
                     "endLine": 901,
                     "endColumn": 12,
-                    "endOffset": 73392
+                    "endOffset": 73394
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3437,10 +3436,10 @@
                 "to": {
                     "startLine": 902,
                     "startColumn": 4,
-                    "startOffset": 73397,
+                    "startOffset": 73399,
                     "endLine": 923,
                     "endColumn": 12,
-                    "endOffset": 74673
+                    "endOffset": 74675
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3450,10 +3449,10 @@
                 "to": {
                     "startLine": 924,
                     "startColumn": 4,
-                    "startOffset": 74678,
+                    "startOffset": 74680,
                     "endLine": 930,
                     "endColumn": 12,
-                    "endOffset": 75209
+                    "endOffset": 75211
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3463,10 +3462,10 @@
                 "to": {
                     "startLine": 931,
                     "startColumn": 4,
-                    "startOffset": 75214,
+                    "startOffset": 75216,
                     "endLine": 935,
                     "endColumn": 12,
-                    "endOffset": 75539
+                    "endOffset": 75541
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3476,10 +3475,10 @@
                 "to": {
                     "startLine": 936,
                     "startColumn": 4,
-                    "startOffset": 75544,
+                    "startOffset": 75546,
                     "endLine": 956,
                     "endColumn": 12,
-                    "endOffset": 76662
+                    "endOffset": 76664
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3489,10 +3488,10 @@
                 "to": {
                     "startLine": 957,
                     "startColumn": 4,
-                    "startOffset": 76667,
+                    "startOffset": 76669,
                     "endLine": 961,
                     "endColumn": 12,
-                    "endOffset": 76918
+                    "endOffset": 76920
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3502,10 +3501,10 @@
                 "to": {
                     "startLine": 962,
                     "startColumn": 4,
-                    "startOffset": 76923,
+                    "startOffset": 76925,
                     "endLine": 966,
                     "endColumn": 12,
-                    "endOffset": 77154
+                    "endOffset": 77156
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3515,10 +3514,10 @@
                 "to": {
                     "startLine": 967,
                     "startColumn": 4,
-                    "startOffset": 77159,
+                    "startOffset": 77161,
                     "endLine": 976,
                     "endColumn": 12,
-                    "endOffset": 77701
+                    "endOffset": 77703
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3528,10 +3527,10 @@
                 "to": {
                     "startLine": 977,
                     "startColumn": 4,
-                    "startOffset": 77706,
+                    "startOffset": 77708,
                     "endLine": 985,
                     "endColumn": 12,
-                    "endOffset": 78195
+                    "endOffset": 78197
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3541,10 +3540,10 @@
                 "to": {
                     "startLine": 986,
                     "startColumn": 4,
-                    "startOffset": 78200,
+                    "startOffset": 78202,
                     "endLine": 996,
                     "endColumn": 12,
-                    "endOffset": 78868
+                    "endOffset": 78870
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3554,10 +3553,10 @@
                 "to": {
                     "startLine": 997,
                     "startColumn": 4,
-                    "startOffset": 78873,
+                    "startOffset": 78875,
                     "endLine": 999,
                     "endColumn": 12,
-                    "endOffset": 79016
+                    "endOffset": 79018
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3567,10 +3566,10 @@
                 "to": {
                     "startLine": 1000,
                     "startColumn": 4,
-                    "startOffset": 79021,
+                    "startOffset": 79023,
                     "endLine": 1006,
                     "endColumn": 12,
-                    "endOffset": 79544
+                    "endOffset": 79546
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3580,10 +3579,10 @@
                 "to": {
                     "startLine": 1007,
                     "startColumn": 4,
-                    "startOffset": 79549,
+                    "startOffset": 79551,
                     "endLine": 1014,
                     "endColumn": 12,
-                    "endOffset": 80108
+                    "endOffset": 80110
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3593,10 +3592,10 @@
                 "to": {
                     "startLine": 1015,
                     "startColumn": 4,
-                    "startOffset": 80113,
+                    "startOffset": 80115,
                     "endLine": 1021,
                     "endColumn": 12,
-                    "endOffset": 80483
+                    "endOffset": 80485
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3606,9 +3605,9 @@
                 "to": {
                     "startLine": 1022,
                     "startColumn": 4,
-                    "startOffset": 80488,
+                    "startOffset": 80490,
                     "endColumn": 117,
-                    "endOffset": 80601
+                    "endOffset": 80603
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3618,10 +3617,10 @@
                 "to": {
                     "startLine": 1023,
                     "startColumn": 4,
-                    "startOffset": 80606,
+                    "startOffset": 80608,
                     "endLine": 1031,
                     "endColumn": 12,
-                    "endOffset": 81139
+                    "endOffset": 81141
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3631,10 +3630,10 @@
                 "to": {
                     "startLine": 1032,
                     "startColumn": 4,
-                    "startOffset": 81144,
+                    "startOffset": 81146,
                     "endLine": 1034,
                     "endColumn": 12,
-                    "endOffset": 81296
+                    "endOffset": 81298
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3644,10 +3643,10 @@
                 "to": {
                     "startLine": 1035,
                     "startColumn": 4,
-                    "startOffset": 81301,
+                    "startOffset": 81303,
                     "endLine": 1037,
                     "endColumn": 12,
-                    "endOffset": 81440
+                    "endOffset": 81442
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3657,10 +3656,10 @@
                 "to": {
                     "startLine": 1038,
                     "startColumn": 4,
-                    "startOffset": 81445,
+                    "startOffset": 81447,
                     "endLine": 1042,
                     "endColumn": 12,
-                    "endOffset": 81760
+                    "endOffset": 81762
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3670,10 +3669,10 @@
                 "to": {
                     "startLine": 1043,
                     "startColumn": 4,
-                    "startOffset": 81765,
+                    "startOffset": 81767,
                     "endLine": 1046,
                     "endColumn": 12,
-                    "endOffset": 82016
+                    "endOffset": 82018
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3683,10 +3682,10 @@
                 "to": {
                     "startLine": 1047,
                     "startColumn": 4,
-                    "startOffset": 82021,
+                    "startOffset": 82023,
                     "endLine": 1050,
                     "endColumn": 12,
-                    "endOffset": 82186
+                    "endOffset": 82188
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3696,10 +3695,10 @@
                 "to": {
                     "startLine": 1051,
                     "startColumn": 4,
-                    "startOffset": 82191,
+                    "startOffset": 82193,
                     "endLine": 1053,
                     "endColumn": 12,
-                    "endOffset": 82327
+                    "endOffset": 82329
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3709,9 +3708,9 @@
                 "to": {
                     "startLine": 1054,
                     "startColumn": 4,
-                    "startOffset": 82332,
+                    "startOffset": 82334,
                     "endColumn": 63,
-                    "endOffset": 82391
+                    "endOffset": 82393
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3721,10 +3720,10 @@
                 "to": {
                     "startLine": 1055,
                     "startColumn": 4,
-                    "startOffset": 82396,
+                    "startOffset": 82398,
                     "endLine": 1058,
                     "endColumn": 12,
-                    "endOffset": 82673
+                    "endOffset": 82675
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3734,10 +3733,10 @@
                 "to": {
                     "startLine": 1059,
                     "startColumn": 4,
-                    "startOffset": 82678,
+                    "startOffset": 82680,
                     "endLine": 1062,
                     "endColumn": 12,
-                    "endOffset": 82959
+                    "endOffset": 82961
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3747,10 +3746,10 @@
                 "to": {
                     "startLine": 1063,
                     "startColumn": 4,
-                    "startOffset": 82964,
+                    "startOffset": 82966,
                     "endLine": 1070,
                     "endColumn": 12,
-                    "endOffset": 83501
+                    "endOffset": 83503
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3760,10 +3759,10 @@
                 "to": {
                     "startLine": 1071,
                     "startColumn": 4,
-                    "startOffset": 83506,
+                    "startOffset": 83508,
                     "endLine": 1075,
                     "endColumn": 12,
-                    "endOffset": 83765
+                    "endOffset": 83767
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3773,10 +3772,10 @@
                 "to": {
                     "startLine": 1076,
                     "startColumn": 4,
-                    "startOffset": 83770,
+                    "startOffset": 83772,
                     "endLine": 1082,
                     "endColumn": 12,
-                    "endOffset": 84103
+                    "endOffset": 84105
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3786,10 +3785,10 @@
                 "to": {
                     "startLine": 1083,
                     "startColumn": 4,
-                    "startOffset": 84108,
+                    "startOffset": 84110,
                     "endLine": 1088,
                     "endColumn": 12,
-                    "endOffset": 84456
+                    "endOffset": 84458
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3799,9 +3798,9 @@
                 "to": {
                     "startLine": 1089,
                     "startColumn": 4,
-                    "startOffset": 84461,
+                    "startOffset": 84463,
                     "endColumn": 93,
-                    "endOffset": 84550
+                    "endOffset": 84552
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3811,10 +3810,10 @@
                 "to": {
                     "startLine": 1090,
                     "startColumn": 4,
-                    "startOffset": 84555,
+                    "startOffset": 84557,
                     "endLine": 1093,
                     "endColumn": 12,
-                    "endOffset": 84856
+                    "endOffset": 84858
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3824,10 +3823,10 @@
                 "to": {
                     "startLine": 1094,
                     "startColumn": 4,
-                    "startOffset": 84861,
+                    "startOffset": 84863,
                     "endLine": 1098,
                     "endColumn": 12,
-                    "endOffset": 85118
+                    "endOffset": 85120
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3837,10 +3836,10 @@
                 "to": {
                     "startLine": 1099,
                     "startColumn": 4,
-                    "startOffset": 85123,
+                    "startOffset": 85125,
                     "endLine": 1100,
                     "endColumn": 12,
-                    "endOffset": 85243
+                    "endOffset": 85245
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3850,10 +3849,10 @@
                 "to": {
                     "startLine": 1101,
                     "startColumn": 4,
-                    "startOffset": 85248,
+                    "startOffset": 85250,
                     "endLine": 1102,
                     "endColumn": 12,
-                    "endOffset": 85370
+                    "endOffset": 85372
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3863,10 +3862,10 @@
                 "to": {
                     "startLine": 1103,
                     "startColumn": 4,
-                    "startOffset": 85375,
+                    "startOffset": 85377,
                     "endLine": 1105,
                     "endColumn": 12,
-                    "endOffset": 85609
+                    "endOffset": 85611
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3876,10 +3875,10 @@
                 "to": {
                     "startLine": 1106,
                     "startColumn": 4,
-                    "startOffset": 85614,
+                    "startOffset": 85616,
                     "endLine": 1108,
                     "endColumn": 12,
-                    "endOffset": 85820
+                    "endOffset": 85822
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3889,10 +3888,10 @@
                 "to": {
                     "startLine": 1109,
                     "startColumn": 4,
-                    "startOffset": 85825,
+                    "startOffset": 85827,
                     "endLine": 1110,
                     "endColumn": 12,
-                    "endOffset": 85939
+                    "endOffset": 85941
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3902,10 +3901,10 @@
                 "to": {
                     "startLine": 1111,
                     "startColumn": 4,
-                    "startOffset": 85944,
+                    "startOffset": 85946,
                     "endLine": 1114,
                     "endColumn": 12,
-                    "endOffset": 86132
+                    "endOffset": 86134
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3915,10 +3914,10 @@
                 "to": {
                     "startLine": 1115,
                     "startColumn": 4,
-                    "startOffset": 86137,
+                    "startOffset": 86139,
                     "endLine": 1121,
                     "endColumn": 12,
-                    "endOffset": 86587
+                    "endOffset": 86589
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3928,10 +3927,10 @@
                 "to": {
                     "startLine": 1122,
                     "startColumn": 4,
-                    "startOffset": 86592,
+                    "startOffset": 86594,
                     "endLine": 1124,
                     "endColumn": 12,
-                    "endOffset": 86768
+                    "endOffset": 86770
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3941,10 +3940,10 @@
                 "to": {
                     "startLine": 1125,
                     "startColumn": 4,
-                    "startOffset": 86773,
+                    "startOffset": 86775,
                     "endLine": 1127,
                     "endColumn": 12,
-                    "endOffset": 86890
+                    "endOffset": 86892
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3954,10 +3953,10 @@
                 "to": {
                     "startLine": 1128,
                     "startColumn": 4,
-                    "startOffset": 86895,
+                    "startOffset": 86897,
                     "endLine": 1131,
                     "endColumn": 12,
-                    "endOffset": 87149
+                    "endOffset": 87151
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3967,10 +3966,10 @@
                 "to": {
                     "startLine": 1132,
                     "startColumn": 4,
-                    "startOffset": 87154,
+                    "startOffset": 87156,
                     "endLine": 1133,
                     "endColumn": 12,
-                    "endOffset": 87262
+                    "endOffset": 87264
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3980,10 +3979,10 @@
                 "to": {
                     "startLine": 1134,
                     "startColumn": 4,
-                    "startOffset": 87267,
+                    "startOffset": 87269,
                     "endLine": 1137,
                     "endColumn": 12,
-                    "endOffset": 87449
+                    "endOffset": 87451
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -3993,10 +3992,10 @@
                 "to": {
                     "startLine": 1138,
                     "startColumn": 4,
-                    "startOffset": 87454,
+                    "startOffset": 87456,
                     "endLine": 1139,
                     "endColumn": 12,
-                    "endOffset": 87551
+                    "endOffset": 87553
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4006,10 +4005,10 @@
                 "to": {
                     "startLine": 1140,
                     "startColumn": 4,
-                    "startOffset": 87556,
+                    "startOffset": 87558,
                     "endLine": 1145,
                     "endColumn": 12,
-                    "endOffset": 87995
+                    "endOffset": 87997
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4019,10 +4018,10 @@
                 "to": {
                     "startLine": 1146,
                     "startColumn": 4,
-                    "startOffset": 88000,
+                    "startOffset": 88002,
                     "endLine": 1147,
                     "endColumn": 12,
-                    "endOffset": 88119
+                    "endOffset": 88121
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4032,10 +4031,10 @@
                 "to": {
                     "startLine": 1148,
                     "startColumn": 4,
-                    "startOffset": 88124,
+                    "startOffset": 88126,
                     "endLine": 1151,
                     "endColumn": 12,
-                    "endOffset": 88404
+                    "endOffset": 88406
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4045,10 +4044,10 @@
                 "to": {
                     "startLine": 1152,
                     "startColumn": 4,
-                    "startOffset": 88409,
+                    "startOffset": 88411,
                     "endLine": 1163,
                     "endColumn": 12,
-                    "endOffset": 89291
+                    "endOffset": 89293
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4058,10 +4057,10 @@
                 "to": {
                     "startLine": 1164,
                     "startColumn": 4,
-                    "startOffset": 89296,
+                    "startOffset": 89298,
                     "endLine": 1169,
                     "endColumn": 12,
-                    "endOffset": 89585
+                    "endOffset": 89587
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4071,10 +4070,10 @@
                 "to": {
                     "startLine": 1170,
                     "startColumn": 4,
-                    "startOffset": 89590,
+                    "startOffset": 89592,
                     "endLine": 1180,
                     "endColumn": 12,
-                    "endOffset": 90317
+                    "endOffset": 90319
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4084,10 +4083,10 @@
                 "to": {
                     "startLine": 1181,
                     "startColumn": 4,
-                    "startOffset": 90322,
+                    "startOffset": 90324,
                     "endLine": 1183,
                     "endColumn": 12,
-                    "endOffset": 90489
+                    "endOffset": 90491
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4097,10 +4096,10 @@
                 "to": {
                     "startLine": 1184,
                     "startColumn": 4,
-                    "startOffset": 90494,
+                    "startOffset": 90496,
                     "endLine": 1188,
                     "endColumn": 12,
-                    "endOffset": 90825
+                    "endOffset": 90827
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4110,10 +4109,10 @@
                 "to": {
                     "startLine": 1189,
                     "startColumn": 4,
-                    "startOffset": 90830,
+                    "startOffset": 90832,
                     "endLine": 1200,
                     "endColumn": 12,
-                    "endOffset": 91692
+                    "endOffset": 91694
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4123,10 +4122,10 @@
                 "to": {
                     "startLine": 1201,
                     "startColumn": 4,
-                    "startOffset": 91697,
+                    "startOffset": 91699,
                     "endLine": 1205,
                     "endColumn": 12,
-                    "endOffset": 91970
+                    "endOffset": 91972
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4136,10 +4135,10 @@
                 "to": {
                     "startLine": 1206,
                     "startColumn": 4,
-                    "startOffset": 91975,
+                    "startOffset": 91977,
                     "endLine": 1208,
                     "endColumn": 12,
-                    "endOffset": 92173
+                    "endOffset": 92175
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4149,10 +4148,10 @@
                 "to": {
                     "startLine": 1209,
                     "startColumn": 4,
-                    "startOffset": 92178,
+                    "startOffset": 92180,
                     "endLine": 1211,
                     "endColumn": 12,
-                    "endOffset": 92364
+                    "endOffset": 92366
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4162,10 +4161,10 @@
                 "to": {
                     "startLine": 1212,
                     "startColumn": 4,
-                    "startOffset": 92369,
+                    "startOffset": 92371,
                     "endLine": 1214,
                     "endColumn": 12,
-                    "endOffset": 92559
+                    "endOffset": 92561
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4175,10 +4174,10 @@
                 "to": {
                     "startLine": 1215,
                     "startColumn": 4,
-                    "startOffset": 92564,
+                    "startOffset": 92566,
                     "endLine": 1217,
                     "endColumn": 12,
-                    "endOffset": 92742
+                    "endOffset": 92744
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4188,10 +4187,10 @@
                 "to": {
                     "startLine": 1218,
                     "startColumn": 4,
-                    "startOffset": 92747,
+                    "startOffset": 92749,
                     "endLine": 1225,
                     "endColumn": 12,
-                    "endOffset": 93056
+                    "endOffset": 93058
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/todoapp/react-native-image-picker/unspecified/res/values/values.xml"
@@ -4201,10 +4200,10 @@
                 "to": {
                     "startLine": 1226,
                     "startColumn": 4,
-                    "startOffset": 93061,
+                    "startOffset": 93063,
                     "endLine": 1229,
                     "endColumn": 10,
-                    "endOffset": 93258
+                    "endOffset": 93260
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4214,10 +4213,10 @@
                 "to": {
                     "startLine": 1230,
                     "startColumn": 4,
-                    "startOffset": 93263,
+                    "startOffset": 93265,
                     "endLine": 1233,
                     "endColumn": 10,
-                    "endOffset": 93464
+                    "endOffset": 93466
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4227,10 +4226,10 @@
                 "to": {
                     "startLine": 1234,
                     "startColumn": 4,
-                    "startOffset": 93469,
+                    "startOffset": 93471,
                     "endLine": 1271,
                     "endColumn": 12,
-                    "endOffset": 96264
+                    "endOffset": 96266
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4240,10 +4239,10 @@
                 "to": {
                     "startLine": 1272,
                     "startColumn": 4,
-                    "startOffset": 96269,
+                    "startOffset": 96271,
                     "endLine": 1310,
                     "endColumn": 12,
-                    "endOffset": 99204
+                    "endOffset": 99206
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4253,9 +4252,9 @@
                 "to": {
                     "startLine": 1311,
                     "startColumn": 4,
-                    "startOffset": 99209,
+                    "startOffset": 99211,
                     "endColumn": 61,
-                    "endOffset": 99266
+                    "endOffset": 99268
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4265,10 +4264,10 @@
                 "to": {
                     "startLine": 1312,
                     "startColumn": 4,
-                    "startOffset": 99271,
+                    "startOffset": 99273,
                     "endLine": 1321,
                     "endColumn": 12,
-                    "endOffset": 99844
+                    "endOffset": 99846
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4278,10 +4277,10 @@
                 "to": {
                     "startLine": 1322,
                     "startColumn": 4,
-                    "startOffset": 99849,
+                    "startOffset": 99851,
                     "endLine": 1330,
                     "endColumn": 12,
-                    "endOffset": 100428
+                    "endOffset": 100430
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4291,9 +4290,9 @@
                 "to": {
                     "startLine": 1331,
                     "startColumn": 4,
-                    "startOffset": 100433,
+                    "startOffset": 100435,
                     "endColumn": 85,
-                    "endOffset": 100514
+                    "endOffset": 100516
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4303,10 +4302,10 @@
                 "to": {
                     "startLine": 1332,
                     "startColumn": 4,
-                    "startOffset": 100519,
+                    "startOffset": 100521,
                     "endLine": 1333,
                     "endColumn": 12,
-                    "endOffset": 100627
+                    "endOffset": 100629
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4316,10 +4315,10 @@
                 "to": {
                     "startLine": 1334,
                     "startColumn": 4,
-                    "startOffset": 100632,
+                    "startOffset": 100634,
                     "endLine": 1337,
                     "endColumn": 12,
-                    "endOffset": 100856
+                    "endOffset": 100858
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4329,10 +4328,10 @@
                 "to": {
                     "startLine": 1338,
                     "startColumn": 4,
-                    "startOffset": 100861,
+                    "startOffset": 100863,
                     "endLine": 1341,
                     "endColumn": 12,
-                    "endOffset": 101194
+                    "endOffset": 101196
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4342,10 +4341,10 @@
                 "to": {
                     "startLine": 1342,
                     "startColumn": 4,
-                    "startOffset": 101199,
+                    "startOffset": 101201,
                     "endLine": 1344,
                     "endColumn": 12,
-                    "endOffset": 101354
+                    "endOffset": 101356
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4355,10 +4354,10 @@
                 "to": {
                     "startLine": 1345,
                     "startColumn": 4,
-                    "startOffset": 101359,
+                    "startOffset": 101361,
                     "endLine": 1347,
                     "endColumn": 12,
-                    "endOffset": 101506
+                    "endOffset": 101508
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4368,10 +4367,10 @@
                 "to": {
                     "startLine": 1348,
                     "startColumn": 4,
-                    "startOffset": 101511,
+                    "startOffset": 101513,
                     "endLine": 1350,
                     "endColumn": 12,
-                    "endOffset": 101677
+                    "endOffset": 101679
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4381,10 +4380,10 @@
                 "to": {
                     "startLine": 1351,
                     "startColumn": 4,
-                    "startOffset": 101682,
+                    "startOffset": 101684,
                     "endLine": 1353,
                     "endColumn": 12,
-                    "endOffset": 101844
+                    "endOffset": 101846
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4394,10 +4393,10 @@
                 "to": {
                     "startLine": 1354,
                     "startColumn": 4,
-                    "startOffset": 101849,
+                    "startOffset": 101851,
                     "endLine": 1357,
                     "endColumn": 12,
-                    "endOffset": 102087
+                    "endOffset": 102089
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4407,10 +4406,10 @@
                 "to": {
                     "startLine": 1358,
                     "startColumn": 4,
-                    "startOffset": 102092,
+                    "startOffset": 102094,
                     "endLine": 1360,
                     "endColumn": 12,
-                    "endOffset": 102257
+                    "endOffset": 102259
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4420,10 +4419,10 @@
                 "to": {
                     "startLine": 1361,
                     "startColumn": 4,
-                    "startOffset": 102262,
+                    "startOffset": 102264,
                     "endLine": 1363,
                     "endColumn": 12,
-                    "endOffset": 102430
+                    "endOffset": 102432
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4433,10 +4432,10 @@
                 "to": {
                     "startLine": 1364,
                     "startColumn": 4,
-                    "startOffset": 102435,
+                    "startOffset": 102437,
                     "endLine": 1366,
                     "endColumn": 12,
-                    "endOffset": 102601
+                    "endOffset": 102603
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4446,10 +4445,10 @@
                 "to": {
                     "startLine": 1367,
                     "startColumn": 4,
-                    "startOffset": 102606,
+                    "startOffset": 102608,
                     "endLine": 1370,
                     "endColumn": 12,
-                    "endOffset": 102875
+                    "endOffset": 102877
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4459,10 +4458,10 @@
                 "to": {
                     "startLine": 1371,
                     "startColumn": 4,
-                    "startOffset": 102880,
+                    "startOffset": 102882,
                     "endLine": 1373,
                     "endColumn": 12,
-                    "endOffset": 103074
+                    "endOffset": 103076
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4472,10 +4471,10 @@
                 "to": {
                     "startLine": 1374,
                     "startColumn": 4,
-                    "startOffset": 103079,
+                    "startOffset": 103081,
                     "endLine": 1376,
                     "endColumn": 12,
-                    "endOffset": 103275
+                    "endOffset": 103277
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4485,10 +4484,10 @@
                 "to": {
                     "startLine": 1377,
                     "startColumn": 4,
-                    "startOffset": 103280,
+                    "startOffset": 103282,
                     "endLine": 1379,
                     "endColumn": 12,
-                    "endOffset": 103464
+                    "endOffset": 103466
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4498,10 +4497,10 @@
                 "to": {
                     "startLine": 1380,
                     "startColumn": 4,
-                    "startOffset": 103469,
+                    "startOffset": 103471,
                     "endLine": 1382,
                     "endColumn": 12,
-                    "endOffset": 103663
+                    "endOffset": 103665
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4511,10 +4510,10 @@
                 "to": {
                     "startLine": 1383,
                     "startColumn": 4,
-                    "startOffset": 103668,
+                    "startOffset": 103670,
                     "endLine": 1385,
                     "endColumn": 12,
-                    "endOffset": 103850
+                    "endOffset": 103852
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -4524,9 +4523,9 @@
                 "to": {
                     "startLine": 1386,
                     "startColumn": 4,
-                    "startOffset": 103855,
+                    "startOffset": 103857,
                     "endColumn": 83,
-                    "endOffset": 103934
+                    "endOffset": 103936
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4536,9 +4535,9 @@
                 "to": {
                     "startLine": 1387,
                     "startColumn": 4,
-                    "startOffset": 103939,
+                    "startOffset": 103941,
                     "endColumn": 95,
-                    "endOffset": 104030
+                    "endOffset": 104032
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4548,9 +4547,9 @@
                 "to": {
                     "startLine": 1388,
                     "startColumn": 4,
-                    "startOffset": 104035,
+                    "startOffset": 104037,
                     "endColumn": 95,
-                    "endOffset": 104126
+                    "endOffset": 104128
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4560,9 +4559,9 @@
                 "to": {
                     "startLine": 1389,
                     "startColumn": 4,
-                    "startOffset": 104131,
+                    "startOffset": 104133,
                     "endColumn": 97,
-                    "endOffset": 104224
+                    "endOffset": 104226
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4572,9 +4571,9 @@
                 "to": {
                     "startLine": 1390,
                     "startColumn": 4,
-                    "startOffset": 104229,
+                    "startOffset": 104231,
                     "endColumn": 99,
-                    "endOffset": 104324
+                    "endOffset": 104326
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4584,9 +4583,9 @@
                 "to": {
                     "startLine": 1391,
                     "startColumn": 4,
-                    "startOffset": 104329,
+                    "startOffset": 104331,
                     "endColumn": 101,
-                    "endOffset": 104426
+                    "endOffset": 104428
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4596,9 +4595,9 @@
                 "to": {
                     "startLine": 1392,
                     "startColumn": 4,
-                    "startOffset": 104431,
+                    "startOffset": 104433,
                     "endColumn": 101,
-                    "endOffset": 104528
+                    "endOffset": 104530
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4608,9 +4607,9 @@
                 "to": {
                     "startLine": 1393,
                     "startColumn": 4,
-                    "startOffset": 104533,
+                    "startOffset": 104535,
                     "endColumn": 101,
-                    "endOffset": 104630
+                    "endOffset": 104632
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4620,9 +4619,9 @@
                 "to": {
                     "startLine": 1394,
                     "startColumn": 4,
-                    "startOffset": 104635,
+                    "startOffset": 104637,
                     "endColumn": 101,
-                    "endOffset": 104732
+                    "endOffset": 104734
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4632,9 +4631,9 @@
                 "to": {
                     "startLine": 1395,
                     "startColumn": 4,
-                    "startOffset": 104737,
+                    "startOffset": 104739,
                     "endColumn": 101,
-                    "endOffset": 104834
+                    "endOffset": 104836
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4644,9 +4643,9 @@
                 "to": {
                     "startLine": 1396,
                     "startColumn": 4,
-                    "startOffset": 104839,
+                    "startOffset": 104841,
                     "endColumn": 99,
-                    "endOffset": 104934
+                    "endOffset": 104936
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4656,9 +4655,9 @@
                 "to": {
                     "startLine": 1397,
                     "startColumn": 4,
-                    "startOffset": 104939,
+                    "startOffset": 104941,
                     "endColumn": 95,
-                    "endOffset": 105030
+                    "endOffset": 105032
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4668,9 +4667,9 @@
                 "to": {
                     "startLine": 1398,
                     "startColumn": 4,
-                    "startOffset": 105035,
+                    "startOffset": 105037,
                     "endColumn": 111,
-                    "endOffset": 105142
+                    "endOffset": 105144
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4680,9 +4679,9 @@
                 "to": {
                     "startLine": 1399,
                     "startColumn": 4,
-                    "startOffset": 105147,
+                    "startOffset": 105149,
                     "endColumn": 128,
-                    "endOffset": 105271
+                    "endOffset": 105273
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4692,9 +4691,9 @@
                 "to": {
                     "startLine": 1400,
                     "startColumn": 4,
-                    "startOffset": 105276,
+                    "startOffset": 105278,
                     "endColumn": 122,
-                    "endOffset": 105394
+                    "endOffset": 105396
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4704,10 +4703,10 @@
                 "to": {
                     "startLine": 1401,
                     "startColumn": 4,
-                    "startOffset": 105399,
+                    "startOffset": 105401,
                     "endLine": 1402,
                     "endColumn": 12,
-                    "endOffset": 105548
+                    "endOffset": 105550
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4717,10 +4716,10 @@
                 "to": {
                     "startLine": 1403,
                     "startColumn": 4,
-                    "startOffset": 105553,
+                    "startOffset": 105555,
                     "endLine": 1404,
                     "endColumn": 12,
-                    "endOffset": 105702
+                    "endOffset": 105704
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4730,9 +4729,9 @@
                 "to": {
                     "startLine": 1405,
                     "startColumn": 4,
-                    "startOffset": 105707,
+                    "startOffset": 105709,
                     "endColumn": 97,
-                    "endOffset": 105800
+                    "endOffset": 105802
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4742,9 +4741,9 @@
                 "to": {
                     "startLine": 1406,
                     "startColumn": 4,
-                    "startOffset": 105805,
+                    "startOffset": 105807,
                     "endColumn": 113,
-                    "endOffset": 105914
+                    "endOffset": 105916
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4754,9 +4753,9 @@
                 "to": {
                     "startLine": 1407,
                     "startColumn": 4,
-                    "startOffset": 105919,
+                    "startOffset": 105921,
                     "endColumn": 93,
-                    "endOffset": 106008
+                    "endOffset": 106010
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4766,10 +4765,10 @@
                 "to": {
                     "startLine": 1408,
                     "startColumn": 4,
-                    "startOffset": 106013,
+                    "startOffset": 106015,
                     "endLine": 1409,
                     "endColumn": 12,
-                    "endOffset": 106148
+                    "endOffset": 106150
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4779,10 +4778,10 @@
                 "to": {
                     "startLine": 1410,
                     "startColumn": 4,
-                    "startOffset": 106153,
+                    "startOffset": 106155,
                     "endLine": 1411,
                     "endColumn": 12,
-                    "endOffset": 106282
+                    "endOffset": 106284
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4792,9 +4791,9 @@
                 "to": {
                     "startLine": 1412,
                     "startColumn": 4,
-                    "startOffset": 106287,
+                    "startOffset": 106289,
                     "endColumn": 95,
-                    "endOffset": 106378
+                    "endOffset": 106380
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4804,9 +4803,9 @@
                 "to": {
                     "startLine": 1413,
                     "startColumn": 4,
-                    "startOffset": 106383,
+                    "startOffset": 106385,
                     "endColumn": 111,
-                    "endOffset": 106490
+                    "endOffset": 106492
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4816,9 +4815,9 @@
                 "to": {
                     "startLine": 1414,
                     "startColumn": 4,
-                    "startOffset": 106495,
+                    "startOffset": 106497,
                     "endColumn": 99,
-                    "endOffset": 106590
+                    "endOffset": 106592
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4828,9 +4827,9 @@
                 "to": {
                     "startLine": 1415,
                     "startColumn": 4,
-                    "startOffset": 106595,
+                    "startOffset": 106597,
                     "endColumn": 115,
-                    "endOffset": 106706
+                    "endOffset": 106708
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4840,9 +4839,9 @@
                 "to": {
                     "startLine": 1416,
                     "startColumn": 4,
-                    "startOffset": 106711,
+                    "startOffset": 106713,
                     "endColumn": 95,
-                    "endOffset": 106802
+                    "endOffset": 106804
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4852,9 +4851,9 @@
                 "to": {
                     "startLine": 1417,
                     "startColumn": 4,
-                    "startOffset": 106807,
+                    "startOffset": 106809,
                     "endColumn": 111,
-                    "endOffset": 106914
+                    "endOffset": 106916
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4864,10 +4863,10 @@
                 "to": {
                     "startLine": 1418,
                     "startColumn": 4,
-                    "startOffset": 106919,
+                    "startOffset": 106921,
                     "endLine": 1419,
                     "endColumn": 12,
-                    "endOffset": 107054
+                    "endOffset": 107056
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4877,9 +4876,9 @@
                 "to": {
                     "startLine": 1420,
                     "startColumn": 4,
-                    "startOffset": 107059,
+                    "startOffset": 107061,
                     "endColumn": 135,
-                    "endOffset": 107190
+                    "endOffset": 107192
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4889,10 +4888,10 @@
                 "to": {
                     "startLine": 1421,
                     "startColumn": 4,
-                    "startOffset": 107195,
+                    "startOffset": 107197,
                     "endLine": 1422,
                     "endColumn": 12,
-                    "endOffset": 107354
+                    "endOffset": 107356
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4902,9 +4901,9 @@
                 "to": {
                     "startLine": 1423,
                     "startColumn": 4,
-                    "startOffset": 107359,
+                    "startOffset": 107361,
                     "endColumn": 129,
-                    "endOffset": 107484
+                    "endOffset": 107486
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4914,10 +4913,10 @@
                 "to": {
                     "startLine": 1424,
                     "startColumn": 4,
-                    "startOffset": 107489,
+                    "startOffset": 107491,
                     "endLine": 1425,
                     "endColumn": 12,
-                    "endOffset": 107642
+                    "endOffset": 107644
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4927,10 +4926,10 @@
                 "to": {
                     "startLine": 1426,
                     "startColumn": 4,
-                    "startOffset": 107647,
+                    "startOffset": 107649,
                     "endLine": 1427,
                     "endColumn": 12,
-                    "endOffset": 107792
+                    "endOffset": 107794
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4940,9 +4939,9 @@
                 "to": {
                     "startLine": 1428,
                     "startColumn": 4,
-                    "startOffset": 107797,
+                    "startOffset": 107799,
                     "endColumn": 140,
-                    "endOffset": 107933
+                    "endOffset": 107935
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4952,10 +4951,10 @@
                 "to": {
                     "startLine": 1429,
                     "startColumn": 4,
-                    "startOffset": 107938,
+                    "startOffset": 107940,
                     "endLine": 1430,
                     "endColumn": 12,
-                    "endOffset": 108077
+                    "endOffset": 108079
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4965,9 +4964,9 @@
                 "to": {
                     "startLine": 1431,
                     "startColumn": 4,
-                    "startOffset": 108082,
+                    "startOffset": 108084,
                     "endColumn": 134,
-                    "endOffset": 108212
+                    "endOffset": 108214
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4977,9 +4976,9 @@
                 "to": {
                     "startLine": 1432,
                     "startColumn": 4,
-                    "startOffset": 108217,
+                    "startOffset": 108219,
                     "endColumn": 111,
-                    "endOffset": 108324
+                    "endOffset": 108326
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -4989,9 +4988,9 @@
                 "to": {
                     "startLine": 1433,
                     "startColumn": 4,
-                    "startOffset": 108329,
+                    "startOffset": 108331,
                     "endColumn": 127,
-                    "endOffset": 108452
+                    "endOffset": 108454
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5001,10 +5000,10 @@
                 "to": {
                     "startLine": 1434,
                     "startColumn": 4,
-                    "startOffset": 108457,
+                    "startOffset": 108459,
                     "endLine": 1435,
                     "endColumn": 12,
-                    "endOffset": 108588
+                    "endOffset": 108590
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5014,10 +5013,10 @@
                 "to": {
                     "startLine": 1436,
                     "startColumn": 4,
-                    "startOffset": 108593,
+                    "startOffset": 108595,
                     "endLine": 1437,
                     "endColumn": 12,
-                    "endOffset": 108730
+                    "endOffset": 108732
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5027,10 +5026,10 @@
                 "to": {
                     "startLine": 1438,
                     "startColumn": 4,
-                    "startOffset": 108735,
+                    "startOffset": 108737,
                     "endLine": 1439,
                     "endColumn": 12,
-                    "endOffset": 108872
+                    "endOffset": 108874
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5040,9 +5039,9 @@
                 "to": {
                     "startLine": 1440,
                     "startColumn": 4,
-                    "startOffset": 108877,
+                    "startOffset": 108879,
                     "endColumn": 111,
-                    "endOffset": 108984
+                    "endOffset": 108986
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5052,9 +5051,9 @@
                 "to": {
                     "startLine": 1441,
                     "startColumn": 4,
-                    "startOffset": 108989,
+                    "startOffset": 108991,
                     "endColumn": 139,
-                    "endOffset": 109124
+                    "endOffset": 109126
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5064,9 +5063,9 @@
                 "to": {
                     "startLine": 1442,
                     "startColumn": 4,
-                    "startOffset": 109129,
+                    "startOffset": 109131,
                     "endColumn": 67,
-                    "endOffset": 109192
+                    "endOffset": 109194
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5076,9 +5075,9 @@
                 "to": {
                     "startLine": 1443,
                     "startColumn": 4,
-                    "startOffset": 109197,
+                    "startOffset": 109199,
                     "endColumn": 72,
-                    "endOffset": 109265
+                    "endOffset": 109267
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5088,9 +5087,9 @@
                 "to": {
                     "startLine": 1444,
                     "startColumn": 4,
-                    "startOffset": 109270,
+                    "startOffset": 109272,
                     "endColumn": 73,
-                    "endOffset": 109339
+                    "endOffset": 109341
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5100,9 +5099,9 @@
                 "to": {
                     "startLine": 1445,
                     "startColumn": 4,
-                    "startOffset": 109344,
+                    "startOffset": 109346,
                     "endColumn": 72,
-                    "endOffset": 109412
+                    "endOffset": 109414
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5112,9 +5111,9 @@
                 "to": {
                     "startLine": 1446,
                     "startColumn": 4,
-                    "startOffset": 109417,
+                    "startOffset": 109419,
                     "endColumn": 73,
-                    "endOffset": 109486
+                    "endOffset": 109488
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5124,10 +5123,10 @@
                 "to": {
                     "startLine": 1447,
                     "startColumn": 4,
-                    "startOffset": 109491,
+                    "startOffset": 109493,
                     "endLine": 1448,
                     "endColumn": 12,
-                    "endOffset": 109632
+                    "endOffset": 109634
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5137,10 +5136,10 @@
                 "to": {
                     "startLine": 1449,
                     "startColumn": 4,
-                    "startOffset": 109637,
+                    "startOffset": 109639,
                     "endLine": 1450,
                     "endColumn": 12,
-                    "endOffset": 109776
+                    "endOffset": 109778
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5150,10 +5149,10 @@
                 "to": {
                     "startLine": 1451,
                     "startColumn": 4,
-                    "startOffset": 109781,
+                    "startOffset": 109783,
                     "endLine": 1452,
                     "endColumn": 12,
-                    "endOffset": 109914
+                    "endOffset": 109916
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5163,9 +5162,9 @@
                 "to": {
                     "startLine": 1453,
                     "startColumn": 4,
-                    "startOffset": 109919,
+                    "startOffset": 109921,
                     "endColumn": 25,
-                    "endOffset": 109940
+                    "endOffset": 109942
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -5175,9 +5174,9 @@
                 "to": {
                     "startLine": 1454,
                     "startColumn": 4,
-                    "startOffset": 109945,
+                    "startOffset": 109947,
                     "endColumn": 65,
-                    "endOffset": 110006
+                    "endOffset": 110008
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5187,9 +5186,9 @@
                 "to": {
                     "startLine": 1455,
                     "startColumn": 4,
-                    "startOffset": 110011,
+                    "startOffset": 110013,
                     "endColumn": 89,
-                    "endOffset": 110096
+                    "endOffset": 110098
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5199,9 +5198,9 @@
                 "to": {
                     "startLine": 1456,
                     "startColumn": 4,
-                    "startOffset": 110101,
+                    "startOffset": 110103,
                     "endColumn": 79,
-                    "endOffset": 110176
+                    "endOffset": 110178
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5211,9 +5210,9 @@
                 "to": {
                     "startLine": 1457,
                     "startColumn": 4,
-                    "startOffset": 110181,
+                    "startOffset": 110183,
                     "endColumn": 91,
-                    "endOffset": 110268
+                    "endOffset": 110270
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5223,9 +5222,9 @@
                 "to": {
                     "startLine": 1458,
                     "startColumn": 4,
-                    "startOffset": 110273,
+                    "startOffset": 110275,
                     "endColumn": 97,
-                    "endOffset": 110366
+                    "endOffset": 110368
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5235,10 +5234,10 @@
                 "to": {
                     "startLine": 1459,
                     "startColumn": 4,
-                    "startOffset": 110371,
+                    "startOffset": 110373,
                     "endLine": 1460,
                     "endColumn": 12,
-                    "endOffset": 110476
+                    "endOffset": 110478
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5248,9 +5247,9 @@
                 "to": {
                     "startLine": 1461,
                     "startColumn": 4,
-                    "startOffset": 110481,
+                    "startOffset": 110483,
                     "endColumn": 77,
-                    "endOffset": 110554
+                    "endOffset": 110556
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5260,9 +5259,9 @@
                 "to": {
                     "startLine": 1462,
                     "startColumn": 4,
-                    "startOffset": 110559,
+                    "startOffset": 110561,
                     "endColumn": 105,
-                    "endOffset": 110660
+                    "endOffset": 110662
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5272,9 +5271,9 @@
                 "to": {
                     "startLine": 1463,
                     "startColumn": 4,
-                    "startOffset": 110665,
+                    "startOffset": 110667,
                     "endColumn": 91,
-                    "endOffset": 110752
+                    "endOffset": 110754
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5284,9 +5283,9 @@
                 "to": {
                     "startLine": 1464,
                     "startColumn": 4,
-                    "startOffset": 110757,
+                    "startOffset": 110759,
                     "endColumn": 103,
-                    "endOffset": 110856
+                    "endOffset": 110858
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5296,9 +5295,9 @@
                 "to": {
                     "startLine": 1465,
                     "startColumn": 4,
-                    "startOffset": 110861,
+                    "startOffset": 110863,
                     "endColumn": 109,
-                    "endOffset": 110966
+                    "endOffset": 110968
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5308,10 +5307,10 @@
                 "to": {
                     "startLine": 1466,
                     "startColumn": 4,
-                    "startOffset": 110971,
+                    "startOffset": 110973,
                     "endLine": 1467,
                     "endColumn": 12,
-                    "endOffset": 111088
+                    "endOffset": 111090
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5321,10 +5320,10 @@
                 "to": {
                     "startLine": 1468,
                     "startColumn": 4,
-                    "startOffset": 111093,
+                    "startOffset": 111095,
                     "endLine": 1471,
                     "endColumn": 12,
-                    "endOffset": 111251
+                    "endOffset": 111253
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5334,10 +5333,10 @@
                 "to": {
                     "startLine": 1472,
                     "startColumn": 4,
-                    "startOffset": 111256,
+                    "startOffset": 111258,
                     "endLine": 1475,
                     "endColumn": 12,
-                    "endOffset": 111408
+                    "endOffset": 111410
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5347,9 +5346,9 @@
                 "to": {
                     "startLine": 1476,
                     "startColumn": 4,
-                    "startOffset": 111413,
+                    "startOffset": 111415,
                     "endColumn": 34,
-                    "endOffset": 111443
+                    "endOffset": 111445
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -5359,10 +5358,10 @@
                 "to": {
                     "startLine": 1477,
                     "startColumn": 4,
-                    "startOffset": 111448,
+                    "startOffset": 111450,
                     "endLine": 1483,
                     "endColumn": 10,
-                    "endOffset": 111861
+                    "endOffset": 111863
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -5372,10 +5371,10 @@
                 "to": {
                     "startLine": 1484,
                     "startColumn": 4,
-                    "startOffset": 111866,
+                    "startOffset": 111868,
                     "endLine": 1490,
                     "endColumn": 10,
-                    "endOffset": 112239
+                    "endOffset": 112241
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -5385,10 +5384,10 @@
                 "to": {
                     "startLine": 1491,
                     "startColumn": 4,
-                    "startOffset": 112244,
+                    "startOffset": 112246,
                     "endLine": 1493,
                     "endColumn": 10,
-                    "endOffset": 112416
+                    "endOffset": 112418
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -5398,10 +5397,10 @@
                 "to": {
                     "startLine": 1494,
                     "startColumn": 4,
-                    "startOffset": 112421,
+                    "startOffset": 112423,
                     "endLine": 1496,
                     "endColumn": 10,
-                    "endOffset": 112595
+                    "endOffset": 112597
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -5411,10 +5410,10 @@
                 "to": {
                     "startLine": 1497,
                     "startColumn": 4,
-                    "startOffset": 112600,
+                    "startOffset": 112602,
                     "endLine": 1499,
                     "endColumn": 12,
-                    "endOffset": 112778
+                    "endOffset": 112780
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -5424,10 +5423,10 @@
                 "to": {
                     "startLine": 1500,
                     "startColumn": 4,
-                    "startOffset": 112783,
+                    "startOffset": 112785,
                     "endLine": 1505,
                     "endColumn": 12,
-                    "endOffset": 113143
+                    "endOffset": 113145
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"
@@ -5437,9 +5436,9 @@
                 "to": {
                     "startLine": 1506,
                     "startColumn": 4,
-                    "startOffset": 113148,
+                    "startOffset": 113150,
                     "endColumn": 79,
-                    "endOffset": 113223
+                    "endOffset": 113225
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5449,9 +5448,9 @@
                 "to": {
                     "startLine": 1507,
                     "startColumn": 4,
-                    "startOffset": 113228,
+                    "startOffset": 113230,
                     "endColumn": 99,
-                    "endOffset": 113323
+                    "endOffset": 113325
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5461,9 +5460,9 @@
                 "to": {
                     "startLine": 1508,
                     "startColumn": 4,
-                    "startOffset": 113328,
+                    "startOffset": 113330,
                     "endColumn": 89,
-                    "endOffset": 113413
+                    "endOffset": 113415
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5473,9 +5472,9 @@
                 "to": {
                     "startLine": 1509,
                     "startColumn": 4,
-                    "startOffset": 113418,
+                    "startOffset": 113420,
                     "endColumn": 109,
-                    "endOffset": 113523
+                    "endOffset": 113525
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5485,9 +5484,9 @@
                 "to": {
                     "startLine": 1510,
                     "startColumn": 4,
-                    "startOffset": 113528,
+                    "startOffset": 113530,
                     "endColumn": 91,
-                    "endOffset": 113615
+                    "endOffset": 113617
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5497,10 +5496,10 @@
                 "to": {
                     "startLine": 1511,
                     "startColumn": 4,
-                    "startOffset": 113620,
+                    "startOffset": 113622,
                     "endLine": 1512,
                     "endColumn": 12,
-                    "endOffset": 113715
+                    "endOffset": 113717
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5510,10 +5509,10 @@
                 "to": {
                     "startLine": 1513,
                     "startColumn": 4,
-                    "startOffset": 113720,
+                    "startOffset": 113722,
                     "endLine": 1514,
                     "endColumn": 12,
-                    "endOffset": 113827
+                    "endOffset": 113829
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5523,10 +5522,10 @@
                 "to": {
                     "startLine": 1515,
                     "startColumn": 4,
-                    "startOffset": 113832,
+                    "startOffset": 113834,
                     "endLine": 1516,
                     "endColumn": 12,
-                    "endOffset": 113941
+                    "endOffset": 113943
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5536,10 +5535,10 @@
                 "to": {
                     "startLine": 1517,
                     "startColumn": 4,
-                    "startOffset": 113946,
+                    "startOffset": 113948,
                     "endLine": 1518,
                     "endColumn": 12,
-                    "endOffset": 114057
+                    "endOffset": 114059
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5549,10 +5548,10 @@
                 "to": {
                     "startLine": 1519,
                     "startColumn": 4,
-                    "startOffset": 114062,
+                    "startOffset": 114064,
                     "endLine": 1520,
                     "endColumn": 12,
-                    "endOffset": 114173
+                    "endOffset": 114175
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5562,9 +5561,9 @@
                 "to": {
                     "startLine": 1521,
                     "startColumn": 4,
-                    "startOffset": 114178,
+                    "startOffset": 114180,
                     "endColumn": 93,
-                    "endOffset": 114267
+                    "endOffset": 114269
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5574,9 +5573,9 @@
                 "to": {
                     "startLine": 1522,
                     "startColumn": 4,
-                    "startOffset": 114272,
+                    "startOffset": 114274,
                     "endColumn": 113,
-                    "endOffset": 114381
+                    "endOffset": 114383
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5586,9 +5585,9 @@
                 "to": {
                     "startLine": 1523,
                     "startColumn": 4,
-                    "startOffset": 114386,
+                    "startOffset": 114388,
                     "endColumn": 117,
-                    "endOffset": 114499
+                    "endOffset": 114501
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5598,10 +5597,10 @@
                 "to": {
                     "startLine": 1524,
                     "startColumn": 4,
-                    "startOffset": 114504,
+                    "startOffset": 114506,
                     "endLine": 1525,
                     "endColumn": 12,
-                    "endOffset": 114601
+                    "endOffset": 114603
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5611,10 +5610,10 @@
                 "to": {
                     "startLine": 1526,
                     "startColumn": 4,
-                    "startOffset": 114606,
+                    "startOffset": 114608,
                     "endLine": 1527,
                     "endColumn": 12,
-                    "endOffset": 114721
+                    "endOffset": 114723
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5624,10 +5623,10 @@
                 "to": {
                     "startLine": 1528,
                     "startColumn": 4,
-                    "startOffset": 114726,
+                    "startOffset": 114728,
                     "endLine": 1529,
                     "endColumn": 12,
-                    "endOffset": 114843
+                    "endOffset": 114845
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5637,9 +5636,9 @@
                 "to": {
                     "startLine": 1530,
                     "startColumn": 4,
-                    "startOffset": 114848,
+                    "startOffset": 114850,
                     "endColumn": 81,
-                    "endOffset": 114925
+                    "endOffset": 114927
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5649,9 +5648,9 @@
                 "to": {
                     "startLine": 1531,
                     "startColumn": 4,
-                    "startOffset": 114930,
+                    "startOffset": 114932,
                     "endColumn": 103,
-                    "endOffset": 115029
+                    "endOffset": 115031
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5661,9 +5660,9 @@
                 "to": {
                     "startLine": 1532,
                     "startColumn": 4,
-                    "startOffset": 115034,
+                    "startOffset": 115036,
                     "endColumn": 119,
-                    "endOffset": 115149
+                    "endOffset": 115151
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5673,9 +5672,9 @@
                 "to": {
                     "startLine": 1533,
                     "startColumn": 4,
-                    "startOffset": 115154,
+                    "startOffset": 115156,
                     "endColumn": 125,
-                    "endOffset": 115275
+                    "endOffset": 115277
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5685,9 +5684,9 @@
                 "to": {
                     "startLine": 1534,
                     "startColumn": 4,
-                    "startOffset": 115280,
+                    "startOffset": 115282,
                     "endColumn": 97,
-                    "endOffset": 115373
+                    "endOffset": 115375
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5697,9 +5696,9 @@
                 "to": {
                     "startLine": 1535,
                     "startColumn": 4,
-                    "startOffset": 115378,
+                    "startOffset": 115380,
                     "endColumn": 93,
-                    "endOffset": 115467
+                    "endOffset": 115469
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5709,9 +5708,9 @@
                 "to": {
                     "startLine": 1536,
                     "startColumn": 4,
-                    "startOffset": 115472,
+                    "startOffset": 115474,
                     "endColumn": 87,
-                    "endOffset": 115555
+                    "endOffset": 115557
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5721,9 +5720,9 @@
                 "to": {
                     "startLine": 1537,
                     "startColumn": 4,
-                    "startOffset": 115560,
+                    "startOffset": 115562,
                     "endColumn": 111,
-                    "endOffset": 115667
+                    "endOffset": 115669
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5733,9 +5732,9 @@
                 "to": {
                     "startLine": 1538,
                     "startColumn": 4,
-                    "startOffset": 115672,
+                    "startOffset": 115674,
                     "endColumn": 115,
-                    "endOffset": 115783
+                    "endOffset": 115785
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5745,9 +5744,9 @@
                 "to": {
                     "startLine": 1539,
                     "startColumn": 4,
-                    "startOffset": 115788,
+                    "startOffset": 115790,
                     "endColumn": 121,
-                    "endOffset": 115905
+                    "endOffset": 115907
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5757,9 +5756,9 @@
                 "to": {
                     "startLine": 1540,
                     "startColumn": 4,
-                    "startOffset": 115910,
+                    "startOffset": 115912,
                     "endColumn": 111,
-                    "endOffset": 116017
+                    "endOffset": 116019
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5769,10 +5768,10 @@
                 "to": {
                     "startLine": 1541,
                     "startColumn": 4,
-                    "startOffset": 116022,
+                    "startOffset": 116024,
                     "endLine": 1543,
                     "endColumn": 12,
-                    "endOffset": 116192
+                    "endOffset": 116194
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5782,9 +5781,9 @@
                 "to": {
                     "startLine": 1544,
                     "startColumn": 4,
-                    "startOffset": 116197,
+                    "startOffset": 116199,
                     "endColumn": 115,
-                    "endOffset": 116308
+                    "endOffset": 116310
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5794,9 +5793,9 @@
                 "to": {
                     "startLine": 1545,
                     "startColumn": 4,
-                    "startOffset": 116313,
+                    "startOffset": 116315,
                     "endColumn": 85,
-                    "endOffset": 116394
+                    "endOffset": 116396
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5806,10 +5805,10 @@
                 "to": {
                     "startLine": 1546,
                     "startColumn": 4,
-                    "startOffset": 116399,
+                    "startOffset": 116401,
                     "endLine": 1547,
                     "endColumn": 12,
-                    "endOffset": 116506
+                    "endOffset": 116508
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5819,10 +5818,10 @@
                 "to": {
                     "startLine": 1548,
                     "startColumn": 4,
-                    "startOffset": 116511,
+                    "startOffset": 116513,
                     "endLine": 1549,
                     "endColumn": 12,
-                    "endOffset": 116630
+                    "endOffset": 116632
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5832,9 +5831,9 @@
                 "to": {
                     "startLine": 1550,
                     "startColumn": 4,
-                    "startOffset": 116635,
+                    "startOffset": 116637,
                     "endColumn": 66,
-                    "endOffset": 116697
+                    "endOffset": 116699
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5844,10 +5843,10 @@
                 "to": {
                     "startLine": 1551,
                     "startColumn": 4,
-                    "startOffset": 116702,
+                    "startOffset": 116704,
                     "endLine": 1552,
                     "endColumn": 12,
-                    "endOffset": 116823
+                    "endOffset": 116825
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5857,9 +5856,9 @@
                 "to": {
                     "startLine": 1553,
                     "startColumn": 4,
-                    "startOffset": 116828,
+                    "startOffset": 116830,
                     "endColumn": 67,
-                    "endOffset": 116891
+                    "endOffset": 116893
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5869,10 +5868,10 @@
                 "to": {
                     "startLine": 1554,
                     "startColumn": 4,
-                    "startOffset": 116896,
+                    "startOffset": 116898,
                     "endLine": 1555,
                     "endColumn": 12,
-                    "endOffset": 117019
+                    "endOffset": 117021
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5882,10 +5881,10 @@
                 "to": {
                     "startLine": 1556,
                     "startColumn": 4,
-                    "startOffset": 117024,
+                    "startOffset": 117026,
                     "endLine": 1557,
                     "endColumn": 12,
-                    "endOffset": 117163
+                    "endOffset": 117165
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5895,10 +5894,10 @@
                 "to": {
                     "startLine": 1558,
                     "startColumn": 4,
-                    "startOffset": 117168,
+                    "startOffset": 117170,
                     "endLine": 1559,
                     "endColumn": 12,
-                    "endOffset": 117291
+                    "endOffset": 117293
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5908,9 +5907,9 @@
                 "to": {
                     "startLine": 1560,
                     "startColumn": 4,
-                    "startOffset": 117296,
+                    "startOffset": 117298,
                     "endColumn": 68,
-                    "endOffset": 117360
+                    "endOffset": 117362
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5920,9 +5919,9 @@
                 "to": {
                     "startLine": 1561,
                     "startColumn": 4,
-                    "startOffset": 117365,
+                    "startOffset": 117367,
                     "endColumn": 94,
-                    "endOffset": 117455
+                    "endOffset": 117457
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5932,9 +5931,9 @@
                 "to": {
                     "startLine": 1562,
                     "startColumn": 4,
-                    "startOffset": 117460,
+                    "startOffset": 117462,
                     "endColumn": 114,
-                    "endOffset": 117570
+                    "endOffset": 117572
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5944,9 +5943,9 @@
                 "to": {
                     "startLine": 1563,
                     "startColumn": 4,
-                    "startOffset": 117575,
+                    "startOffset": 117577,
                     "endColumn": 112,
-                    "endOffset": 117683
+                    "endOffset": 117685
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5956,9 +5955,9 @@
                 "to": {
                     "startLine": 1564,
                     "startColumn": 4,
-                    "startOffset": 117688,
+                    "startOffset": 117690,
                     "endColumn": 98,
-                    "endOffset": 117782
+                    "endOffset": 117784
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5968,9 +5967,9 @@
                 "to": {
                     "startLine": 1565,
                     "startColumn": 4,
-                    "startOffset": 117787,
+                    "startOffset": 117789,
                     "endColumn": 108,
-                    "endOffset": 117891
+                    "endOffset": 117893
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5980,9 +5979,9 @@
                 "to": {
                     "startLine": 1566,
                     "startColumn": 4,
-                    "startOffset": 117896,
+                    "startOffset": 117898,
                     "endColumn": 110,
-                    "endOffset": 118002
+                    "endOffset": 118004
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -5992,9 +5991,9 @@
                 "to": {
                     "startLine": 1567,
                     "startColumn": 4,
-                    "startOffset": 118007,
+                    "startOffset": 118009,
                     "endColumn": 110,
-                    "endOffset": 118113
+                    "endOffset": 118115
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6004,9 +6003,9 @@
                 "to": {
                     "startLine": 1568,
                     "startColumn": 4,
-                    "startOffset": 118118,
+                    "startOffset": 118120,
                     "endColumn": 100,
-                    "endOffset": 118214
+                    "endOffset": 118216
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6016,9 +6015,9 @@
                 "to": {
                     "startLine": 1569,
                     "startColumn": 4,
-                    "startOffset": 118219,
+                    "startOffset": 118221,
                     "endColumn": 104,
-                    "endOffset": 118319
+                    "endOffset": 118321
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6028,10 +6027,10 @@
                 "to": {
                     "startLine": 1570,
                     "startColumn": 4,
-                    "startOffset": 118324,
+                    "startOffset": 118326,
                     "endLine": 1571,
                     "endColumn": 12,
-                    "endOffset": 118431
+                    "endOffset": 118433
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6041,10 +6040,10 @@
                 "to": {
                     "startLine": 1572,
                     "startColumn": 4,
-                    "startOffset": 118436,
+                    "startOffset": 118438,
                     "endLine": 1573,
                     "endColumn": 12,
-                    "endOffset": 118561
+                    "endOffset": 118563
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6054,9 +6053,9 @@
                 "to": {
                     "startLine": 1574,
                     "startColumn": 4,
-                    "startOffset": 118566,
+                    "startOffset": 118568,
                     "endColumn": 90,
-                    "endOffset": 118652
+                    "endOffset": 118654
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6066,9 +6065,9 @@
                 "to": {
                     "startLine": 1575,
                     "startColumn": 4,
-                    "startOffset": 118657,
+                    "startOffset": 118659,
                     "endColumn": 122,
-                    "endOffset": 118775
+                    "endOffset": 118777
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6078,10 +6077,10 @@
                 "to": {
                     "startLine": 1576,
                     "startColumn": 4,
-                    "startOffset": 118780,
+                    "startOffset": 118782,
                     "endLine": 1577,
                     "endColumn": 12,
-                    "endOffset": 118887
+                    "endOffset": 118889
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6091,9 +6090,9 @@
                 "to": {
                     "startLine": 1578,
                     "startColumn": 4,
-                    "startOffset": 118892,
+                    "startOffset": 118894,
                     "endColumn": 85,
-                    "endOffset": 118973
+                    "endOffset": 118975
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6103,9 +6102,9 @@
                 "to": {
                     "startLine": 1579,
                     "startColumn": 4,
-                    "startOffset": 118978,
+                    "startOffset": 118980,
                     "endColumn": 103,
-                    "endOffset": 119077
+                    "endOffset": 119079
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6115,10 +6114,10 @@
                 "to": {
                     "startLine": 1580,
                     "startColumn": 4,
-                    "startOffset": 119082,
+                    "startOffset": 119084,
                     "endLine": 1581,
                     "endColumn": 12,
-                    "endOffset": 119185
+                    "endOffset": 119187
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6128,10 +6127,10 @@
                 "to": {
                     "startLine": 1582,
                     "startColumn": 4,
-                    "startOffset": 119190,
+                    "startOffset": 119192,
                     "endLine": 1583,
                     "endColumn": 12,
-                    "endOffset": 119285
+                    "endOffset": 119287
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6141,10 +6140,10 @@
                 "to": {
                     "startLine": 1584,
                     "startColumn": 4,
-                    "startOffset": 119290,
+                    "startOffset": 119292,
                     "endLine": 1585,
                     "endColumn": 12,
-                    "endOffset": 119403
+                    "endOffset": 119405
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6154,10 +6153,10 @@
                 "to": {
                     "startLine": 1586,
                     "startColumn": 4,
-                    "startOffset": 119408,
+                    "startOffset": 119410,
                     "endLine": 1587,
                     "endColumn": 12,
-                    "endOffset": 119507
+                    "endOffset": 119509
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6167,10 +6166,10 @@
                 "to": {
                     "startLine": 1588,
                     "startColumn": 4,
-                    "startOffset": 119512,
+                    "startOffset": 119514,
                     "endLine": 1589,
                     "endColumn": 12,
-                    "endOffset": 119611
+                    "endOffset": 119613
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6180,10 +6179,10 @@
                 "to": {
                     "startLine": 1590,
                     "startColumn": 4,
-                    "startOffset": 119616,
+                    "startOffset": 119618,
                     "endLine": 1591,
                     "endColumn": 12,
-                    "endOffset": 119737
+                    "endOffset": 119739
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6193,9 +6192,9 @@
                 "to": {
                     "startLine": 1592,
                     "startColumn": 4,
-                    "startOffset": 119742,
+                    "startOffset": 119744,
                     "endColumn": 87,
-                    "endOffset": 119825
+                    "endOffset": 119827
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6205,9 +6204,9 @@
                 "to": {
                     "startLine": 1593,
                     "startColumn": 4,
-                    "startOffset": 119830,
+                    "startOffset": 119832,
                     "endColumn": 89,
-                    "endOffset": 119915
+                    "endOffset": 119917
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6217,9 +6216,9 @@
                 "to": {
                     "startLine": 1594,
                     "startColumn": 4,
-                    "startOffset": 119920,
+                    "startOffset": 119922,
                     "endColumn": 109,
-                    "endOffset": 120025
+                    "endOffset": 120027
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6229,9 +6228,9 @@
                 "to": {
                     "startLine": 1595,
                     "startColumn": 4,
-                    "startOffset": 120030,
+                    "startOffset": 120032,
                     "endColumn": 83,
-                    "endOffset": 120109
+                    "endOffset": 120111
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6241,9 +6240,9 @@
                 "to": {
                     "startLine": 1596,
                     "startColumn": 4,
-                    "startOffset": 120114,
+                    "startOffset": 120116,
                     "endColumn": 53,
-                    "endOffset": 120163
+                    "endOffset": 120165
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6253,9 +6252,9 @@
                 "to": {
                     "startLine": 1597,
                     "startColumn": 4,
-                    "startOffset": 120168,
+                    "startOffset": 120170,
                     "endColumn": 63,
-                    "endOffset": 120227
+                    "endOffset": 120229
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6265,9 +6264,9 @@
                 "to": {
                     "startLine": 1598,
                     "startColumn": 4,
-                    "startOffset": 120232,
+                    "startOffset": 120234,
                     "endColumn": 105,
-                    "endOffset": 120333
+                    "endOffset": 120335
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6277,9 +6276,9 @@
                 "to": {
                     "startLine": 1599,
                     "startColumn": 4,
-                    "startOffset": 120338,
+                    "startOffset": 120340,
                     "endColumn": 109,
-                    "endOffset": 120443
+                    "endOffset": 120445
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6289,9 +6288,9 @@
                 "to": {
                     "startLine": 1600,
                     "startColumn": 4,
-                    "startOffset": 120448,
+                    "startOffset": 120450,
                     "endColumn": 83,
-                    "endOffset": 120527
+                    "endOffset": 120529
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6301,9 +6300,9 @@
                 "to": {
                     "startLine": 1601,
                     "startColumn": 4,
-                    "startOffset": 120532,
+                    "startOffset": 120534,
                     "endColumn": 119,
-                    "endOffset": 120647
+                    "endOffset": 120649
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml"
@@ -6313,10 +6312,10 @@
                 "to": {
                     "startLine": 1602,
                     "startColumn": 4,
-                    "startOffset": 120652,
+                    "startOffset": 120654,
                     "endLine": 1611,
                     "endColumn": 10,
-                    "endOffset": 121088
+                    "endOffset": 121090
                 },
                 "from": {
                     "file": "/Users/imac/Desktop/ReactNative/DemoMXHReactNative/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.3/res/values/values.xml"

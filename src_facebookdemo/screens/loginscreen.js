@@ -32,6 +32,10 @@ export default class loginscreen extends Component<Props> {
    
   }
 
+  registerAccount() {
+    this.props.navigation.navigate('RegisterContainer')
+  }
+
   render() {
     return ( 
       <ImageBackground
@@ -110,7 +114,7 @@ export default class loginscreen extends Component<Props> {
               <View style={{ marginTop: 20, borderWidth: 1, borderColor: 'white', flexDirection: 'row', borderRadius: 20,}}>
                 
                   <Left style={{justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderBottomLeftRadius: 20, borderTopLeftRadius: 20, borderColor: 'white',paddingVertical: 10, backgroundColor: 'rgba(255,255,255,0.6)'}}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={()=>this.registerAccount()}>
                       <Text style={{color: 'white'}}>Đăng kí</Text>
                     </TouchableOpacity>
                   </Left>

@@ -7,6 +7,7 @@ import ListUsersContainer from './container/ListUserscontainer';
 import CustomDrawNav from './container/CustomDrawNav';
 import InfoDetailUser from './container/infoDetailUserscontainer';
 import ThisPostContainer from './container/ThisPostContainer';
+import RegisterContainer from './container/RegisterContainer';
 const deviceWidth = Dimensions.get("window").width;
 import {Root} from 'native-base'
 var navigationOptions = {
@@ -39,6 +40,9 @@ const Draw = DrawerNavigator({
      },
      ThisPostContainer: {
          screen: ThisPostContainer
+     },
+     RegisterContainer: {
+         screen: RegisterContainer
      }
 
 },

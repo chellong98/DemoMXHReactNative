@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View ,Alert, Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
+import {View ,Alert,RefreshControl, Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
 import {Container, Toast, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
 import PopupDialog, { SlideAnimation , DialogButton} from 'react-native-popup-dialog'; //inport dialog 
 import Setting from './../utils/setting';
@@ -31,27 +31,17 @@ export default class infodetailuser extends Component<Props> {
       commentsOfPost: [],
       NguoiLike: [],
       imageUri: '',
-      showToast: false
+      showToast: false,
+      refreshing: false,
     },
     this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, NguoiLike)=>{
       // console.log("all post");  
       // console.log(allPosts);  
       // console.log('like of post') 
       // console.log(likesOfPost)
-      for(i=0; i<allPosts.length; i++) {
-        allPosts[i].statusLike = false //them 1 thuoc tinh vao doi tuong trong mang
-        allPosts[i].statusComment = false 
-        if(allPosts[i].NguoiLike.length>0) {
-          for(j=0; j<NguoiLike.length; j++) {
-            if(NguoiLike[j].idNguoiLike==global.account.sothutu) {
-              allPosts[i].statusLike=true;
-            }
-          }
-        }
-      }
+      
       // this.forceUpdate()
       this.setState({allPosts: allPosts})
-      for(i=0; i<allPosts; i++) {}
 
       // console.log('allposts')
       // console.log(this.state.allPosts);
@@ -83,10 +73,22 @@ export default class infodetailuser extends Component<Props> {
       // console.log(noiDungBaiDang.image + " " + noiDungBaiDang.imageSize.width + " " + noiDungBaiDang.imageSize.height)
       return ( <Image 
         style={{ resizeMode: 'contain', width: imageSize.width-40, height: imageSize.height}}
-        source={{uri: Setting.SERVER_API+noiDungBaiDang.image.replace("\\","/")}}/>
+        source={{uri: Setting.SERVER_API+noiDungBaiDang.image}}/>
       )
     }
   }
+  _onRefresh() {
+    // this.setState({refreshing: !this.state.refreshing})
+    if(this.state.allPosts==null || this.state.allPosts.length===0) 
+      Toast.show({
+        text: 'không có kết nối mạng',
+        type: 'warning',
+        position: 'bottom',
+        duration: 3000,
+      })
+    
+  }
+
   taoHang(value, index, user) {  
     var likeColor = value.statusLike==true ? '#00903b' : undefined;
     var commentColor = value.statusComment==true ? '#00903b' : undefined;
@@ -303,14 +305,14 @@ export default class infodetailuser extends Component<Props> {
         </PopupDialog>
        
         <Header searchBar rounded style={{}} backgroundColor='#00903b' androidStatusBarColor='#00903b'>
-        <Left style={{flex: 2/10}}>
-          <TouchableOpacity onPress={()=>{
-            this.props.navigation.g
-            this.props.navigation.navigate('ListUsersContainer', {dataUsers: global.listUsers});
-          }}>
-            <Icon android='md-arrow-back' ios='md-arrow-back' style={{color: 'white'}}/>
-          </TouchableOpacity>
-        </Left>
+          <Left style={{flex: 2/10}}>
+            <TouchableOpacity onPress={()=>{
+              this.props.navigation.goBack()
+              // this.props.navigation.navigate('ListUsersContainer', {dataUsers: global.listUsers});
+            }}>
+              <Icon android='md-arrow-back' ios='md-arrow-back' style={{color: 'white'}}/>
+            </TouchableOpacity>
+          </Left>
           <Item style={{flex: 6/10}}>
             <Icon name='ios-search'/>
             <Input placeholder='Search' />
@@ -329,7 +331,12 @@ export default class infodetailuser extends Component<Props> {
           </Button>
           </Right>
         </Header>
-        <Content>
+        <Content
+          refreshControl={
+            <RefreshControl
+              refreshing={this.state.refreshing}
+              onRefresh={this._onRefresh.bind(this)}
+            />}>
           <Card style={{flex: 0}}>
             <CardItem>
               <Left>
@@ -365,7 +372,8 @@ export default class infodetailuser extends Component<Props> {
               </Left>
             </CardItem>
           </Card>
-          <List> 
+          <List 
+          > 
             {
               // console.log(this.state.allPosts)
               

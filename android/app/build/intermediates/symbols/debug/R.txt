@@ -461,7 +461,8 @@ int drawable images_loadingscreen 0x7f02003f
 int drawable images_notcheck 0x7f020040
 int drawable node_modules_reactnavigation_src_views_assets_backicon 0x7f020041
 int drawable node_modules_reactnavigation_src_views_assets_backiconmask 0x7f020042
-int drawable notification_template_icon_bg 0x7f020043
+int drawable notification_template_icon_bg 0x7f020044
+int drawable photo 0x7f020043
 int id action0 0x7f0d0058
 int id action_bar 0x7f0d0048
 int id action_bar_activity_content 0x7f0d0000

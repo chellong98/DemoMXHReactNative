@@ -8,16 +8,21 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^6.3.1",
+    "expo": "^27.0.1",
     "native-base": "^2.4.2",
     "node-pre-gyp": "^0.9.1",
     "react": "16.3.0-alpha.1",
     "react-native": "0.54.3",
     "react-native-datepicker": "^1.7.2",
+    "react-native-form-generator": "^0.9.9",
     "react-native-image-picker": "^0.26.7",
     "react-native-local-mongodb": "^2.1.0",
     "react-native-popup-dialog": "^0.11.46",
     "react-native-version-check": "^3.0.0-rc.5",
     "react-navigation": "^1.5.11",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-form": "^7.3.0",
     "rn-gn-buttonloading": "^1.0.2"
   },
   "devDependencies": {
