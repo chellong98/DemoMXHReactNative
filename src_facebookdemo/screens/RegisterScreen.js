@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import {View ,Alert, ScrollView,  Animated, Image,RefreshControl, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions, ImageBackground} from 'react-native';
 import {Container, Card,List,Toast, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content, CheckBox} from 'native-base';
 import { Field,reduxForm ,Form} from 'redux-form';
+import DatePicker from 'react-native-datepicker'
+import Pakage from './../utils/pakage';
+import Setting from './../utils/setting';
 const deviceSize = Dimensions.get("window");
 var color = '#00903b'
 
@@ -11,12 +14,121 @@ export default class registerscreen extends React.Component{
         super(props)
         this.state = {
             refreshing: false,
+            width: 0,
+            date:"",
+            uriImage: {
+                cover: "",
+                avatar: ""
+            },
+            gender: {
+                male: true,
+                female: false,
+            },
+            firstname: "",
+            lastname: "",
+            email: "",
+            password: "",
+            iconfirstname: "",
+            iconlastname: "",
         }
     }
-    _onRefresh() {
-        // this.setState({refreshing: !this.state.refreshing})
+ 
+    _onLayout(event) {
+        const {x,y,width, height} = event.nativeEvent.layout;
+        if(this.state.width!=0) return;
+        this.setState({width})
+        console.log('width ' + width)
+        
+    }
+    _datePicker(date) {
+        console.log('date')
+        console.log(date)
+        this.setState({date: date})
+    }
+    _uploadImageCover() {
+        Pakage.upLoadImage((uri)=> {
+            this.setState({uriImage: {cover: uri, avatar: this.state.uriImage.avatar}})
+        })
+        
+    }
+    _uploadImageAvatar() {
+        Pakage.upLoadImage((uri)=> {
+            this.setState({uriImage: {cover: this.state.uriImage.cover, avatar: uri}})
+        })
+    }
+    checkValidate(item) {
+        if(this.state.firstname=="" || this.state.lastname=="" || this.state.email=="" || this.state.password=="" || this.state.date=="") {
+            Toast.show({
+                text: "all fields is required",
+                type: 'warning',
+                buttonText: "OK",
+                duration: 2000,
+                position: 'top'
+            })
+            return false
+        }
+        console.log(item)
+        if(Setting.check.maxLength15(item)!=undefined){
+            Toast.show({
+                text: Setting.check.maxLength15(item),
+                type: 'warning',
+                buttonText: "OK",
+                duration: 2000,
+                position: 'top'
+            })
+            return false
+        } 
+         if(Setting.check.minLength2(item)!=undefined) {
+            Toast.show({
+                text: Setting.check.minLength2(item),
+                type: 'warning',
+                buttonText: "OK",
+                duration: 2000,
+                position: 'top'
+            })
+            return false
+        }
+         if(Setting.check.alphaNumeric(item)!=undefined) {
+            Toast.show({
+                text: Setting.check.alphaNumeric(item),
+                type: 'warning',
+                buttonText: "OK",
+                duration: 2000,
+                position: 'top'
+            })
+            return false
+        }
+        return true
+    }
+    signUp() {
+       if(!this.checkValidate(this.state.firstname)) {
+           console.log(this.state.firstname)
+           console.log('first name')
+            return
+       }
+       if(!this.checkValidate(this.state.lastname)) {
+            console.log('last name')
+            return
+        }
+        if(Setting.check.email(this.state.email)!=undefined) {
+            Toast.show({
+                text: Setting.check.email(this.state.email),
+                type: 'warning',
+                buttonText: "OK",
+                duration: 2000,
+            })
+            return
+       }
+       if(!this.checkValidate(this.state.password)) {
+            console.log('password')
+            return
+        }
+        else {
+            console.log('email: ' + this.state.email + "\n" + 'firstname: ' + this.state.firstname + "\n" + 'lastname' + this.state.lastname + '\n' + 'password: ' + this.state.password)
+        }
     }
     render() {
+        console.log('image cover ' + this.state.uriImage.cover)
         return (
             <Container>
                 <Header style={{backgroundColor: color}} androidStatusBarColor={color}>
@@ -25,67 +137,131 @@ export default class registerscreen extends React.Component{
                             <Icon android='md-arrow-back' ios='md-arrow-back' style={{color: 'white'}}/>
                         </TouchableOpacity>
                     </Left>
-                    <Body style={{flex: 9/10}}>
+                    <Body style={{flex: 8/10}}>
                         <Title style={{color: 'white',}}>Sign Up</Title>
                     </Body>
+                    <Right style={{flex: 1/10}}>
+
+                    </Right>
                 </Header>
                 <Content>
-                    <Card style={{flex: 3/10}}>
-                        <Image style={{width: deviceSize.width-5, height: deviceSize.height/4}} source={{uri: 'data:image/jpeg;base64,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'}}
-                        />
-                        
-                       <Thumbnail source={{uri: 'data:image/jpeg;base64,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'}}/>
+                    <Card style={{flex: 3/10,backgroundColor: 'rgba(0, 144, 59, 0.5)'}}>
+                        <TouchableOpacity
+                        ref={(self)=>this._button=self}
+                        // onPress={()=>this._button.setOpacityTo(0.)}
+                        style={{backgroundColor: 'white'}}
+                        onPress={()=>this._uploadImageCover()}
+                        >
+                            <Animated.View style={{opacity: 0.2, }}>
+                            <Image style={{width: deviceSize.width-5, height: deviceSize.height/4}} source={{uri: this.state.uriImage.cover=="" ? 'https://www.inovex.de/blog/wp-content/uploads/2018/03/react-native-800x450.png' : this.state.uriImage.cover}}
+                            />
+                            </Animated.View>
+                        </TouchableOpacity>
+                        <TouchableOpacity 
+                        onPress={()=>this._uploadImageAvatar()}
+                        style={{position: 'absolute', zIndex: 10, top: deviceSize.height/10, left: deviceSize.width/2-this.state.width/2, borderWidth: 1, borderRadius: this.state.width/2}}>
+                            <Thumbnail 
+                            onLayout={(e)=>this._onLayout(e)}
+                            large 
+                            source={{uri: this.state.uriImage.avatar=="" ? 'https://files.gamebanana.com/img/ico/sprays/550f7e584c470.png' : this.state.uriImage.avatar}}
+                            />
+                       </TouchableOpacity>
                     </Card>
                     <List style={styles.list}
-                        refreshControl={
-                        <RefreshControl
-                          refreshing={this.state.refreshing}
-                          onRefresh={this._onRefresh.bind(this)}
-                        />
-                      }
+                        
+                      
                     >
                         <ListItem style={styles.listitem}>
                             <Left style={styles.leftlistitem}>
-                                <Icon android='md-alert' ios='md-alert'/>
+                                <Icon 
+                                style={{color: this.state.iconfirstname==='md-checkmark' ? color : null}}
+                                android={this.state.iconfirstname=="" ? 'md-alert' : this.state.iconfirstname} ios={this.state.iconfirstname=="" ? 'md-alert' : this.state.iconfirstname}/>
                             </Left>
                             <Body style={styles.bodylistitem}>
                                 <Text style={{fontWeight: 'bold', fontSize: 15}}>First name</Text> 
                             </Body>
                             <Left style={styles.rightlistitem}>
-                                <Input style={{color: color}}/>
+                                <Input
+                                onKeyPress={(submit)=>{
+                                    if(this.checkValidate(this.state.firstname)) {
+                                        this.setState({iconfirstname: 'md-checkmark'})
+                                    } else {
+                                        this.setState({iconfirstname: 'md-alert'})
+                                    }
+                                }}
+                                // onKeyPress={(keypress)=>console.log(keypress.nativeEvent)}
+                                onChangeText={(text)=>this.setState({firstname: text})}
+                                returnKeyType="next" 
+                                style={{color: color}}/>
                             </Left>
                         </ListItem >
                         <ListItem style={styles.listitem}>
                             <Left style={styles.leftlistitem}>
-                                <Icon android='md-alert' ios='md-alert'/>
+                                <Icon style={{color: this.state.iconlastname=='md-checkmark' ? color : null}}
+                                android={this.state.iconlastname=="" ? 'md-alert' : this.state.iconlastname} ios={this.state.iconlastname=="" ? 'md-alert' : this.state.iconlastname}/>
                             </Left>
                             <Body style={styles.bodylistitem}>
                                 <Text style={{fontWeight: 'bold', fontSize: 15}}>Last name</Text> 
                             </Body>
                             <Left style={styles.rightlistitem}>
-                                <Input style={{color: color}}/>
+                                <Input
+                                onKeyPress={(submit)=>{
+                                    if(this.checkValidate(this.state.lastname)) {
+                                        this.setState({iconlastname: 'md-checkmark'})
+                                    }else {
+                                        this.setState({iconlastname: 'md-alert'})
+                                    }
+                                }}
+                                returnKeyType="next"
+                                // onKeyPress={(keypress)=>console.log(keypress.nativeEvent)}
+                                onChangeText={(text)=>this.setState({lastname: text})}
+                                style={{color: color}}/>
+                            </Left>
+                        </ListItem>
+                        <ListItem style={styles.listitem}>
+                            <Left style={styles.leftlistitem}>
+                                <Icon android='md-mail' ios='md-mail' 
+                                style={{color: Setting.check.email(this.state.email)!=undefined ? 'red' : undefined}}/>
+                            </Left>
+                            <Body style={styles.bodylistitem}>
+                                <Text style={{fontWeight: 'bold', fontSize: 15}}>Email</Text> 
+                            </Body>
+                            <Left style={styles.rightlistitem}>
+                                <Input
+                                onKeyPress={(submit)=>{
+                                    if(Setting.check.email(this.state.email)!=undefined) {
+                                        Toast.show({
+                                            text: Setting.check.email(this.state.email),
+                                            type: 'warning',
+                                            buttonText: "OK",
+                                            duration: 2000,
+                                        })
+                                    }
+                                }} 
+                                onChangeText={(text)=>this.setState({email: text})}
+                                keyboardType="email-address" 
+                                returnKeyType="next" 
+                                style={{color: color}}/>
                             </Left>
                         </ListItem>
                         <ListItem style={styles.listitem}>
                         <Left style={styles.leftlistitem}>
-                            <Icon android='md-mail' ios='md-mail'/>
+                            <Icon 
+                            style={{color: Setting.check.maxLength15(this.state.password)==undefined&&Setting.check.minLength8(this.state.password)==undefined&&Setting.check.alphaNumeric(this.state.password)==undefined ? undefined : 'red'}}
+                            android='md-lock' ios='md-lock'/>
                         </Left>
                         <Body style={styles.bodylistitem}>
-                            <Text style={{fontWeight: 'bold', fontSize: 15}}>Email</Text> 
+                            <Text returnKeyType="next" style={{fontWeight: 'bold', fontSize: 15}}>Password</Text> 
                         </Body>
                         <Left style={styles.rightlistitem}>
-                            <Input style={{color: color}}/>
-                        </Left>
-                        </ListItem>
-                        <ListItem style={styles.listitem}>
-                        <Left style={styles.leftlistitem}>
-                            <Icon android='md-lock' ios='md-lock'/>
-                        </Left>
-                        <Body style={styles.bodylistitem}>
-                            <Text style={{fontWeight: 'bold', fontSize: 15}}>Password</Text> 
-                        </Body>
-                        <Left style={styles.rightlistitem}>
-                            <Input secureTextEntry style={{color: color}}/>
+                            <Input 
+                            onKeyPress={(submit)=>{
+                                this.checkValidate(this.state.password);
+                            }}
+                            onChangeText={(text)=>this.setState({password: text})}
+                            returnKeyType="next" 
+                            secureTextEntry 
+                            style={{color: color}}/>
                         </Left>
                         </ListItem>
 
@@ -96,15 +272,62 @@ export default class registerscreen extends React.Component{
                             <Text style={{fontWeight: 'bold'}}> Gender</Text>
                         </View>
                         <View style={{flexDirection: 'row'}}>
-                            <CheckBox checked={true} color={color}/>
+                            <CheckBox checked={this.state.gender.male} 
+                            onPress={()=>{this.setState({gender: {male: !this.state.gender.male , female: !this.state.gender.female}})}}
+                            color={color}/>
                             <Text style={{paddingLeft: 10}}> Male</Text>
                         </View>
                         <View style={{flexDirection: 'row'}}>
-                            <CheckBox checked={true} color={color}/>
+                            <CheckBox 
+                            onPress={()=>this.setState({gender: {male: !this.state.gender.male , female: !this.state.gender.female}})}
+                            checked={this.state.gender.female} 
+                            color={color}/>
                             <Text style={{paddingLeft: 10}}> Female</Text>
                         </View>
                     </View>
-                    
+                    <View style={{backgroundColor: 'white', paddingBottom: 10,}}>
+                    <ListItem style={{ height: 50}}>
+                        <Left style={styles.leftlistitem}>
+                        <Icon android='md-calendar' ios='md-calendar'/>
+                        </Left>
+                        <Body style={styles.bodylistitem}>
+                            <Text style={{fontWeight: 'bold', fontSize: 15}}>BirthDay</Text> 
+                        </Body>
+                        <Left style={styles.rightlistitem}>
+                            <DatePicker
+                            style={{width: 200}}
+                            date={this.state.date}
+                            mode="date"
+                            placeholder="select date"
+                            format="YYYY-MM-DD"
+                            
+                            maxDate="2018-12-31"
+                            minDate="1900-01-01"
+                            confirmBtnText="Confirm"
+                            cancelBtnText="Cancel"
+                            customStyles={{
+                            dateIcon: {
+                                position: 'absolute',
+                                left: 0,
+                                top: 4,
+                                marginLeft: 0
+                            },
+                            dateInput: {
+                                marginLeft: 36,
+                                borderRadius: 30
+                            }
+                            // ... You can check the source to find the other keys.
+                            }}
+                            onDateChange={(date)=>this._datePicker(date)}
+      />
+                        </Left>
+                    </ListItem>
+                    </View>
+                    <View >
+                        <Button  full success onPress={()=>this.signUp()}>
+                            <Text style={{color: 'white'}}>Sign Up</Text>
+                        </Button>
+                    </View>
                 </Content>
             </Container>
         )
@@ -133,5 +356,6 @@ const styles = StyleSheet.create({
         marginTop: 10,
         flexDirection: 'row',
         marginLeft: 20,
+        paddingBottom: 10
     }
 });

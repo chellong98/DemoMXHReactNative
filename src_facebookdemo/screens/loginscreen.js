@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {View,Keyboard,Text, ImageBackground,TextInput,KeyboardAvoidingView,Alert,TouchableOpacity} from 'react-native';
-import {Item,Input,Icon,Button,Left, Right,Content} from 'native-base';
+import {Item,Input,Icon,Button,Left, Right,Content, Toast} from 'native-base';
 import ButtonLoading from 'rn-gn-buttonloading';
 import Pakage from './../utils/pakage';
-
+import Setting from './../utils/setting';
 srcimage = require('./../images/login.jpg');
 export interface Props {
   navigation: any,
@@ -42,7 +42,7 @@ export default class loginscreen extends Component<Props> {
         source = {srcimage}
         style={{flex: 1, width: '100%', justifyContent: 'center', alignItems: 'center'}}
       >
-        <KeyboardAvoidingView keyboardVerticalOffset={150} behavior="padding" style={{width: '100%', alignItems: 'center', paddingHorizontal: 20,  backgroundColor: null, marginTop: 200}}>
+        <KeyboardAvoidingView keyboardVerticalOffset={0} behavior="padding" style={{width: '100%', alignItems: 'center', paddingHorizontal: 20,  backgroundColor: null, marginTop: 200}}>
           <View >
             <Text style={{color: '#67DAF9', fontSize: 20}}>REACT NATIVE</Text>
           </View>
@@ -80,6 +80,36 @@ export default class loginscreen extends Component<Props> {
                   title = 'LOGIN'
                   size = {40}
                   onPress = {()=>{
+                    if(Setting.check.email(this.state.username)!=undefined) {
+                      console.log('email')
+                      Toast.show({
+                        text: Setting.check.email(this.state.username) ,
+                        type: 'warning',
+                        buttonText: 'OK'
+                      })
+                      this.button.cancel()
+                      return
+                    }
+                    if( Setting.check.minLength8(this.state.password)!=undefined) {
+                      console.log('passs')
+                      Toast.show({
+                        text:  Setting.check.minLength8(this.state.password),
+                        type: 'warning',
+                        buttonText: 'OK'
+                      })
+                      this.button.cancel()
+                      return
+                    }
+                    if(Setting.check.maxLength15(this.state.password)!=undefined) {
+                      console.log('passs')
+                      Toast.show({
+                        text:  Setting.check.maxLength15(this.state.password),
+                        type: 'warning',
+                        buttonText: 'OK'
+                      })
+                      this.button.cancel()
+                      return
+                    }
                     this.props.login(this.state.username, this.state.password,
                     (status)=>{ 
                       if(status.error==0){
@@ -101,7 +131,7 @@ export default class loginscreen extends Component<Props> {
                         setTimeout(()=>{
                           Alert.alert("username password incorrect");
                           this.button.cancel();
-                        }, 5000);
+                        }, 3000);
                       }
                     });
                   }}

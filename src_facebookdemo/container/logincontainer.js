@@ -5,6 +5,7 @@ import UserService from './../services/UserServices';
 export interface Props {
   navigation: any, 
 }
+
 export default class logincontainer extends Component<Props> {
   constructor(props) {
     super(props);
@@ -25,7 +26,11 @@ export default class logincontainer extends Component<Props> {
   }
   render() {
     return ( 
-      <LoginScreen navigation={this.props.navigation} login={(username, password, callback)=>this.login(username, password, callback)}/>
+      <LoginScreen 
+      navigation={this.props.navigation} 
+      login={(username, password, callback)=>this.login(username, password, callback)}
+      
+      />
     )
   }
 };
