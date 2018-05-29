@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {View ,Alert,RefreshControl, Animated, Image, Keyboard, StyleSheet,TouchableOpacity, Text,Dimensions} from 'react-native';
-import {Container, Toast, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
+import {Container,Spinner, Toast, Card,List, CardItem, Item,Thumbnail, Button, ListItem, Input, Header, Body, Right, Title, Left,Icon, Content} from 'native-base';
 import PopupDialog, { SlideAnimation , DialogButton} from 'react-native-popup-dialog'; //inport dialog 
 import Setting from './../utils/setting';
 import Pakage from './../utils/pakage';
@@ -86,6 +86,19 @@ export default class infodetailuser extends Component<Props> {
         position: 'bottom',
         duration: 3000,
       })
+      this.props.layToanBoBaiDang(this.props.user.sothutu, (allPosts, NguoiLike)=>{
+        // console.log("all post");  
+        // console.log(allPosts);  
+        // console.log('like of post') 
+        // console.log(likesOfPost)
+        
+        // this.forceUpdate()
+        this.setState({allPosts: allPosts})
+  
+        // console.log('allposts')
+        // console.log(this.state.allPosts);
+       
+      })
     
   }
 
@@ -97,6 +110,7 @@ export default class infodetailuser extends Component<Props> {
  
     // console.log(noiDungBaiDang)
     // console.log("like of post: " + this.state.likesOfPost[index])
+    
     return (
       <ListItem key={index} style={{borderBottomWidth: 0}}>
         <Card>
@@ -169,6 +183,34 @@ export default class infodetailuser extends Component<Props> {
         </Card>
       </ListItem>
     )
+  }
+
+  renderList() {
+    if(this.state.allPosts.length<1) {
+      return(
+        <Content>
+          <Spinner color='green' />
+        </Content>
+      )
+    }
+    return (
+
+      <List 
+          >
+            {
+              // console.log(this.state.allPosts)
+              
+              
+                this.state.allPosts.map((value, index)=>{
+                
+                  return this.taoHang(value, index, this.props.user)
+                })
+          
+              
+            }
+          </List>
+    )
+
   }
 
   renderImageUpload() {
@@ -334,6 +376,7 @@ export default class infodetailuser extends Component<Props> {
         <Content
           refreshControl={
             <RefreshControl
+            
               refreshing={this.state.refreshing}
               onRefresh={this._onRefresh.bind(this)}
             />}>
@@ -350,6 +393,7 @@ export default class infodetailuser extends Component<Props> {
             </CardItem>
            {
               this.renderCardStatus(user)
+              
            }
             <CardItem>
               <Body>
@@ -372,17 +416,10 @@ export default class infodetailuser extends Component<Props> {
               </Left>
             </CardItem>
           </Card>
-          <List 
-          > 
             {
-              // console.log(this.state.allPosts)
-              
-              this.state.allPosts.map((value, index)=>{
-                return this.taoHang(value, index, this.props.user)
-              })
-              
+              this.renderList()
             }
-          </List>
+          
         </Content> 
       </Container>
       </Root>

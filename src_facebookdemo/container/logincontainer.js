@@ -20,6 +20,8 @@ export default class logincontainer extends Component<Props> {
     this.services.update((status)=>{
       this.setState({status});
       callback(status);
+      global.socket.emit('login', global.account)
+      
       // console.log(status);
     }, check);
    

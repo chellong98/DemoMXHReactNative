@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { AsyncStorage, Text, View, TextInput, StyleSheet } from 'react-native'
 var imagePicker = require('react-native-image-picker');
+
 var options = {
     title: 'Select image',
     storageOptions : {
@@ -9,6 +10,7 @@ var options = {
     }
   }
 config = {
+    
     login(username, password)    //lay ra user pass va url API
     {
         var form = new FormData(); //tao form trong
@@ -69,13 +71,36 @@ config = {
 
         return {url: 'index.php/First_controller/postCommentController', data: form};
     },
-
+    
     postLike(idBaiDang, idAccount) {
         var form = new FormData();
         form.append('idBaiDang', idBaiDang)
         form.append('idAccount', idAccount)
 
         return {url: 'index.php/First_controller/postLikeController', data: form}
+    },
+
+    registerUser(info) {
+        var form = new FormData();
+        form.append('firstname', info.firstname);
+        form.append('lastname', info.lastname);
+        form.append('email', info.email);
+        form.append('gender', info.gender);
+        form.append('linkfacebook', info.linkfacebook);
+        form.append('password', info.password);
+        form.append('birthday', info.birthday);
+
+          form.append("imageCover", { 
+              uri: info.imageCover , 
+            type: 'image/jpeg',
+             name: info.imageCover!=='' ? this.getRamdomString() : ''} );
+
+        form.append("imageAvatar", { 
+            uri: info.imageAvatar , 
+            type: 'image/jpeg',
+            name: info.imageAvatar!=='' ? this.getRamdomString() : ''} );
+
+        return {url: 'index.php/First_controller/registerUserController', data: form}
     },
 
     upLoadImage(callback) {

@@ -8,8 +8,11 @@ import Pakage from './../utils/pakage';
 import Setting from './../utils/setting';
 const deviceSize = Dimensions.get("window");
 var color = '#00903b'
-
-export default class registerscreen extends React.Component{
+export interface Props {
+    navigation: any,
+    _signUp: Function,
+}
+export default class registerscreen extends React.Component<Props>{
     constructor(props) {
         super(props)
         this.state = {
@@ -17,8 +20,8 @@ export default class registerscreen extends React.Component{
             width: 0,
             date:"",
             uriImage: {
-                cover: "",
-                avatar: ""
+                cover: "https://www.inovex.de/blog/wp-content/uploads/2018/03/react-native-800x450.png",
+                avatar: "https://files.gamebanana.com/img/ico/sprays/550f7e584c470.png"
             },
             gender: {
                 male: true,
@@ -46,9 +49,9 @@ export default class registerscreen extends React.Component{
         this.setState({date: date})
     }
     _uploadImageCover() {
-        Pakage.upLoadImage((uri)=> {
-            this.setState({uriImage: {cover: uri, avatar: this.state.uriImage.avatar}})
-        })
+        // Pakage.upLoadImage((uri)=> {
+        //     this.setState({uriImage: {cover: uri, avatar: this.state.uriImage.avatar}})
+        // })
         
     }
     _uploadImageAvatar() {
@@ -57,16 +60,7 @@ export default class registerscreen extends React.Component{
         })
     }
     checkValidate(item) {
-        if(this.state.firstname=="" || this.state.lastname=="" || this.state.email=="" || this.state.password=="" || this.state.date=="") {
-            Toast.show({
-                text: "all fields is required",
-                type: 'warning',
-                buttonText: "OK",
-                duration: 2000,
-                position: 'top'
-            })
-            return false
-        }
+        
         console.log(item)
         if(Setting.check.maxLength15(item)!=undefined){
             Toast.show({
@@ -101,6 +95,16 @@ export default class registerscreen extends React.Component{
         return true
     }
     signUp() {
+        if(this.state.firstname=="" || this.state.lastname=="" || this.state.email=="" || this.state.password=="" || this.state.date=="") {
+            Toast.show({
+                text: "all fields is required",
+                type: 'warning',
+                buttonText: "OK",
+                duration: 2000,
+                position: 'top'
+            })
+            return 
+        }
        if(!this.checkValidate(this.state.firstname)) {
            console.log(this.state.firstname)
            console.log('first name')
@@ -124,7 +128,21 @@ export default class registerscreen extends React.Component{
             return
         }
         else {
-            console.log('email: ' + this.state.email + "\n" + 'firstname: ' + this.state.firstname + "\n" + 'lastname' + this.state.lastname + '\n' + 'password: ' + this.state.password)
+            let info = {
+                firstname: this.state.firstname,
+                lastname: this.state.lastname,
+                email: this.state.email,
+                password: this.state.password,
+                gender: this.state.gender.male ? 'Male' : 'Female',
+                linkfacebook: '',
+                imageAvatar: this.state.uriImage.avatar,
+                imageCover: this.state.uriImage.cover,
+                birthday: this.state.date,
+            }
+            
+            console.log('info')
+            console.log(info)
+            this.props._signUp(info)
         }
     }
     render() {
@@ -153,7 +171,7 @@ export default class registerscreen extends React.Component{
                         onPress={()=>this._uploadImageCover()}
                         >
                             <Animated.View style={{opacity: 0.2, }}>
-                            <Image style={{width: deviceSize.width-5, height: deviceSize.height/4}} source={{uri: this.state.uriImage.cover=="" ? 'https://www.inovex.de/blog/wp-content/uploads/2018/03/react-native-800x450.png' : this.state.uriImage.cover}}
+                            <Image style={{width: deviceSize.width-5, height: deviceSize.height/4}} source={{uri: this.state.uriImage.cover}}
                             />
                             </Animated.View>
                         </TouchableOpacity>
@@ -163,7 +181,7 @@ export default class registerscreen extends React.Component{
                             <Thumbnail 
                             onLayout={(e)=>this._onLayout(e)}
                             large 
-                            source={{uri: this.state.uriImage.avatar=="" ? 'https://files.gamebanana.com/img/ico/sprays/550f7e584c470.png' : this.state.uriImage.avatar}}
+                            source={{uri: this.state.uriImage.avatar}}
                             />
                        </TouchableOpacity>
                     </Card>
@@ -247,7 +265,7 @@ export default class registerscreen extends React.Component{
                         <ListItem style={styles.listitem}>
                         <Left style={styles.leftlistitem}>
                             <Icon 
-                            style={{color: Setting.check.maxLength15(this.state.password)==undefined&&Setting.check.minLength8(this.state.password)==undefined&&Setting.check.alphaNumeric(this.state.password)==undefined ? undefined : 'red'}}
+                            style={{color: Setting.check.maxLength15(this.state.password)==undefined&&Setting.check.minLength2(this.state.password)==undefined&&Setting.check.alphaNumeric(this.state.password)==undefined ? undefined : 'red'}}
                             android='md-lock' ios='md-lock'/>
                         </Left>
                         <Body style={styles.bodylistitem}>
@@ -300,7 +318,7 @@ export default class registerscreen extends React.Component{
                             mode="date"
                             placeholder="select date"
                             format="YYYY-MM-DD"
-                            
+                            androidMode='calendar'
                             maxDate="2018-12-31"
                             minDate="1900-01-01"
                             confirmBtnText="Confirm"

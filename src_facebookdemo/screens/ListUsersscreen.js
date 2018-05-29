@@ -141,7 +141,17 @@ export default class listuser extends Component {
                     }) 
                 }
                 </List>
+            
+                    
+              
             </Content>
+            <Button 
+            onPress={()=>{
+                this.props.navigation.navigate('ListMessage');
+            }}
+            rounded success style={{position: 'absolute', bottom: 10, right: 10, height: 50, width: 50, borderRadius: 50}}>
+                <Icon android='md-chatbubbles' ios='md-chatbubbles'/>
+            </Button>
         </Container>
     )
   }

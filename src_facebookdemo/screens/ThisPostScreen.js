@@ -17,7 +17,8 @@ export default class thispostscreen extends Component<Props> {
         super(props);
         this.state = {
             showToast: false,
-            text: ''
+            text: '',
+            statusLike: false,
         }
         console.log('comment')
         console.log(this.props.comments)
@@ -42,7 +43,11 @@ export default class thispostscreen extends Component<Props> {
                         </View>
                     </View>
                     <View>
-                        <TouchableOpacity><Text><Icon active name='thumbs-up' style={{color: null, fontSize: 20}}/> Like</Text></TouchableOpacity>
+                        <TouchableOpacity onPress={()=>{
+                            
+                        }}>
+                            <Text><Icon active name='thumbs-up' style={{color: null, fontSize: 20}}/> Like</Text>
+                        </TouchableOpacity>
                     </View>
                 </Body>
                

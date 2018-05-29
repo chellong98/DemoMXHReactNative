@@ -66,7 +66,9 @@ export default class drawnav extends Component<Props> {
         <Footer style={{backgroundColor: '#00903b',}}>
           <Body style={{ justifyContent: 'center', alignItems: 'center'}}>
               <TouchableOpacity onPress={()=>{
+                global.socket.emit('disconnect')
                 this.props.navigation.navigate('LoginContainer')
+               
               }}>
                 <Text style={{color: 'white', fontSize: 20}}><Icon size={1} android='md-log-out' ios='md-log-out' style={{color: 'white'}}/> Logout</Text>
               </TouchableOpacity>
